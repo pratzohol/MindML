@@ -18,7 +18,16 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-roamlinks-plugin
-      # - run: pip install mkdocs-mermaid2-plugin
+      - run: pip install \
+                mkdocs-material \
+                mkdocs-awesome-pages-plugin \
+                mkdocs-git-revision-date-localized-plugin \
+                mkdocs-git-committers-plugin-2 \
+                mkdocs-git-authors-plugin \
+                pillow cairosvg \
+                mkdocs-glightbox \
+                
+                mkdocs-minify-plugin \
+                mkdocs-mermaid2-plugin \
+                mkdocs-macros-plugin \
       - run: mkdocs gh-deploy --force
