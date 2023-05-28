@@ -1,0 +1,69 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.wrappingIndent": "indent",
+  "editor.overviewRulerBorder": false,
+  "editor.lineHeight": 24,
+  "[markdown]": {
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    }
+  },
+  "files.defaultLanguage": "markdown",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/node_modules": true,
+    "LICENSE": true,
+    ".gitignore": true,
+    ".vscode": true
+},
+  "files.watcherExclude": {
+    "**/node_modules": true
+  },
+  "foam.edit.linkReferenceDefinitions": "off",
+  "foam.openDailyNote.directory": "journal",
+  "foam.openDailyNote.titleFormat": "fullDate",
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "markdown.preview.breaks": true,
+  "pasteImage.path": "${projectRoot}/attachments",
+  "pasteImage.showFilePathConfirmInputBox": true,
+"prettier.singleQuote": false,
+"spellright.language": [
+    "en"
+],
+"spellright.documentTypes": [
+    "latex"
+],
+"explorerExclude.backup": {},
+"workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#100263",
+    "activityBar.background": "#100263",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#9c1903",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#100263",
+    "statusBar.background": "#080131",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#100263",
+    "statusBarItem.remoteBackground": "#080131",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#080131",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#08013199",
+    "titleBar.inactiveForeground": "#e7e7e799"
+},
+"peacock.color": "#080131",
+}
