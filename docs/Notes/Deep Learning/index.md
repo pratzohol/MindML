@@ -1,3 +1,2 @@
 # Deep Learning
 
-[[docs/index]]
