@@ -87,8 +87,7 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - tags:
-      tags_compare: !!python/name:material.plugins.tags.plugin.casefold
+  - tags
   - git-revision-date-localized:
       type: datetime
       enable_creation_date: true
