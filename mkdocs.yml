@@ -1,9 +1,8 @@
-site_name: MLmind Notes
+site_name: MindML Notes
 
 theme:
-    name: 'material'
+    name: material
     palette:
-
       # Light mode
       - media: "(prefers-color-scheme: light)"
         scheme: default
@@ -12,7 +11,6 @@ theme:
         toggle:
           icon: material/weather-sunny
           name: Switch to dark mode
-
       # Dark mode
       - media: "(prefers-color-scheme: dark)"
         scheme: slate
@@ -20,18 +18,24 @@ theme:
         accent: purple
         toggle:
           icon: material/weather-night
-          name: Switch to light mode
+          name: Switch to light mode          
+    features:
+      - navigation.tracking
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.sections
+      - navigation.path
+      - navigation.indexes
 
 # Extensions
 markdown_extensions:
   - footnotes
   - tables
-  # - attr_list
+  - attr_list
   - pymdownx.arithmatex:
       generic: true
-  # - pymdownx.superfences
-  # - pymdownx.details
-  # - pymdownx.magiclink
+  - pymdownx.details
+  - pymdownx.magiclink
   - pymdownx.tasklist:
       custom_checkbox: true
   - def_list
@@ -45,7 +49,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       permalink: true
 
@@ -60,3 +66,17 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js 
+
+# extra:
+#   consent:
+#     title: Cookie consent
+#     description: >- 
+#       We use cookies to recognize your repeated visits and preferences, as well
+#       as to measure the effectiveness of my documentation and whether users
+#       find what they're searching for. With your consent, you're helping me to
+#       make my documentation better.
+#     cookies:
+#       analytics: 
+#     actions:
+#       - accept
+#       - manage
