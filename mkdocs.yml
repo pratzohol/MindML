@@ -10,6 +10,7 @@ edit_uri: edit/main/docs/
 theme:
     name: material
     icon:
+      logo: fontawesome/brands/markdown
       repo: fontawesome/brands/github
       edit: material/pencil-box
       view: material/eye
@@ -98,7 +99,7 @@ plugins:
       repository: pratzohol/MindML
       branch: main
   - glightbox
-
+  - social
 
 extra_javascript:
   - javascripts/mathjax.js
