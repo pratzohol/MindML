@@ -94,7 +94,6 @@ plugins:
   - git-committers:
       repository: pratzohol/MindML
       branch: main
-  - optimize
   - glightbox
 
 
