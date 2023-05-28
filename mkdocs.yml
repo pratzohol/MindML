@@ -47,6 +47,7 @@ theme:
       - content.action.view
       - content.code.copy
       - content.tooltips
+      - search.highlight
 
 
 # Extensions

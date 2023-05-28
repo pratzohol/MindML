@@ -25,9 +25,12 @@
     "**/node_modules": true,
     "LICENSE": true,
     ".gitignore": true,
-    ".vscode": false,
+    ".vscode": true,
     ".github": true,
-    ".cache": true
+    ".cache": true,
+    "myenv": true,
+    "mkdocs.yml": true,
+    ".foam": true
 },
   "files.watcherExclude": {
     "**/node_modules": true
