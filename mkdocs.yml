@@ -1,4 +1,7 @@
-site_name: My Notes
+site_name: MindML
+site_description: Notes on ML, DL, CV, RL, and more.
+site_author: Prateek Mishra
+site_url: https://pratzohol.github.io/MindML/
 
 repo_url: https://github.com/pratzohol/MindML
 repo_name: pratzohol/MindML
