@@ -25,7 +25,9 @@
     "**/node_modules": true,
     "LICENSE": true,
     ".gitignore": true,
-    ".vscode": false
+    ".vscode": false,
+    ".github": true,
+    ".cache": true
 },
   "files.watcherExclude": {
     "**/node_modules": true
