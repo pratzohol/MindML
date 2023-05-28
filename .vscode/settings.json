@@ -25,7 +25,7 @@
     "**/node_modules": true,
     "LICENSE": true,
     ".gitignore": true,
-    ".vscode": true
+    ".vscode": false
 },
   "files.watcherExclude": {
     "**/node_modules": true
@@ -66,4 +66,14 @@
     "titleBar.inactiveForeground": "#e7e7e799"
 },
 "peacock.color": "#080131",
+"yaml.schemas": {
+    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+},
+"yaml.customTags": [
+    "!ENV scalar",
+    "!ENV sequence",
+    "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
+    "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
+    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+],
 }

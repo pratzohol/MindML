@@ -113,11 +113,11 @@ extra:
         link: https://github.com/pratzohol/
         name: GitHub
       - icon: fontawesome/brands/linkedin
-        link: https://www.linkedin.com/in/pratzohol/
+        link: https://www.linkedin.com/in/pratzohol-iitd/
         name: LinkedIn
-      - icon: fontawesome/brands/instragram
-        link: https://www.instagram.com/pratzohol/
-        name: Instagram
+      # - icon: fontawesome/brands/instragram
+      #   link: https://www.instagram.com/pratzohol/
+      #   name: Instagram
       - icon: fontawesome/solid/paper-plane
         link: mailto:IITDprateekmishra@gmail.com
         name: Email

@@ -2,7 +2,6 @@ name: ci
 on:
   push:
     branches:
-      - master
       - main
 permissions:
   contents: write
@@ -14,12 +13,16 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - uses: actions/cache@v2
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - uses: actions/cache@v3
         with:
-          key: ${{ github.ref }}
+          key: mkdocs-material-${{ env.cache_id }}
           path: .cache
-      - run: sudo apt-get install pngquant
+          restore-keys: |
+            mkdocs-material-
+      - run: apt-get install pngquant
       - run: pip install \
+                lxml \
                 mkdocs-material \
                 mkdocs-roamlinks-plugin \
                 mkdocs-awesome-pages-plugin \
@@ -29,6 +32,4 @@ jobs:
                 pillow cairosvg \
                 mkdocs-glightbox \
                 mkdocs-minify-plugin \
-                mkdocs-mermaid2-plugin \
-                mkdocs-macros-plugin \
       - run: mkdocs gh-deploy --force
