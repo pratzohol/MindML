@@ -1,7 +1,12 @@
-site_name: MindML Notes
+site_name: My Notes
+
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: pratzohol/MindML
 
 theme:
     name: material
+    icon:
+      repo: fontawesome/brands/github
     palette:
       # Light mode
       - media: "(prefers-color-scheme: light)"
