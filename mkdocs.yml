@@ -26,6 +26,10 @@ theme:
       - navigation.sections
       - navigation.path
       - navigation.indexes
+      - toc.follow
+      - navigation.top
+      - search.suggest
+      - search.share
 
 # Extensions
 markdown_extensions:
@@ -58,7 +62,8 @@ markdown_extensions:
 
 plugins:
   - search
-  - roamlinks 
+  - roamlinks
+  - social
 
 
 extra_javascript:
