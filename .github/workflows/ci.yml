@@ -18,6 +18,7 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+      - run: apt-get install pngquant
       - run: pip install \
                 mkdocs-material \
                 mkdocs-roamlinks-plugin \
