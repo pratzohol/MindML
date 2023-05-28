@@ -30,6 +30,7 @@ theme:
       - navigation.top
       - search.suggest
       - search.share
+      - navigation.footer
 
 # Extensions
 markdown_extensions:
@@ -63,7 +64,8 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - social
+  - tags:
+      tags_compare: !!python/name:material.plugins.tags.casefold
 
 
 extra_javascript:
@@ -72,7 +74,25 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js 
 
-# extra:
+
+extra:
+  social:
+      - icon: fontawesome/brands/twitter
+        link: https://twitter.com/pratzohol/
+        name: Twitter
+      - icon: fontawesome/brands/github
+        link: https://github.com/pratzohol/
+        name: GitHub
+      - icon: fontawesome/brands/linkedin
+        link: https://www.linkedin.com/in/pratzohol/
+        name: LinkedIn
+      - icon: fontawesome/brands/instragram
+        link: https://www.instagram.com/pratzohol/
+        name: Instagram
+      - icon: fontawesome/solid/paper-plane
+        link: mailto:IITDprateekmishra@gmail.com
+        name: Email
+
 #   consent:
 #     title: Cookie consent
 #     description: >- 
