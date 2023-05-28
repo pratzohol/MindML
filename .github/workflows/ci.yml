@@ -20,13 +20,13 @@ jobs:
           path: .cache
       - run: pip install \
                 mkdocs-material \
+                mkdocs-roamlinks-plugin \
                 mkdocs-awesome-pages-plugin \
                 mkdocs-git-revision-date-localized-plugin \
                 mkdocs-git-committers-plugin-2 \
                 mkdocs-git-authors-plugin \
                 pillow cairosvg \
                 mkdocs-glightbox \
-                
                 mkdocs-minify-plugin \
                 mkdocs-mermaid2-plugin \
                 mkdocs-macros-plugin \
