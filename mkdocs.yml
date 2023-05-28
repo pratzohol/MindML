@@ -1,30 +1,31 @@
-site_name: obsidian-mkdocs template
+site_name: MLmind Notes
 
 theme:
     name: 'material'
     palette:
 
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: pink
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+      # Light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: indigo
+        accent: purple
+        toggle:
+          icon: material/weather-sunny
+          name: Switch to dark mode
 
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: pink
-      accent: blue
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+      # Dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: indigo
+        accent: purple
+        toggle:
+          icon: material/weather-night
+          name: Switch to light mode
 
 # Extensions
 markdown_extensions:
   - footnotes
+  - tables
   # - attr_list
   - pymdownx.arithmatex:
       generic: true
@@ -47,6 +48,7 @@ markdown_extensions:
 
   - toc:
       permalink: true
+
 
 plugins:
   - search
