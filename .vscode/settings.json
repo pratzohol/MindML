@@ -51,26 +51,6 @@
     "latex"
 ],
 "explorerExclude.backup": {},
-"workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#100263",
-    "activityBar.background": "#100263",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#9c1903",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "commandCenter.border": "#e7e7e799",
-    "sash.hoverBorder": "#100263",
-    "statusBar.background": "#080131",
-    "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#100263",
-    "statusBarItem.remoteBackground": "#080131",
-    "statusBarItem.remoteForeground": "#e7e7e7",
-    "titleBar.activeBackground": "#080131",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#08013199",
-    "titleBar.inactiveForeground": "#e7e7e799"
-},
-"peacock.color": "#080131",
 "yaml.schemas": {
     "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
 },
