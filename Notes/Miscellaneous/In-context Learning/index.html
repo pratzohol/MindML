@@ -570,17 +570,17 @@
 <p><em>During unsupervised pre-training, a language model develops a broad set of skills and pattern recognition abilities. It then uses these abilities at inference time to rapidly adapt to or recognize the desired task. We use the term “in-context learning” to describe the inner loop of this process, which occurs within the forward-pass upon each sequence.</em></p>
 </blockquote>
 <h2 id="icl-vs-size-of-the-model">ICL vs Size of the Model<a class="headerlink" href="#icl-vs-size-of-the-model" title="Permanent link">&para;</a></h2>
-<p><a href="https://arxiv.org/abs/2211.15661">Akyürek et al.</a> make another observation that ICL exhibits <em>algorithmic phase transitions</em> as model depth increases:<br />
-- one-layer transformers’ ICL behavior approximates a single step of gradient descent, while wider and deeper transformers match ordinary least squares or ridge regression solutions. <br />
-- It is possible to imagine that if small models implement simple learning algorithms in-context, larger models might implement more sophisticated functions during ICL.<br />
--  Smaller models do not seem to learn from in-context examples, and larger ones do.</p>
+<p><a href="https://arxiv.org/abs/2211.15661">Akyürek et al.</a> make another observation that ICL exhibits <em>algorithmic phase transitions</em> as model depth increases:
+- one-layer transformers’ ICL behavior approximates a single step of gradient descent, while wider and deeper transformers match ordinary least squares or ridge regression solutions.
+- It is possible to imagine that if small models implement simple learning algorithms in-context, larger models might implement more sophisticated functions during ICL.
+- Smaller models do not seem to learn from in-context examples, and larger ones do.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 1, 2023 18:30:47</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 1, 2023 19:01:27</span>
       
         <br>
         Created:
