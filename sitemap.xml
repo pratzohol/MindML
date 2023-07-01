@@ -6,12 +6,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/Notes/Deep%20Learning/</loc>
-         <lastmod>2023-07-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pratzohol.github.io/MindML/Notes/Graph%20Neural%20Networks/</loc>
+         <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/In-context%20Learning/</loc>
          <lastmod>2023-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
