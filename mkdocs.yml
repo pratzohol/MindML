@@ -96,9 +96,9 @@ plugins:
   - git-revision-date-localized:
       type: datetime
       enable_creation_date: true
-  - git-committers:
-      repository: pratzohol/MindML
-      branch: main
+  # - git-committers:
+  #     repository: pratzohol/MindML
+  #     branch: main
   - glightbox
   - social
 
