@@ -530,30 +530,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#definition" class="md-nav__link">
-    Definition
+  <a href="#1-definition" class="md-nav__link">
+    1. Definition
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#loss-functions" class="md-nav__link">
-    Loss Functions
+  <a href="#2-loss-functions" class="md-nav__link">
+    2. Loss Functions
   </a>
   
-    <nav class="md-nav" aria-label="Loss Functions">
+    <nav class="md-nav" aria-label="2. Loss Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#contrastive-loss" class="md-nav__link">
-    Contrastive Loss
+  <a href="#21-contrastive-loss" class="md-nav__link">
+    2.1. Contrastive Loss
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#triplet-loss" class="md-nav__link">
-    Triplet Loss
+  <a href="#22-triplet-loss" class="md-nav__link">
+    2.2. Triplet Loss
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-types-of-learning" class="md-nav__link">
+    3. Types of Learning
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Types of Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-self-supervised-learning" class="md-nav__link">
+    3.1. Self-Supervised Learning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-supervised-learning" class="md-nav__link">
+    3.2. Supervised Learning
   </a>
   
 </li>
@@ -679,30 +706,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#definition" class="md-nav__link">
-    Definition
+  <a href="#1-definition" class="md-nav__link">
+    1. Definition
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#loss-functions" class="md-nav__link">
-    Loss Functions
+  <a href="#2-loss-functions" class="md-nav__link">
+    2. Loss Functions
   </a>
   
-    <nav class="md-nav" aria-label="Loss Functions">
+    <nav class="md-nav" aria-label="2. Loss Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#contrastive-loss" class="md-nav__link">
-    Contrastive Loss
+  <a href="#21-contrastive-loss" class="md-nav__link">
+    2.1. Contrastive Loss
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#triplet-loss" class="md-nav__link">
-    Triplet Loss
+  <a href="#22-triplet-loss" class="md-nav__link">
+    2.2. Triplet Loss
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-types-of-learning" class="md-nav__link">
+    3. Types of Learning
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Types of Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-self-supervised-learning" class="md-nav__link">
+    3.1. Self-Supervised Learning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-supervised-learning" class="md-nav__link">
+    3.2. Supervised Learning
   </a>
   
 </li>
@@ -747,7 +801,7 @@
 
 
 <h1 id="contrastive-learning">Contrastive Learning<a class="headerlink" href="#contrastive-learning" title="Permanent link">&para;</a></h1>
-<h2 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">&para;</a></h2>
+<h2 id="1-definition">1. Definition<a class="headerlink" href="#1-definition" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Contrastive learning aims at learning low-dimensional representations of data by contrasting between similar and dissimilar samples.</p>
 </blockquote>
@@ -755,17 +809,41 @@
 <p>Let's suppose we have 3 images, <span class="arithmatex">\(I_1\)</span>, <span class="arithmatex">\(I_2\)</span> and <span class="arithmatex">\(I_3\)</span>, where <span class="arithmatex">\(I_1\)</span> and <span class="arithmatex">\(I_2\)</span> belongs to same class (e.x. dog) and <span class="arithmatex">\(I_3\)</span> belongs to different class (e.x. cat). The representation space will look something like this:</p>
 <p><a class="glightbox" href="../../../assets/Notes/Miscellaneous/contrastive-learning-1.drawio.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="svg-1" src="../../../assets/Notes/Miscellaneous/contrastive-learning-1.drawio.svg" /></a></p>
 <p>We see that the distance <span class="arithmatex">\(d(x_1, x_2)\)</span> is small compared to <span class="arithmatex">\(d(x_1, x_3)\)</span> and <span class="arithmatex">\(d(x_2, x_3)\)</span> where <span class="arithmatex">\(d()\)</span> is a metric function like euclidean.</p>
-<h2 id="loss-functions">Loss Functions<a class="headerlink" href="#loss-functions" title="Permanent link">&para;</a></h2>
-<h3 id="contrastive-loss">Contrastive Loss<a class="headerlink" href="#contrastive-loss" title="Permanent link">&para;</a></h3>
+<h2 id="2-loss-functions">2. Loss Functions<a class="headerlink" href="#2-loss-functions" title="Permanent link">&para;</a></h2>
+<h3 id="21-contrastive-loss">2.1. Contrastive Loss<a class="headerlink" href="#21-contrastive-loss" title="Permanent link">&para;</a></h3>
 <p>We suppose that we have a pair (<span class="arithmatex">\(I_i\)</span>, <span class="arithmatex">\(I_j\)</span>) and a label <span class="arithmatex">\(Y\)</span> that is equal to 0 if the samples are similar and 1 otherwise. To extract a low-dimensional representation of each sample, we use a Convolutional Neural Network <span class="arithmatex">\(f\)</span> that encodes the input images <span class="arithmatex">\(I_i\)</span> and <span class="arithmatex">\(I_j\)</span> into an embedding space where <span class="arithmatex">\(x_i = f(I_i)\)</span> and <span class="arithmatex">\(x_j = f(I_j)\)</span>. The contrastive loss is defined as:  </p>
-<h3 id="triplet-loss">Triplet Loss<a class="headerlink" href="#triplet-loss" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\mathbf{L = (1-Y) * ||x_i - x_j||^2 + Y * max(0, m - ||x_i - x_j||^2)}\]</div>
+<p>where <span class="arithmatex">\(m\)</span> is a hyperparameter, defining lower bound distance between dissimilar samples.<br />
+This can be thought of as :  </p>
+<ul>
+<li>If <span class="arithmatex">\(Y = 0\)</span>, then samples are similar and hence, we want to minimize the distance between <span class="arithmatex">\(\mathbf{x_i}\)</span> and <span class="arithmatex">\(\mathbf{x_j}\)</span>.  </li>
+<li>If <span class="arithmatex">\(Y = 1\)</span>, then samples are dissimilar and minimizing <span class="arithmatex">\(\mathbf{L}\)</span> means we want to make the term <span class="arithmatex">\(m - ||x_i - x_j||^2\)</span> <span class="arithmatex">\(\leq\)</span> 0. Thus, we want the distance between <span class="arithmatex">\(\mathbf{x_i}\)</span> and <span class="arithmatex">\(\mathbf{x_j}\)</span> to be maximized and greater than the lower bound <span class="arithmatex">\(m\)</span>.</li>
+<li>[NOTE :] This is not a classification task. We are trying to learn the embedding <span class="arithmatex">\(\mathbf{x_i}\)</span> for the <span class="arithmatex">\(i\)</span>-th sample.</li>
+</ul>
+<h3 id="22-triplet-loss">2.2. Triplet Loss<a class="headerlink" href="#22-triplet-loss" title="Permanent link">&para;</a></h3>
+<p>It takes triplet as input : an anchor sample <span class="arithmatex">\(I\)</span>, a positive sample <span class="arithmatex">\(I^{+}\)</span> and a negative sample <span class="arithmatex">\(I^{-}\)</span>.<br />
+During training, the loss function enforces the distance between anchor and positive sample to be less than the distance between anchor and negative sample.</p>
+<p>The triplet loss is defined as:</p>
+<div class="arithmatex">\[\mathbf{L = max(0, ||x - x^{+}||^2 - ||x - x^{-}||^2 + m)}\]</div>
+<p>where <span class="arithmatex">\(m\)</span> is a hyperparameter defined in contrastive loss. Here also, we want dissimilar to be far and similar to be close so that the term <span class="arithmatex">\(||x - x^{+}||^2 - ||x - x^{-}||^2 + m\)</span> <span class="arithmatex">\(\leq\)</span> 0.</p>
+<h2 id="3-types-of-learning">3. Types of Learning<a class="headerlink" href="#3-types-of-learning" title="Permanent link">&para;</a></h2>
+<h3 id="31-self-supervised-learning">3.1. Self-Supervised Learning<a class="headerlink" href="#31-self-supervised-learning" title="Permanent link">&para;</a></h3>
+<p>When we don't have labeled samples, we use unsupervised learning, also known as self-supervised learning.</p>
+<p>A famous self-supervised framework for unsupervised contrastive learning is <a href="https://arxiv.org/abs/2002.05709"><strong><em>SimCLR</em></strong></a>. Its main idea is to generate positive image pairs by applying random transformations in the anchor image like crop, flip and color jitter since these changes keep the label of the image unchanged.</p>
+<h3 id="32-supervised-learning">3.2. Supervised Learning<a class="headerlink" href="#32-supervised-learning" title="Permanent link">&para;</a></h3>
+<p>The label of each sample is available during training. So, we can generate positive and negative pairs or triplets by just looking at the labels. </p>
+<p>Positive Pairs : Samples with same label<br />
+Negative Pairs : Samples with different label</p>
+<p>However, generating all possible pairs or triplets requires a lot of time and computational resources. Also, in every dataset, there are many negative pairs or triplets that already satisfy the contrastive training objectives and give zero loss resulting in slow training convergence.</p>
+<p>To deal with this problem, we have to generate <em>hard pairs</em> and <em>hard triplets</em>, meaning that their loss value is high, i.e., similar pairs that are far apart and dissimilar pairs that are very close. </p>
+<p>Many hard negative mining methods have been proposed that usually look into the representation space for hard pairs and triplets using fast search algorithms.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 2, 2023 16:31:30</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 2, 2023 17:39:59</span>
       
         <br>
         Created:

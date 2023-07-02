@@ -544,22 +544,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#definition" class="md-nav__link">
-    Definition
+  <a href="#1-definition" class="md-nav__link">
+    1. Definition
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#icl-vs-size-of-the-model" class="md-nav__link">
-    ICL vs Size of the Model
+  <a href="#2-icl-vs-size-of-the-model" class="md-nav__link">
+    2. ICL vs Size of the Model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#related-discussion" class="md-nav__link">
-    Related Discussion
+  <a href="#3-related-discussion" class="md-nav__link">
+    3. Related Discussion
   </a>
   
 </li>
@@ -666,22 +666,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#definition" class="md-nav__link">
-    Definition
+  <a href="#1-definition" class="md-nav__link">
+    1. Definition
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#icl-vs-size-of-the-model" class="md-nav__link">
-    ICL vs Size of the Model
+  <a href="#2-icl-vs-size-of-the-model" class="md-nav__link">
+    2. ICL vs Size of the Model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#related-discussion" class="md-nav__link">
-    Related Discussion
+  <a href="#3-related-discussion" class="md-nav__link">
+    3. Related Discussion
   </a>
   
 </li>
@@ -721,19 +721,19 @@
 
 
 <h1 id="in-context-learning-icl">In-context Learning (ICL)<a class="headerlink" href="#in-context-learning-icl" title="Permanent link">&para;</a></h1>
-<h2 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">&para;</a></h2>
+<h2 id="1-definition">1. Definition<a class="headerlink" href="#1-definition" title="Permanent link">&para;</a></h2>
 <p>In-context Learning or ICL was defined in <a href="https://arxiv.org/abs/2005.14165">"Language Models are few-shot learners"</a> by Brown et al., the paper that introduced GPT-3. The authors define ICL as:</p>
 <blockquote>
 <p><em>During unsupervised pre-training, a language model develops a broad set of skills and pattern recognition abilities. It then uses these abilities at inference time to rapidly adapt to or recognize the desired task. We use the term “in-context learning” to describe the inner loop of this process, which occurs within the forward-pass upon each sequence.</em></p>
 </blockquote>
-<h2 id="icl-vs-size-of-the-model">ICL vs Size of the Model<a class="headerlink" href="#icl-vs-size-of-the-model" title="Permanent link">&para;</a></h2>
+<h2 id="2-icl-vs-size-of-the-model">2. ICL vs Size of the Model<a class="headerlink" href="#2-icl-vs-size-of-the-model" title="Permanent link">&para;</a></h2>
 <p><a href="https://arxiv.org/abs/2211.15661">Akyürek et al.</a> make another observation that ICL exhibits <em>algorithmic phase transitions</em> as model depth increases:</p>
 <ul>
 <li>One-layer transformers’ ICL behavior approximates a single step of gradient descent, while wider and deeper transformers match ordinary least squares or ridge regression solutions.</li>
 <li>It is possible to imagine that if small models implement simple learning algorithms in-context, larger models might implement more sophisticated functions during ICL.</li>
 <li>Smaller models do not seem to learn from in-context examples, and larger ones do.</li>
 </ul>
-<h2 id="related-discussion">Related Discussion<a class="headerlink" href="#related-discussion" title="Permanent link">&para;</a></h2>
+<h2 id="3-related-discussion">3. Related Discussion<a class="headerlink" href="#3-related-discussion" title="Permanent link">&para;</a></h2>
 <ol>
 <li>In <a href="../../Graph_Neural_Networks/icl-over-graphs/">ICL over Graphs</a>, I covered the paper <a href="https://arxiv.org/abs/2305.12600">"PRODIGY : Enabling in-context learning over graphs"</a> which extends the concept of ICL to graphs.</li>
 </ol>
@@ -743,7 +743,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 2, 2023 07:46:51</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 2, 2023 17:38:20</span>
       
         <br>
         Created:
