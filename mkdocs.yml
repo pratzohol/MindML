@@ -15,7 +15,7 @@ theme:
       edit: material/pencil-box
       view: material/eye
     font:
-      text: PT Serif
+      text: Noto Sans
     palette:
       # Light mode
       - media: "(prefers-color-scheme: light)"
