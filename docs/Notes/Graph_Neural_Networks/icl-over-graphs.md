@@ -5,13 +5,13 @@ In this note, I will cover the following paper ["PRODIGY : Enabling in-context l
 _**NOTE**_ : Definition of in-context learning (ICL) is covered in this post ([[in-context-learning|In-context Learning (ICL)]]).
 
 
-## Introduction
+## 1. Introduction
 
 We can easily infer that the in-context learning is a novel and one of the most intriguing capabilities of language models. However, how to enable in-context learning over graphs is still an unexplored question.
 
 An in-context learner for graphs should be able to solve novel tasks on novel graphs. For example, give music product recommendations on Spotify when being trained on Amazon purchasing graph. 
 
-## Challenges
+## 2. Challenges
 1. How to formulate and represent node-, edge- and graph-level tasks over graphs with a _unified task representation_ that allows the model to solve diverse tasks without the need for retraining or parameter tuning.
 2. How to design model architecture and pre-training objectives that enable in-context learning capabilities across _diverse tasks_ and _diverse graphs_ in the unified task representation.
 3. Existing _graph pre-training methods_ only aim to learn good graph encoder and require fine-tuning to adapt to different tasks, while existing _meta-learning methods_ over graphs only aim to generalize across tasks within same graph.
