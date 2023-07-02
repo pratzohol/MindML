@@ -35,6 +35,7 @@ It takes triplet as input : an anchor sample $I$, a positive sample $I^{+}$ and 
 During training, the loss function enforces the distance between anchor and positive sample to be less than the distance between anchor and negative sample.
 
 The triplet loss is defined as:
+
 $$\mathbf{L = max(0, ||x - x^{+}||^2 - ||x - x^{-}||^2 + m)}$$
 
 where $m$ is a hyperparameter defined in contrastive loss. Here also, we want dissimilar to be far and similar to be close so that the term $||x - x^{+}||^2 - ||x - x^{-}||^2 + m$ $\leq$ 0.
