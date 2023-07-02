@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/icl-over-graphs/</loc>
+         <lastmod>2023-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/in-context-learning/</loc>
          <lastmod>2023-07-02</lastmod>
          <changefreq>daily</changefreq>
