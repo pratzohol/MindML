@@ -2,7 +2,7 @@
 
 In this note, I will cover the following paper ["PRODIGY : Enabling in-context learning over graphs"](https://arxiv.org/abs/2305.12600).
 
-> Definition of in-context learning (ICL) is covered in [[in-context-learning|In-context Learning (ICL)]].
+_**NOTE**_ : Definition of in-context learning (ICL) is covered in this post ([[in-context-learning|In-context Learning (ICL)]]).
 
 
 ## Introduction
