@@ -31,8 +31,7 @@ This can be thought of as :
 
 ### 2.2. Triplet Loss
 
-It takes triplet as input : an anchor sample $I$, a positive sample $I^{+}$ and a negative sample $I^{-}$.  
-During training, the loss function enforces the distance between anchor and positive sample to be less than the distance between anchor and negative sample.
+It takes triplet as input : an anchor sample $I$, a positive sample $I^{+}$ and a negative sample $I^{-}$. During training, the loss function enforces the distance between anchor and positive sample to be less than the distance between anchor and negative sample.
 
 The triplet loss is defined as:
 
@@ -42,21 +41,25 @@ where $m$ is a hyperparameter defined in contrastive loss. Here also, we want di
 
 ## 3. Types of Learning
 
-### 3.1. Self-Supervised Learning
+### 3.1. [Self-Supervised Learning](types-of-learning.md#2-unsupervised-learning)
 
 When we don't have labeled samples, we use unsupervised learning, also known as self-supervised learning.
 
 A famous self-supervised framework for unsupervised contrastive learning is [**_SimCLR_**](https://arxiv.org/abs/2002.05709). Its main idea is to generate positive image pairs by applying random transformations in the anchor image like crop, flip and color jitter since these changes keep the label of the image unchanged.
 
-### 3.2. Supervised Learning
+### 3.2. [Supervised Learning](types-of-learning.md#1-supervised-learning)
 
 The label of each sample is available during training. So, we can generate positive and negative pairs or triplets by just looking at the labels. 
 
-Positive Pairs : Samples with same label  
-Negative Pairs : Samples with different label
+_Positive Pairs : Samples with same label_  
+_Negative Pairs : Samples with different label_
 
 However, generating all possible pairs or triplets requires a lot of time and computational resources. Also, in every dataset, there are many negative pairs or triplets that already satisfy the contrastive training objectives and give zero loss resulting in slow training convergence.
 
 To deal with this problem, we have to generate _hard pairs_ and _hard triplets_, meaning that their loss value is high, i.e., similar pairs that are far apart and dissimilar pairs that are very close. 
 
 Many hard negative mining methods have been proposed that usually look into the representation space for hard pairs and triplets using fast search algorithms.
+
+## 4. Related Discussion
+
+1. Different types of Learning in Machine Learning setting is covered in this post [[types-of-learning|Types of Learning]].
