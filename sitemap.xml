@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pratzohol.github.io/MindML/</loc>
-         <lastmod>2023-07-01</lastmod>
+         <lastmod>2023-07-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/In-context%20Learning/</loc>
-         <lastmod>2023-07-01</lastmod>
+         <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/in-context-learning/</loc>
+         <lastmod>2023-07-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
