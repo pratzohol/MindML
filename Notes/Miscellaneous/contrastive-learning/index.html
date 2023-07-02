@@ -476,6 +476,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -590,6 +592,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-related-discussion" class="md-nav__link">
+    4. Related Discussion
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -607,6 +616,20 @@
     <li class="md-nav__item">
       <a href="../in-context-learning/" class="md-nav__link">
         In-context Learning (ICL)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types-of-learning/" class="md-nav__link">
+        Types of Learning
       </a>
     </li>
   
@@ -766,6 +789,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-related-discussion" class="md-nav__link">
+    4. Related Discussion
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -821,29 +851,32 @@ This can be thought of as :  </p>
 <li>[NOTE :] This is not a classification task. We are trying to learn the embedding <span class="arithmatex">\(\mathbf{x_i}\)</span> for the <span class="arithmatex">\(i\)</span>-th sample.</li>
 </ul>
 <h3 id="22-triplet-loss">2.2. Triplet Loss<a class="headerlink" href="#22-triplet-loss" title="Permanent link">&para;</a></h3>
-<p>It takes triplet as input : an anchor sample <span class="arithmatex">\(I\)</span>, a positive sample <span class="arithmatex">\(I^{+}\)</span> and a negative sample <span class="arithmatex">\(I^{-}\)</span>.<br />
-During training, the loss function enforces the distance between anchor and positive sample to be less than the distance between anchor and negative sample.</p>
+<p>It takes triplet as input : an anchor sample <span class="arithmatex">\(I\)</span>, a positive sample <span class="arithmatex">\(I^{+}\)</span> and a negative sample <span class="arithmatex">\(I^{-}\)</span>. During training, the loss function enforces the distance between anchor and positive sample to be less than the distance between anchor and negative sample.</p>
 <p>The triplet loss is defined as:</p>
 <div class="arithmatex">\[\mathbf{L = max(0, ||x - x^{+}||^2 - ||x - x^{-}||^2 + m)}\]</div>
 <p>where <span class="arithmatex">\(m\)</span> is a hyperparameter defined in contrastive loss. Here also, we want dissimilar to be far and similar to be close so that the term <span class="arithmatex">\(||x - x^{+}||^2 - ||x - x^{-}||^2 + m\)</span> <span class="arithmatex">\(\leq\)</span> 0.</p>
 <h2 id="3-types-of-learning">3. Types of Learning<a class="headerlink" href="#3-types-of-learning" title="Permanent link">&para;</a></h2>
-<h3 id="31-self-supervised-learning">3.1. Self-Supervised Learning<a class="headerlink" href="#31-self-supervised-learning" title="Permanent link">&para;</a></h3>
+<h3 id="31-self-supervised-learning">3.1. <a href="../types-of-learning/#2-unsupervised-learning">Self-Supervised Learning</a><a class="headerlink" href="#31-self-supervised-learning" title="Permanent link">&para;</a></h3>
 <p>When we don't have labeled samples, we use unsupervised learning, also known as self-supervised learning.</p>
 <p>A famous self-supervised framework for unsupervised contrastive learning is <a href="https://arxiv.org/abs/2002.05709"><strong><em>SimCLR</em></strong></a>. Its main idea is to generate positive image pairs by applying random transformations in the anchor image like crop, flip and color jitter since these changes keep the label of the image unchanged.</p>
-<h3 id="32-supervised-learning">3.2. Supervised Learning<a class="headerlink" href="#32-supervised-learning" title="Permanent link">&para;</a></h3>
+<h3 id="32-supervised-learning">3.2. <a href="../types-of-learning/#1-supervised-learning">Supervised Learning</a><a class="headerlink" href="#32-supervised-learning" title="Permanent link">&para;</a></h3>
 <p>The label of each sample is available during training. So, we can generate positive and negative pairs or triplets by just looking at the labels. </p>
-<p>Positive Pairs : Samples with same label<br />
-Negative Pairs : Samples with different label</p>
+<p><em>Positive Pairs : Samples with same label</em><br />
+<em>Negative Pairs : Samples with different label</em></p>
 <p>However, generating all possible pairs or triplets requires a lot of time and computational resources. Also, in every dataset, there are many negative pairs or triplets that already satisfy the contrastive training objectives and give zero loss resulting in slow training convergence.</p>
 <p>To deal with this problem, we have to generate <em>hard pairs</em> and <em>hard triplets</em>, meaning that their loss value is high, i.e., similar pairs that are far apart and dissimilar pairs that are very close. </p>
 <p>Many hard negative mining methods have been proposed that usually look into the representation space for hard pairs and triplets using fast search algorithms.</p>
+<h2 id="4-related-discussion">4. Related Discussion<a class="headerlink" href="#4-related-discussion" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Different types of Learning in Machine Learning setting is covered in this post <a href="../types-of-learning/">Types of Learning</a>.</li>
+</ol>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 2, 2023 17:39:59</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 2, 2023 18:59:42</span>
       
         <br>
         Created:
