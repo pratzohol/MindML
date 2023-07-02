@@ -16,3 +16,4 @@
 .cache/plugin/social/Roboto-ThinItalic.ttf
 .vscode/settings.json
 .vscode/ltex.dictionary.en-US.txt
+.vscode/ltex.hiddenFalsePositives.en-US.txt
