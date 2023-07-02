@@ -1,4 +1,4 @@
-# In-Context Learning (ICL)
+# In-context Learning (ICL)
 
 ## Definition
 
