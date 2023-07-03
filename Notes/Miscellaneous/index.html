@@ -12,27 +12,27 @@
         <meta name="author" content="Prateek Mishra">
       
       
-        <link rel="canonical" href="https://pratzohol.github.io/MindML/Notes/Miscellaneous/in-context-learning/">
+        <link rel="canonical" href="https://pratzohol.github.io/MindML/Notes/Miscellaneous/">
       
       
-        <link rel="prev" href="../contrastive-learning/">
+        <link rel="prev" href="../Graph_Neural_Networks/icl-over-graphs/">
       
       
-        <link rel="next" href="../types-of-learning/">
+        <link rel="next" href="contrastive-learning/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>In-context Learning (ICL) - MindML</title>
+        <title>Miscellaneous - MindML</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="In-context Learning (ICL) - MindML" >
+        <meta  property="og:title"  content="Miscellaneous - MindML" >
       
         <meta  property="og:description"  content="Notes on ML, DL, CV, RL, and more." >
       
-        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Miscellaneous/in-context-learning.png" >
+        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Miscellaneous/index.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,19 +69,19 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/Notes/Miscellaneous/in-context-learning/" >
+        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/Notes/Miscellaneous/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="In-context Learning (ICL) - MindML" >
+        <meta  name="twitter:title"  content="Miscellaneous - MindML" >
       
         <meta  name="twitter:description"  content="Notes on ML, DL, CV, RL, and more." >
       
-        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Miscellaneous/in-context-learning.png" >
+        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Miscellaneous/index.png" >
       
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -92,7 +92,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -114,7 +114,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#in-context-learning-icl" class="md-skip">
+        <a href="#miscellaneous" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +130,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../.." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -149,7 +149,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              In-context Learning (ICL)
+              Miscellaneous
             
           </span>
         </div>
@@ -250,7 +250,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       About
     </a>
   </li>
@@ -272,7 +272,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Definitions/" class="md-tabs__link md-tabs__link--active">
+      <a href="../Definitions/" class="md-tabs__link md-tabs__link--active">
         Notes
       </a>
     </li>
@@ -290,7 +290,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../Techie_Tech/" class="md-tabs__link">
+      <a href="../../Techie_Tech/" class="md-tabs__link">
         Techie Tech
       </a>
     </li>
@@ -324,7 +324,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../.." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -355,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         About
       </a>
     </li>
@@ -427,7 +427,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../Definitions/">Definitions</a>
+          <a href="../Definitions/">Definitions</a>
           
         </div>
       
@@ -486,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph_Neural_Networks/icl-over-graphs/" class="md-nav__link">
+      <a href="../Graph_Neural_Networks/icl-over-graphs/" class="md-nav__link">
         ICL over Graphs
       </a>
     </li>
@@ -534,8 +534,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Miscellaneous</a>
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Miscellaneous</a>
           
             <label for="__nav_2_3">
               <span class="md-nav__icon md-icon"></span>
@@ -558,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contrastive-learning/" class="md-nav__link">
+      <a href="contrastive-learning/" class="md-nav__link">
         Contrastive Learning
       </a>
     </li>
@@ -570,66 +570,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          In-context Learning (ICL)
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="in-context-learning/" class="md-nav__link">
         In-context Learning (ICL)
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-definition" class="md-nav__link">
-    1. Definition
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-icl-vs-size-of-the-model" class="md-nav__link">
-    2. ICL vs Size of the Model
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-related-discussion" class="md-nav__link">
-    3. Related Discussion
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -641,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../types-of-learning/" class="md-nav__link">
+      <a href="types-of-learning/" class="md-nav__link">
         Types of Learning
       </a>
     </li>
@@ -690,7 +635,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../Techie_Tech/">Techie Tech</a>
+          <a href="../../Techie_Tech/">Techie Tech</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -713,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Techie_Tech/markdown-things/" class="md-nav__link">
+      <a href="../../Techie_Tech/markdown-things/" class="md-nav__link">
         Some Markdown Things
       </a>
     </li>
@@ -754,23 +699,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-definition" class="md-nav__link">
-    1. Definition
+  <a href="#1-overview" class="md-nav__link">
+    1. Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-icl-vs-size-of-the-model" class="md-nav__link">
-    2. ICL vs Size of the Model
+  <a href="#2-structure" class="md-nav__link">
+    2. Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-tags" class="md-nav__link">
+    3. Tags
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-related-discussion" class="md-nav__link">
-    3. Related Discussion
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -789,19 +740,10 @@
                   
   
 
-  <nav class="md-tags" >
-    
-      
-      
-        <span class="md-tag">ICL</span>
-      
-    
-  </nav>
-
 
 
   
-    <a href="https://github.com/pratzohol/MindML/edit/main/docs/Notes/Miscellaneous/in-context-learning.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/edit/main/docs/Notes/Miscellaneous/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-2.3 6.35c.22-.21.22-.56 0-.77L15.42 7.3a.532.532 0 0 0-.77 0l-1 1 2.05 2.05 1-1M7 14.94V17h2.06l6.06-6.06-2.06-2.06L7 14.94Z"/></svg>
     </a>
@@ -810,41 +752,43 @@
     
       
     
-    <a href="https://github.com/pratzohol/MindML/raw/main/docs/Notes/Miscellaneous/in-context-learning.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/raw/main/docs/Notes/Miscellaneous/index.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="in-context-learning-icl">In-context Learning (ICL)<a class="headerlink" href="#in-context-learning-icl" title="Permanent link">&para;</a></h1>
-<h2 id="1-definition">1. Definition<a class="headerlink" href="#1-definition" title="Permanent link">&para;</a></h2>
-<p>In-context Learning or ICL was defined in <a href="https://arxiv.org/abs/2005.14165">"Language Models are few-shot learners"</a> by Brown et al., the paper that introduced GPT-3. The authors define ICL as:</p>
-<blockquote>
-<p><em>During unsupervised pre-training, a language model develops a broad set of skills and pattern recognition abilities. It then uses these abilities at inference time to rapidly adapt to or recognize the desired task. We use the term “in-context learning” to describe the inner loop of this process, which occurs within the forward-pass upon each sequence.</em></p>
-</blockquote>
-<h2 id="2-icl-vs-size-of-the-model">2. ICL vs Size of the Model<a class="headerlink" href="#2-icl-vs-size-of-the-model" title="Permanent link">&para;</a></h2>
-<p><a href="https://arxiv.org/abs/2211.15661">Akyürek et al.</a> make another observation that ICL exhibits <em>algorithmic phase transitions</em> as model depth increases:</p>
+<h1 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h1>
+<h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p>This section will contain <u><em>miscellaneous</em></u>  notes that doesn't come under the umbrella topics of other sections like Deep Learning, Graph Neural Networks, etc.</p>
+<h2 id="2-structure">2. Structure<a class="headerlink" href="#2-structure" title="Permanent link">&para;</a></h2>
+<p>Some of the broad topics which will go into this section are:</p>
 <ul>
-<li>One-layer transformers’ ICL behavior approximates a single step of gradient descent, while wider and deeper transformers match ordinary least squares or ridge regression solutions.</li>
-<li>It is possible to imagine that if small models implement simple learning algorithms in-context, larger models might implement more sophisticated functions during ICL.</li>
-<li>Smaller models do not seem to learn from in-context examples, and larger ones do.</li>
+<li>Classical ML like SVM, kNN, etc.</li>
+<li>Concepts from statistics, information theory </li>
+<li>Probability Concepts</li>
+<li>Calculus</li>
 </ul>
-<h2 id="3-related-discussion">3. Related Discussion<a class="headerlink" href="#3-related-discussion" title="Permanent link">&para;</a></h2>
-<ol>
-<li>In <a href="../../Graph_Neural_Networks/icl-over-graphs/">ICL over Graphs</a>, I covered the paper <a href="https://arxiv.org/abs/2305.12600">"PRODIGY : Enabling in-context learning over graphs"</a> which extends the concept of ICL to graphs.</li>
-</ol>
+<p>Further, this section can contain sub-sections. For example, if on a particular topic like SVM, I have a few notes, then I can create a sub-section for it.</p>
+<h3 id="3-tags">3. Tags<a class="headerlink" href="#3-tags" title="Permanent link">&para;</a></h3>
+<p>I will make a list of tags which were used for this section. Whatever thing I had in my mind, I can easily look up the tags to check whether I already covered it or not.</p>
+<p>Following are the tags which were used in this section:</p>
+<ul>
+<li>Basics</li>
+<li>ICL</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 3, 2023 11:40:19</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 3, 2023 14:46:44</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 1, 2023 18:26:54</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 3, 2023 14:46:44</span>
       
     
   </small>
@@ -875,7 +819,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../contrastive-learning/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Contrastive Learning" rel="prev">
+          <a href="../Graph_Neural_Networks/icl-over-graphs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ICL over Graphs" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -884,20 +828,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Contrastive Learning
+                ICL over Graphs
               </div>
             </div>
           </a>
         
         
           
-          <a href="../types-of-learning/" class="md-footer__link md-footer__link--next" aria-label="Next: Types of Learning" rel="next">
+          <a href="contrastive-learning/" class="md-footer__link md-footer__link--next" aria-label="Next: Contrastive Learning" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Types of Learning
+                Contrastive Learning
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -965,13 +909,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="../../../javascripts/mathjax.js"></script>
+          <script src="../../javascripts/mathjax.js"></script>
         
       
         

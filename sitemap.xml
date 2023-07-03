@@ -6,7 +6,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://pratzohol.github.io/MindML/Notes/Definitions/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/icl-over-graphs/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -26,7 +36,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/Random_is_Fun/markdown-things/</loc>
+         <loc>https://pratzohol.github.io/MindML/Techie_Tech/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pratzohol.github.io/MindML/Techie_Tech/markdown-things/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
