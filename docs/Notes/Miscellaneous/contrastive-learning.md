@@ -1,5 +1,3 @@
-
-
 # Contrastive Learning
 
 ## 1. Definition
