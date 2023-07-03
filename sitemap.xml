@@ -11,7 +11,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/icl-over-graphs/</loc>
+         <loc>https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/icl-over-graphs-GraphPrompt/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/icl-over-graphs-PRODIGY/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
