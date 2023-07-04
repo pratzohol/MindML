@@ -34,4 +34,5 @@ jobs:
                 pillow cairosvg \
                 mkdocs-glightbox \
                 mkdocs-minify-plugin \
+                mkdocs-awesome-pages-plugin \
       - run: mkdocs gh-deploy --force
