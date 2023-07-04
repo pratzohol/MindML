@@ -101,8 +101,8 @@ plugins:
   # - git-committers:
   #     repository: pratzohol/MindML
   #     branch: main
-  - glightbox
   - social
+  # - awesome-pages
 
 extra_javascript:
   - javascripts/mathjax.js
