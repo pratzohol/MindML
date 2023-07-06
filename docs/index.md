@@ -12,6 +12,6 @@ First of all, I was bored. Second, the concepts, papers and articles I read were
 
 Hence, it's better to organize everything in one place. This will also help me in revising the concepts and ideas I have learnt.
 
-## How to use MindML?
+## How I use MindML?
 
 To use MindML, I want myself to go through the pain of reading various articles only once. After that, I want to organize the concepts in my own words and in a way that I can easily understand.

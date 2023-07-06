@@ -5,7 +5,7 @@ tags:
     - Graphs
 ---
 
-# ICL over Graphs : PRODIGY
+# ICL : PRODIGY
 
 In this note, I will cover the following paper ["PRODIGY : Enabling in-context learning over graphs"](https://arxiv.org/abs/2305.12600).
 

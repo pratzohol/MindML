@@ -5,7 +5,7 @@ tags:
     - Graphs
 ---
 
-# ICL over Graphs : GraphPrompt
+# ICL : GraphPrompt
 
 In this note, I will cover the following paper ["GraphPrompt : Unifying Pre-Training and Downstream Tasks for GNN"](https://arxiv.org/abs/2302.08043).
 
