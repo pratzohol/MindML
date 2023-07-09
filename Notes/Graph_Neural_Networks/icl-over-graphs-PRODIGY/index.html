@@ -1134,7 +1134,7 @@
 <li>This is an example of in-context few shot prompting over graphs for edge classification.</li>
 <li>(A) Given source graph <span class="arithmatex">\(\mathcal{G}\)</span>, we provide prompt examples <span class="arithmatex">\(\mathcal{S}\)</span> and queries <span class="arithmatex">\(\mathcal{Q}\)</span>. <span class="arithmatex">\(\mathcal{S}\)</span> consist of input head and tail nodes and their labels.</li>
 <li>(B) For each data-point in <span class="arithmatex">\(\mathcal{S}\)</span> and <span class="arithmatex">\(\mathcal{Q}\)</span>, we construct its <em>Data graph</em> <span class="arithmatex">\(\mathcal{G}^D\)</span> using the source graph <span class="arithmatex">\(\mathcal{G}\)</span>.</li>
-<li>(C) Then, we create <em>Task graph</em> to capture connection between each data-point and label. We learn embedding to represent Data graph as nodes <span class="arithmatex">\(v_x\)</span> for each data-point. There are label nodes <span class="arithmatex">\(v_y\)</span> for each y <span class="arithmatex">\(\in \mathcal{Y}\)</span>. Each data-point is connected to every label nodes. For data-points in <span class="arithmatex">\(\mathcal{S}\)</span></li>
+<li>(C) Then, we create <em>Task graph</em> to capture connection between each data-point and label. We learn embedding to represent Data graph as nodes <span class="arithmatex">\(v_x\)</span> for each data-point. There are label nodes <span class="arithmatex">\(v_y\)</span> for each y <span class="arithmatex">\(\in \mathcal{Y}\)</span>. Each data-point is connected to every label nodes. For data-points in <span class="arithmatex">\(\mathcal{S}\)</span>, each edge is marked by a boolean value, <span class="arithmatex">\(\texttt{T}\)</span> for true label and <span class="arithmatex">\(\texttt{F}\)</span> for others. </li>
 </ul>
 </li>
 <li>
@@ -1205,7 +1205,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 9, 2023 05:01:49</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 9, 2023 05:21:47</span>
       
         <br>
         Created:
