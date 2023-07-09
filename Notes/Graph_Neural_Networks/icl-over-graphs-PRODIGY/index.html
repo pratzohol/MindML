@@ -48,6 +48,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1112,7 +1114,7 @@
 <p><em><strong>NOTE</strong></em> : Definition of <a href="../../Miscellaneous/in-context-learning/">In-context Learning (ICL)</a> is already covered.</p>
 <h2 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">&para;</a></h2>
 <p>We can easily infer that the in-context learning is a novel and one of the most intriguing capabilities of language models. However, how to enable in-context learning over graphs is still an unexplored question.</p>
-<p>An in-context learner for graphs should be able to solve novel tasks on novel graphs. For example, give music product recommendations on Spotify when being trained on Amazon purchasing graph. </p>
+<p>An in-context learner for graphs should be able to solve novel tasks on novel graphs. For example, give music product recommendations on Spotify when being trained on Amazon purchasing graph.</p>
 <h2 id="2-challenges">2. Challenges<a class="headerlink" href="#2-challenges" title="Permanent link">&para;</a></h2>
 <ol>
 <li>How to formulate and represent node-, edge- and graph-level tasks over graphs with a <em>unified task representation</em> that allows the model to solve diverse tasks without the need for retraining or parameter tuning.</li>
@@ -1136,10 +1138,10 @@
 </ul>
 </li>
 <li>
-<p><strong><em>PRODIGY</em></strong> : <strong>Pr</strong>etraining <strong>O</strong>ver <strong>D</strong>iverse <strong>I</strong>n-Context <strong>G</strong>raphs S<strong>y</strong>stems, which is a framework for pre-training in-context learner over prompt graphs. </p>
+<p><strong><em>PRODIGY</em></strong> : <strong>Pr</strong>etraining <strong>O</strong>ver <strong>D</strong>iverse <strong>I</strong>n-Context <strong>G</strong>raphs S<strong>y</strong>stems, which is a framework for pre-training in-context learner over prompt graphs.</p>
 <ul>
 <li>PRODIGY designs both model architecture and pre-training objectives with in-context task formulation over prompt graph.</li>
-<li>Model architecture uses GNN to learn embeddings of node/edge representations and an attention mechanism for message passing over prompt graph. </li>
+<li>Model architecture uses GNN to learn embeddings of node/edge representations and an attention mechanism for message passing over prompt graph.</li>
 </ul>
 </li>
 </ul>
@@ -1155,7 +1157,7 @@
 </li>
 <li>Since, we want uniform formulation for different levels of tasks, we define space of input <span class="arithmatex">\(\mathcal{X}\)</span> consists of graphs, i.e., <span class="arithmatex">\(x_i \in \mathcal{X}\)</span> where <span class="arithmatex">\(x_i = (\mathcal{V}_i, \mathcal{E}_i, \mathcal{R}_i)\)</span>.<ul>
 <li>For node-level classification, <span class="arithmatex">\(|\mathcal{V}_i| = 1\)</span> and <span class="arithmatex">\(|\mathcal{E}_i| = 0\)</span></li>
-<li>For edge-level classification, <span class="arithmatex">\(|\mathcal{V}_i| = 2\)</span> and <span class="arithmatex">\(|\mathcal{E}_i| = 0\)</span><br />
+<li>For edge-level classification, <span class="arithmatex">\(|\mathcal{V}_i| = 2\)</span> and <span class="arithmatex">\(|\mathcal{E}_i| = 0\)</span>
 (Since, we are predicting label of potential edges, we don't have any edges in the input, and instead input consists of pair of nodes)</li>
 </ul>
 </li>
@@ -1170,8 +1172,26 @@
 <h3 id="41-prompt-graph-representation">4.1. Prompt Graph Representation<a class="headerlink" href="#41-prompt-graph-representation" title="Permanent link">&para;</a></h3>
 <p>Given the information as a prompt, the pre-trained model should be able to directly output the predicted labels for the queries via in-context learning. Thus, to formulate information as unified and efficient form of input, this paper proposes their <em>in-context task formulation prompt graph</em>.</p>
 <ol>
-<li><strong><em>Data graph</em></strong> : </li>
-<li><strong><em>Task graph</em></strong> : </li>
+<li><strong><em>Data graph</em></strong> : We perform <em>contextualization</em> of each data-point in <span class="arithmatex">\(\mathcal{S}\)</span> and <span class="arithmatex">\(\mathcal{Q}\)</span> using source graph <span class="arithmatex">\(\mathcal{G}\)</span>. We want to have more information about the data-point <span class="arithmatex">\(x_i = (\mathcal{V}_i, \mathcal{E}_i, \mathcal{R}_i)\)</span> without having to represent the whole source graph <span class="arithmatex">\(\mathcal{G}\)</span>.<ul>
+<li>Intuitively, it makes sense to sample a <span class="arithmatex">\(k\)</span>-hop neighborhood to construct data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>.</li>
+<li>Formally, <span class="arithmatex">\(\mathcal{G}_i^D = (\mathcal{V}_i^D, \mathcal{E}_i^D, \mathcal{R}_i^D) \sim \bigoplus_{j = 0}^ k \texttt{Neighbor} (\mathcal{V}_i, \mathcal{G}, j)\)</span>, where <span class="arithmatex">\(\texttt{Neighbor}\)</span> is a function which returns exact <span class="arithmatex">\(j\)</span>-hop neighborhood of each node in <span class="arithmatex">\(\mathcal{V}_i\)</span> in <span class="arithmatex">\(\mathcal{G}\)</span>.</li>
+<li>NOTE : <span class="arithmatex">\(\bigoplus\)</span> is a direct sum operator. In this case it would mean that<ul>
+<li><span class="arithmatex">\(\mathcal{V}_i^D = \bigcup_{j = 0}^k \texttt{Neighbor} (\mathcal{V}_i, \mathcal{G}, j)\)</span></li>
+<li><span class="arithmatex">\(\mathcal{E}_i^D = \bigcup_{j = 0}^k \texttt{Neighbor} (\mathcal{E}_i, \mathcal{G}, j)\)</span></li>
+<li><span class="arithmatex">\(\mathcal{R}_i^D = \bigcup_{j = 0}^k \texttt{Neighbor} (\mathcal{R}_i, \mathcal{G}, j)\)</span>.</li>
+</ul>
+</li>
+<li><em>Input Node Set</em> : For the data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>, the nodes in <span class="arithmatex">\(\mathcal{V}_i\)</span> (before contextualization) correspond to this set. For node classification, it is a single target node whereas for link prediction it is a pair of nodes.</li>
+</ul>
+</li>
+<li><strong><em>Task graph</em></strong> : After contextualizing each data-point to a data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>, we then construct task graph <span class="arithmatex">\(\mathcal{G}^T\)</span> to better capture the connection and relationship among the inputs and the labels.<ul>
+<li>For each data graph <span class="arithmatex">\(\mathcal{G}_i^D\)</span>, we represent the input as <em>data node</em> <span class="arithmatex">\(v_{x_i}\)</span>.</li>
+<li>For each label <span class="arithmatex">\(y_i \in \mathcal{Y}\)</span>, we represent the label as <em>label node</em> <span class="arithmatex">\(v_{y_i}\)</span>.</li>
+<li>So, overall task graph contains <span class="arithmatex">\(m \cdot k + n\)</span> <em>data nodes</em> and <span class="arithmatex">\(m\)</span> <em>label nodes</em>. (<span class="arithmatex">\(m \cdot k\)</span> <em>prompt examples</em> and <span class="arithmatex">\(n\)</span> <em>queries</em>)</li>
+<li>For the query set, we add single directional edge from each label node to each query data node.</li>
+<li>For prompt examples, each data node is connected to every label node via bidirectional edges, where edge with true labels are marked as <span class="arithmatex">\(\texttt{T}\)</span> and rest are marked as <span class="arithmatex">\(\texttt{F}\)</span>.</li>
+</ul>
+</li>
 </ol>
 <h3 id="42-pre-training">4.2. Pre-training<a class="headerlink" href="#42-pre-training" title="Permanent link">&para;</a></h3>
 <h4 id="421-message-passing-architecture-over-prompt-graph">4.2.1. Message Passing Architecture over Prompt Graph<a class="headerlink" href="#421-message-passing-architecture-over-prompt-graph" title="Permanent link">&para;</a></h4>
@@ -1185,7 +1205,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 8, 2023 18:49:29</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 9, 2023 05:01:49</span>
       
         <br>
         Created:
