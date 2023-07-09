@@ -40,7 +40,7 @@ The general approach presented to solve these problems as described in this pape
     - This is an example of in-context few shot prompting over graphs for edge classification.
     - (A) Given source graph $\mathcal{G}$, we provide prompt examples $\mathcal{S}$ and queries $\mathcal{Q}$. $\mathcal{S}$ consist of input head and tail nodes and their labels.
     - (B) For each data-point in $\mathcal{S}$ and $\mathcal{Q}$, we construct its _Data graph_ $\mathcal{G}^D$ using the source graph $\mathcal{G}$.
-    - (C) Then, we create *Task graph* to capture connection between each data-point and label. We learn embedding to represent Data graph as nodes $v_x$ for each data-point. There are label nodes $v_y$ for each y $\in \mathcal{Y}$. Each data-point is connected to every label nodes. For data-points in $\mathcal{S}$
+    - (C) Then, we create *Task graph* to capture connection between each data-point and label. We learn embedding to represent Data graph as nodes $v_x$ for each data-point. There are label nodes $v_y$ for each y $\in \mathcal{Y}$. Each data-point is connected to every label nodes. For data-points in $\mathcal{S}$, each edge is marked by a boolean value, $\texttt{T}$ for true label and $\texttt{F}$ for others. 
 
 - **_PRODIGY_** : **Pr**etraining **O**ver **D**iverse **I**n-Context **G**raphs S**y**stems, which is a framework for pre-training in-context learner over prompt graphs.
     - PRODIGY designs both model architecture and pre-training objectives with in-context task formulation over prompt graph.
