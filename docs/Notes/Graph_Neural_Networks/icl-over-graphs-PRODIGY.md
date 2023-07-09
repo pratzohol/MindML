@@ -17,7 +17,7 @@ _**NOTE**_ : Definition of [[in-context-learning|In-context Learning (ICL)]] is 
 
 We can easily infer that the in-context learning is a novel and one of the most intriguing capabilities of language models. However, how to enable in-context learning over graphs is still an unexplored question.
 
-An in-context learner for graphs should be able to solve novel tasks on novel graphs. For example, give music product recommendations on Spotify when being trained on Amazon purchasing graph. 
+An in-context learner for graphs should be able to solve novel tasks on novel graphs. For example, give music product recommendations on Spotify when being trained on Amazon purchasing graph.
 
 ## 2. Challenges
 1. How to formulate and represent node-, edge- and graph-level tasks over graphs with a _unified task representation_ that allows the model to solve diverse tasks without the need for retraining or parameter tuning.
@@ -36,15 +36,15 @@ The general approach presented to solve these problems as described in this pape
 - **_Prompt Graph_** : It provides a way to unify the representation of node-, edge- and graph-level tasks over graphs. It has prompt examples, queries and connected with additional label nodes as shown in Figure below.
 
     ![Figure 1](../../assets/Notes/Graph_Neural_Networks/icl-over-graphs-prodigy-1.png)
-    
+
     - This is an example of in-context few shot prompting over graphs for edge classification.
     - (A) Given source graph $\mathcal{G}$, we provide prompt examples $\mathcal{S}$ and queries $\mathcal{Q}$. $\mathcal{S}$ consist of input head and tail nodes and their labels.
     - (B) For each data-point in $\mathcal{S}$ and $\mathcal{Q}$, we construct its _Data graph_ $\mathcal{G}^D$ using the source graph $\mathcal{G}$.
     - (C) Then, we create *Task graph* to capture connection between each data-point and label. We learn embedding to represent Data graph as nodes $v_x$ for each data-point. There are label nodes $v_y$ for each y $\in \mathcal{Y}$. Each data-point is connected to every label nodes. For data-points in $\mathcal{S}$
 
-- **_PRODIGY_** : **Pr**etraining **O**ver **D**iverse **I**n-Context **G**raphs S**y**stems, which is a framework for pre-training in-context learner over prompt graphs. 
+- **_PRODIGY_** : **Pr**etraining **O**ver **D**iverse **I**n-Context **G**raphs S**y**stems, which is a framework for pre-training in-context learner over prompt graphs.
     - PRODIGY designs both model architecture and pre-training objectives with in-context task formulation over prompt graph.
-    - Model architecture uses GNN to learn embeddings of node/edge representations and an attention mechanism for message passing over prompt graph. 
+    - Model architecture uses GNN to learn embeddings of node/edge representations and an attention mechanism for message passing over prompt graph.
 
 ## 3. In-Context Learning over Graphs
 
@@ -57,7 +57,7 @@ The general approach presented to solve these problems as described in this pape
     - Graph-level : Predict label on sub-graphs, i.e., input consists of nodes and edges both.
 - Since, we want uniform formulation for different levels of tasks, we define space of input $\mathcal{X}$ consists of graphs, i.e., $x_i \in \mathcal{X}$ where $x_i = (\mathcal{V}_i, \mathcal{E}_i, \mathcal{R}_i)$.
     - For node-level classification, $|\mathcal{V}_i| = 1$ and $|\mathcal{E}_i| = 0$
-    - For edge-level classification, $|\mathcal{V}_i| = 2$ and $|\mathcal{E}_i| = 0$  
+    - For edge-level classification, $|\mathcal{V}_i| = 2$ and $|\mathcal{E}_i| = 0$
     (Since, we are predicting label of potential edges, we don't have any edges in the input, and instead input consists of pair of nodes)
 ### 3.2. Few-shot Prompting
 
@@ -71,8 +71,20 @@ The general approach presented to solve these problems as described in this pape
 
 Given the information as a prompt, the pre-trained model should be able to directly output the predicted labels for the queries via in-context learning. Thus, to formulate information as unified and efficient form of input, this paper proposes their _in-context task formulation prompt graph_.
 
-1. **_Data graph_** : 
-2. **_Task graph_** : 
+1. **_Data graph_** : We perform _contextualization_ of each data-point in $\mathcal{S}$ and $\mathcal{Q}$ using source graph $\mathcal{G}$. We want to have more information about the data-point $x_i = (\mathcal{V}_i, \mathcal{E}_i, \mathcal{R}_i)$ without having to represent the whole source graph $\mathcal{G}$.
+    - Intuitively, it makes sense to sample a $k$-hop neighborhood to construct data graph $\mathcal{G}^D$.
+    - Formally, $\mathcal{G}_i^D = (\mathcal{V}_i^D, \mathcal{E}_i^D, \mathcal{R}_i^D) \sim \bigoplus_{j = 0}^ k \texttt{Neighbor} (\mathcal{V}_i, \mathcal{G}, j)$, where $\texttt{Neighbor}$ is a function which returns exact $j$-hop neighborhood of each node in $\mathcal{V}_i$ in $\mathcal{G}$.
+    - NOTE : $\bigoplus$ is a direct sum operator. In this case it would mean that
+        - $\mathcal{V}_i^D = \bigcup_{j = 0}^k \texttt{Neighbor} (\mathcal{V}_i, \mathcal{G}, j)$
+        - $\mathcal{E}_i^D = \bigcup_{j = 0}^k \texttt{Neighbor} (\mathcal{E}_i, \mathcal{G}, j)$
+        - $\mathcal{R}_i^D = \bigcup_{j = 0}^k \texttt{Neighbor} (\mathcal{R}_i, \mathcal{G}, j)$.
+    - _Input Node Set_ : For the data graph $\mathcal{G}^D$, the nodes in $\mathcal{V}_i$ (before contextualization) correspond to this set. For node classification, it is a single target node whereas for link prediction it is a pair of nodes.
+2. **_Task graph_** : After contextualizing each data-point to a data graph $\mathcal{G}^D$, we then construct task graph $\mathcal{G}^T$ to better capture the connection and relationship among the inputs and the labels.
+    - For each data graph $\mathcal{G}_i^D$, we represent the input as _data node_ $v_{x_i}$.
+    - For each label $y_i \in \mathcal{Y}$, we represent the label as _label node_ $v_{y_i}$.
+    - So, overall task graph contains $m \cdot k + n$ _data nodes_ and $m$ _label nodes_. ($m \cdot k$ _prompt examples_ and $n$ _queries_)
+    - For the query set, we add single directional edge from each label node to each query data node.
+    - For prompt examples, each data node is connected to every label node via bidirectional edges, where edge with true labels are marked as $\texttt{T}$ and rest are marked as $\texttt{F}$.
 
 ### 4.2. Pre-training
 
