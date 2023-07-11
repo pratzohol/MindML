@@ -1176,10 +1176,11 @@
 <li>Intuitively, it makes sense to sample a <span class="arithmatex">\(k\)</span>-hop neighborhood to construct data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>.</li>
 <li>Formally, <span class="arithmatex">\(\mathcal{G}_i^D = (\mathcal{V}_i^D, \mathcal{E}_i^D, \mathcal{R}_i^D) \sim \bigoplus_{j = 0}^ k \texttt{Neighbor} (\mathcal{V}_i, \mathcal{G}, j)\)</span>, where <span class="arithmatex">\(\texttt{Neighbor}\)</span> is a function which returns exact <span class="arithmatex">\(j\)</span>-hop neighborhood of each node in <span class="arithmatex">\(\mathcal{V}_i\)</span> in <span class="arithmatex">\(\mathcal{G}\)</span>.</li>
 <li>NOTE : <span class="arithmatex">\(\bigoplus\)</span> is a direct sum operator. In this case it means that<ul>
-<li>For example, suppose {<span class="arithmatex">\(v_1\)</span>, <span class="arithmatex">\(v_2\)</span>, <span class="arithmatex">\(v_3\)</span>} <span class="arithmatex">\(\in \mathcal{V}_i\)</span>, and <span class="arithmatex">\(\forall m = {1, 2, 3}, (\mathcal{V}_{i, m}, \mathcal{E}_{i, m}, \mathcal{R}_{i, m}) =\)</span> subgraph obtained by sampling <span class="arithmatex">\(k\)</span>-hop neighbourhood of node <span class="arithmatex">\(v_m \in \mathcal{V}_i\)</span>. Then,</li>
-<li><span class="arithmatex">\(\mathcal{V}_i^D = \bigcup_{m = 1}^3 (\mathcal{V}_{i, m})\)</span></li>
-<li><span class="arithmatex">\(\mathcal{E}_i^D = \bigcup_{m = 1}^3 (\mathcal{E}_{i, m})\)</span></li>
-<li><span class="arithmatex">\(\mathcal{R}_i^D = \bigcup_{m = 1}^3 (\mathcal{R}_{i, m})\)</span></li>
+<li>For example, suppose {<span class="arithmatex">\(v_1\)</span>, <span class="arithmatex">\(v_2\)</span>, <span class="arithmatex">\(v_3\)</span>} <span class="arithmatex">\(\in \mathcal{V}_i\)</span>, and <span class="arithmatex">\(\forall m = {1, 2, 3},  
+      (\mathcal{V}_{i, m}, \mathcal{E}_{i, m}, \mathcal{R}_{i, m}) =\)</span> subgraph obtained by sampling <span class="arithmatex">\(k\)</span>-hop neighbourhood of node <span class="arithmatex">\(v_m \in \mathcal{V}_i\)</span>. Then,</li>
+<li><span class="arithmatex">\(\mathcal{V}_i^D = \bigcup_{m = 1}^3 \mathcal{V}_{i, m}\)</span></li>
+<li><span class="arithmatex">\(\mathcal{E}_i^D = \bigcup_{m = 1}^3 \mathcal{E}_{i, m}\)</span></li>
+<li><span class="arithmatex">\(\mathcal{R}_i^D = \bigcup_{m = 1}^3 \mathcal{R}_{i, m}\)</span></li>
 </ul>
 </li>
 <li><em>Input Node Set</em> : For the data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>, the nodes in <span class="arithmatex">\(\mathcal{V}_i\)</span> (before contextualization) correspond to this set. For node classification, it is a single target node whereas for link prediction it is a pair of nodes.</li>
@@ -1206,7 +1207,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 11, 2023 08:00:19</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 11, 2023 12:06:34</span>
       
         <br>
         Created:
