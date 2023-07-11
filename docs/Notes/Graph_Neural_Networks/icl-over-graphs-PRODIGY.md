@@ -76,10 +76,12 @@ Prompt graph consists of both Data Graph and Task Graph.
 1. **_Data graph_** : We perform _contextualization_ of each data-point in $\mathcal{S}$ and $\mathcal{Q}$ using source graph $\mathcal{G}$. We want to have more information about the data-point $x_i = (\mathcal{V}_i, \mathcal{E}_i, \mathcal{R}_i)$ without having to represent the whole source graph $\mathcal{G}$.
     - Intuitively, it makes sense to sample a $k$-hop neighborhood to construct data graph $\mathcal{G}^D$.
     - Formally, $\mathcal{G}_i^D = (\mathcal{V}_i^D, \mathcal{E}_i^D, \mathcal{R}_i^D) \sim \bigoplus_{j = 0}^ k \texttt{Neighbor} (\mathcal{V}_i, \mathcal{G}, j)$, where $\texttt{Neighbor}$ is a function which returns exact $j$-hop neighborhood of each node in $\mathcal{V}_i$ in $\mathcal{G}$.
-    - NOTE : $\bigoplus$ is a direct sum operator. In this case it would mean that
-        - $\mathcal{V}_i^D = \bigcup_{j = 0}^k \texttt{Neighbor} (\mathcal{V}_i, \mathcal{G}, j)$
-        - $\mathcal{E}_i^D = \bigcup_{j = 0}^k \texttt{Neighbor} (\mathcal{E}_i, \mathcal{G}, j)$
-        - $\mathcal{R}_i^D = \bigcup_{j = 0}^k \texttt{Neighbor} (\mathcal{R}_i, \mathcal{G}, j)$.
+    - NOTE : $\bigoplus$ is a direct sum operator. In this case it means that
+        - For example, suppose {$v_1$, $v_2$, $v_3$} $\in \mathcal{V}_i$, and $\forall m = {1, 2, 3},  
+              (\mathcal{V}_{i, m}, \mathcal{E}_{i, m}, \mathcal{R}_{i, m}) =$ subgraph obtained by sampling $k$-hop neighbourhood of node $v_m \in \mathcal{V}_i$. Then,
+        - $\mathcal{V}_i^D = \bigcup_{m = 1}^3 \mathcal{V}_{i, m}$
+        - $\mathcal{E}_i^D = \bigcup_{m = 1}^3 \mathcal{E}_{i, m}$
+        - $\mathcal{R}_i^D = \bigcup_{m = 1}^3 \mathcal{R}_{i, m}$
     - _Input Node Set_ : For the data graph $\mathcal{G}^D$, the nodes in $\mathcal{V}_i$ (before contextualization) correspond to this set. For node classification, it is a single target node whereas for link prediction it is a pair of nodes.
 2. **_Task graph_** : After contextualizing each data-point to a data graph $\mathcal{G}^D$, we then construct task graph $\mathcal{G}^T$ to better capture the connection and relationship among the inputs and the labels.
     - For each data graph $\mathcal{G}_i^D$, we represent the input as _data node_ $v_{x_i}$.
