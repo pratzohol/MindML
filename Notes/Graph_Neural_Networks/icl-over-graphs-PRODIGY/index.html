@@ -18,7 +18,7 @@
         <link rel="prev" href="../icl-over-graphs-GraphPrompt/">
       
       
-        <link rel="next" href="../../Miscellaneous/">
+        <link rel="next" href="../../Maths/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
@@ -394,6 +394,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -711,6 +713,72 @@
         
           
         
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Maths/">Maths</a>
+          
+            <label for="__nav_2_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Maths
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Maths/bigoplus/" class="md-nav__link">
+        \bigoplus
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
           
         
           
@@ -722,14 +790,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../../Miscellaneous/">Miscellaneous</a>
           
-            <label for="__nav_2_3">
+            <label for="__nav_2_4">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_3">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4">
           <span class="md-nav__icon md-icon"></span>
           Miscellaneous
         </label>
@@ -1121,8 +1189,8 @@
 <li>How to design model architecture and pre-training objectives that enable in-context learning capabilities across <em>diverse tasks</em> and <em>diverse graphs</em> in the unified task representation.</li>
 <li>Existing <em>graph pre-training methods</em> only aim to learn good graph encoder and require fine-tuning to adapt to different tasks, while existing <em>meta-learning methods</em> over graphs only aim to generalize across tasks within same graph.</li>
 </ol>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Achieving in-context learning requires generalizing across different graphs and
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>tasks without fine-tuning or parameter tuning.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Achieving in-context learning requires generalizing across different graphs and tasks 
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>without fine-tuning or parameter tuning.
 </span></code></pre></div>
 <h3 id="21-how-to-tackle-this">2.1. How to tackle this?<a class="headerlink" href="#21-how-to-tackle-this" title="Permanent link">&para;</a></h3>
 <p>The general approach presented to solve these problems as described in this paper is :</p>
@@ -1164,7 +1232,7 @@
 </ul>
 <h3 id="32-few-shot-prompting">3.2. Few-shot Prompting<a class="headerlink" href="#32-few-shot-prompting" title="Permanent link">&para;</a></h3>
 <ul>
-<li>For a <em>k</em>-shot prompt with downstream <em>m</em>-way classification tasks with <span class="arithmatex">\(|\mathcal{Y}| = m\)</span> classes, we use small number of input-label pairs <span class="arithmatex">\(\mathcal{S} = \{(x_i, y_i)\}_{i=1}^{m \cdot k}\)</span> as <em>prompt examples</em>. Here, we have <em>k</em> samples for each label (class) <span class="arithmatex">\(y \in \mathcal{Y}\)</span>.</li>
+<li>For a <em>k</em>-shot prompt with downstream <em>m</em>-way classification tasks with <span class="arithmatex">\(|\mathcal{Y}| = m\)</span> classes, we use small number of input-label pairs <span class="arithmatex">\(\mathcal{S} = \{(x_i, y_i)\}_{i=1}^{m \cdot k}\)</span> as <em>prompt examples</em>. Here, we have <em>k</em> samples for each label (class) <span class="arithmatex">\(y_i \in \mathcal{Y}\)</span>.</li>
 <li>Set of queries <span class="arithmatex">\(\mathcal{Q} = \{x_i\}_{i=1}^n\)</span> is also sampled. We want to predict labels for each query <span class="arithmatex">\(x_i \in \mathcal{Q}\)</span>.</li>
 <li><em>Important</em> difference between graphs and language models w.r.t. prompting is that the source graph <span class="arithmatex">\(\mathcal{G}\)</span> contains information about the input, and hence, we need to include <span class="arithmatex">\(\mathcal{G}\)</span> in the prompt.</li>
 </ul>
@@ -1173,21 +1241,18 @@
 <p>Given the information as a prompt, the pre-trained model should be able to directly output the predicted labels for the queries via in-context learning. Thus, to formulate information as unified and efficient form of input, this paper proposes their <em>in-context task formulation prompt graph</em>.</p>
 <p>Prompt graph consists of both Data Graph and Task Graph. </p>
 <ol>
-<li><strong><em>Data graph</em></strong> : We perform <em>contextualization</em> of each data-point in <span class="arithmatex">\(\mathcal{S}\)</span> and <span class="arithmatex">\(\mathcal{Q}\)</span> using source graph <span class="arithmatex">\(\mathcal{G}\)</span>. We want to have more information about the data-point <span class="arithmatex">\(x_i = (\mathcal{V}_i, \mathcal{E}_i, \mathcal{R}_i)\)</span> without having to represent the whole source graph <span class="arithmatex">\(\mathcal{G}\)</span>.<ul>
+<li>
+<p><strong><em>Data graph</em></strong> : We perform <em>contextualization</em> of each data-point in <span class="arithmatex">\(\mathcal{S}\)</span> and <span class="arithmatex">\(\mathcal{Q}\)</span> using source graph <span class="arithmatex">\(\mathcal{G}\)</span>. We want to have more information about the data-point <span class="arithmatex">\(x_i = (\mathcal{V}_i, \mathcal{E}_i, \mathcal{R}_i)\)</span> without having to represent the whole source graph <span class="arithmatex">\(\mathcal{G}\)</span>.</p>
+<ul>
 <li>Intuitively, it makes sense to sample a <span class="arithmatex">\(k\)</span>-hop neighborhood to construct data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>.</li>
 <li>Formally, <span class="arithmatex">\(\mathcal{G}_i^D = (\mathcal{V}_i^D, \mathcal{E}_i^D, \mathcal{R}_i^D) \sim \bigoplus_{j = 0}^ k \texttt{Neighbor} (\mathcal{V}_i, \mathcal{G}, j)\)</span>, where <span class="arithmatex">\(\texttt{Neighbor}\)</span> is a function which returns exact <span class="arithmatex">\(j\)</span>-hop neighborhood of each node in <span class="arithmatex">\(\mathcal{V}_i\)</span> in <span class="arithmatex">\(\mathcal{G}\)</span>.</li>
-<li>NOTE : <span class="arithmatex">\(\bigoplus\)</span> is a direct sum operator. In this case it means that<ul>
-<li>For example, suppose {<span class="arithmatex">\(v_1\)</span>, <span class="arithmatex">\(v_2\)</span>, <span class="arithmatex">\(v_3\)</span>} <span class="arithmatex">\(\in \mathcal{V}_i\)</span>, and <span class="arithmatex">\(\forall m = {1, 2, 3},  
-      (\mathcal{V}_{i, m}, \mathcal{E}_{i, m}, \mathcal{R}_{i, m}) =\)</span> subgraph obtained by sampling <span class="arithmatex">\(k\)</span>-hop neighbourhood of node <span class="arithmatex">\(v_m \in \mathcal{V}_i\)</span>. Then,</li>
-<li><span class="arithmatex">\(\mathcal{V}_i^D = \bigcup_{m = 1}^3 \mathcal{V}_{i, m}\)</span></li>
-<li><span class="arithmatex">\(\mathcal{E}_i^D = \bigcup_{m = 1}^3 \mathcal{E}_{i, m}\)</span></li>
-<li><span class="arithmatex">\(\mathcal{R}_i^D = \bigcup_{m = 1}^3 \mathcal{R}_{i, m}\)</span></li>
-</ul>
-</li>
+<li>NOTE : <span class="arithmatex">\(\bigoplus\)</span> (<a href="../../Maths/bigoplus/">\bigoplus</a>) is a direct sum operator.</li>
 <li><em>Input Node Set</em> : For the data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>, the nodes in <span class="arithmatex">\(\mathcal{V}_i\)</span> (before contextualization) correspond to this set. For node classification, it is a single target node whereas for link prediction it is a pair of nodes.</li>
 </ul>
 </li>
-<li><strong><em>Task graph</em></strong> : After contextualizing each data-point to a data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>, we then construct task graph <span class="arithmatex">\(\mathcal{G}^T\)</span> to better capture the connection and relationship among the inputs and the labels.<ul>
+<li>
+<p><strong><em>Task graph</em></strong> : After contextualizing each data-point to a data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>, we then construct task graph <span class="arithmatex">\(\mathcal{G}^T\)</span> to better capture the connection and relationship among the inputs and the labels.</p>
+<ul>
 <li>For each data graph <span class="arithmatex">\(\mathcal{G}_i^D\)</span>, we represent the input as <em>data node</em> <span class="arithmatex">\(v_{x_i}\)</span>.</li>
 <li>For each label <span class="arithmatex">\(y_i \in \mathcal{Y}\)</span>, we represent the label as <em>label node</em> <span class="arithmatex">\(v_{y_i}\)</span>.</li>
 <li>So, overall task graph contains <span class="arithmatex">\(m \cdot k + n\)</span> <em>data nodes</em> and <span class="arithmatex">\(m\)</span> <em>label nodes</em>. (<span class="arithmatex">\(m \cdot k\)</span> <em>prompt examples</em> and <span class="arithmatex">\(n\)</span> <em>queries</em>)</li>
@@ -1247,7 +1312,7 @@ Here, <span class="arithmatex">\(d\)</span> is the embedding dimension and <span
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 11, 2023 16:06:31</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 12, 2023 01:58:22</span>
       
         <br>
         Created:
@@ -1298,13 +1363,13 @@ Here, <span class="arithmatex">\(d\)</span> is the embedding dimension and <span
         
         
           
-          <a href="../../Miscellaneous/" class="md-footer__link md-footer__link--next" aria-label="Next: Miscellaneous" rel="next">
+          <a href="../../Maths/" class="md-footer__link md-footer__link--next" aria-label="Next: Maths" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Miscellaneous
+                Maths
               </div>
             </div>
             <div class="md-footer__button md-icon">
