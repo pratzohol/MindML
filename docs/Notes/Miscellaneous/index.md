@@ -9,9 +9,8 @@ This section will contain <u>_miscellaneous_</u>  notes that doesn't come under 
 Some of the broad topics which will go into this section are:
 
 - Classical ML like SVM, kNN, etc.
-- Concepts from statistics, information theory
-- Probability Concepts
-- Calculus
+- Generic things about ML like bias-variance tradeoff, etc.
+- Accuracy, Precision, Recall, etc.
 
 Further, this section can contain sub-sections. For example, if on a particular topic like SVM, I have a few notes, then I can create a sub-section for it.
 
