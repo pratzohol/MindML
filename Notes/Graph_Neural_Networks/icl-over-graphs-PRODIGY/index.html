@@ -928,6 +928,8 @@
         
           
         
+          
+        
       
       
         
@@ -959,6 +961,92 @@
       <a href="../../../Techie_Tech/markdown-things/" class="md-nav__link">
         Some Markdown Things
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          DSA
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          DSA
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Techie_Tech/DSA/bfs-dfs/" class="md-nav__link">
+        BFS & DFS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Techie_Tech/DSA/sliding-windows/" class="md-nav__link">
+        Sliding Window
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Techie_Tech/DSA/sorting-methods/" class="md-nav__link">
+        Sorting Methods
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1189,8 +1277,7 @@
 <li>How to design model architecture and pre-training objectives that enable in-context learning capabilities across <em>diverse tasks</em> and <em>diverse graphs</em> in the unified task representation.</li>
 <li>Existing <em>graph pre-training methods</em> only aim to learn good graph encoder and require fine-tuning to adapt to different tasks, while existing <em>meta-learning methods</em> over graphs only aim to generalize across tasks within same graph.</li>
 </ol>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Achieving in-context learning requires generalizing across different graphs and tasks 
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>without fine-tuning or parameter tuning.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Achieving in-context learning requires generalizing across different graphs and tasks without fine-tuning or parameter tuning.
 </span></code></pre></div>
 <h3 id="21-how-to-tackle-this">2.1. How to tackle this?<a class="headerlink" href="#21-how-to-tackle-this" title="Permanent link">&para;</a></h3>
 <p>The general approach presented to solve these problems as described in this paper is :</p>
@@ -1296,9 +1383,7 @@ Here, <span class="arithmatex">\(d\)</span> is the embedding dimension and <span
 <p>So, we apply another GNN <span class="arithmatex">\(M_\texttt{T}\)</span> to update the node embeddings of task graph <span class="arithmatex">\(\mathcal{G}^T\)</span>. </p>
 <div class="arithmatex">\[H = M_T (\mathcal{G}^T)\]</div>
 <p>For <span class="arithmatex">\(M_T\)</span>, attention based GNN was used, where each nodes perform attention to other nodes at each layer.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>The goal of this step is to learn a better representation of the label nodes using
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>the support examples and propagate label information back to the support and query
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>graph representation for a more task-specific graph representation.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>The goal of this step is to learn a better representation of the label nodes using the support examples and propagate label information back to the support and query graph representation for a more task-specific graph representation.
 </span></code></pre></div>
 </li>
 </ol>
@@ -1312,7 +1397,7 @@ Here, <span class="arithmatex">\(d\)</span> is the embedding dimension and <span
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 12, 2023 01:58:22</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 1, 2023 16:47:59</span>
       
         <br>
         Created:

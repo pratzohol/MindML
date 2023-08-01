@@ -766,6 +766,8 @@
         
           
         
+          
+        
       
       
         
@@ -797,6 +799,92 @@
       <a href="../../Techie_Tech/markdown-things/" class="md-nav__link">
         Some Markdown Things
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          DSA
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          DSA
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Techie_Tech/DSA/bfs-dfs/" class="md-nav__link">
+        BFS & DFS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Techie_Tech/DSA/sliding-windows/" class="md-nav__link">
+        Sliding Window
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Techie_Tech/DSA/sorting-methods/" class="md-nav__link">
+        Sorting Methods
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -933,14 +1021,14 @@
 <li><em>Pre-training</em> : In the pre-training stage, a neural network model is trained on a large and diverse dataset, typically on a related but different task. This initial training is called "pre-training" because the model is not yet specialized for the specific downstream task of interest. Instead, it learns general features and representations from the data in an unsupervised or supervised manner.</li>
 <li><em>Fine-tune</em> :  In this stage, the pre-trained model is further trained on a smaller, task-specific dataset. During fine-tuning, the earlier layers of the model, which capture more generic features, are usually frozen or updated with a lower learning rate to preserve the general knowledge learned during pre-training. The later layers, which capture more task-specific information, are updated with a higher learning rate to allow the model to specialize for the specific task.</li>
 </ol>
-<p>CONS : There might be a large training gap between the pre-trained model and the downstream task. This can lead to a phenomenon called "catastrophic forgetting," where the model forgets the general knowledge learned during pre-training as it learns the task-specific information during fine-tuning. This also leads to large fine-tuning time which might outweigh the training time and hence, becomes computationally expensive.</p>
+<p>CONS : There might be a large training gap between the pre-trained model and the downstream task. This can lead to a phenomenon called "catastrophic forgetting," where the model forgets the general knowledge learned during pre-training as it learns the task-specific information during fine-tuning. This also leads to large fine-tuning time which might become comparable to the training time and hence, becomes computationally expensive.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 29, 2023 08:39:53</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 1, 2023 16:47:59</span>
       
         <br>
         Created:
