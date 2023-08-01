@@ -5,3 +5,7 @@
 .md-nav {
     font-size: 13.6px;
 }
+
+code {
+    white-space: pre-wrap !important;
+}

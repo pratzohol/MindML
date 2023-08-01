@@ -25,8 +25,7 @@ An in-context learner for graphs should be able to solve novel tasks on novel gr
 3. Existing _graph pre-training methods_ only aim to learn good graph encoder and require fine-tuning to adapt to different tasks, while existing _meta-learning methods_ over graphs only aim to generalize across tasks within same graph.
 
 ```
-Achieving in-context learning requires generalizing across different graphs and tasks 
-without fine-tuning or parameter tuning.
+Achieving in-context learning requires generalizing across different graphs and tasks without fine-tuning or parameter tuning.
 ```
 
 ### 2.1. How to tackle this?
@@ -130,9 +129,7 @@ Here, $d$ is the embedding dimension and $\mathcal{G}^D$ is the whole data graph
     For $M_T$, attention based GNN was used, where each nodes perform attention to other nodes at each layer.
 
     ```
-    The goal of this step is to learn a better representation of the label nodes using
-    the support examples and propagate label information back to the support and query
-    graph representation for a more task-specific graph representation.
+    The goal of this step is to learn a better representation of the label nodes using the support examples and propagate label information back to the support and query graph representation for a more task-specific graph representation.
     ```
 
 #### 4.2.2. In-context Pre-training Objectives

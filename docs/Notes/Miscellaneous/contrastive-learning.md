@@ -61,8 +61,7 @@ To deal with this problem, we have to generate _hard pairs_ and _hard triplets_,
 Many hard negative mining methods have been proposed that usually look into the representation space for hard pairs and triplets using fast search algorithms.
 
 ```
-It only makes sense that this kind of contrastive learning will be used mostly
-with self-supervised (unsupervised) or semi-supervised settings.
+It only makes sense that this kind of contrastive learning will be used mostly with self-supervised (unsupervised) or semi-supervised settings.
 ```
 
 ## 4. Related Discussion
