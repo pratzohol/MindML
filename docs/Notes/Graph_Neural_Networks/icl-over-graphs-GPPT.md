@@ -133,7 +133,7 @@ $$e_{v_i} = T_{str} (v_i) = a_i * h_i + \sum_{v_j \in \mathcal{N}(v_i)} a_{j} * 
 Prompt Initialization -->
 
 - Optimal node embeddings should be at center of node embeddings. Random initialization may deteriorate the classification at initial stage.
-- Thus, for each cluster $m$, $e_c^m$ is initialized as the mean of node embeddings of _training nodes_ of class $y_c$ in cluster $m$.
+- Thus, for each cluster $m$, task token $e_c^m$ is initialized as the mean of node embeddings of _training nodes_ of class $y_c$ in cluster $m$.
 - This means initialization provides the valid task tokens, and ensures the correct classification at the initial stage.
 
 Orthogonal Prompt Constraint -->
@@ -145,7 +145,20 @@ $$\mathcal{L_o} = \sum_{m} || E^m (E^m)^T - I ||_F^2$$
 
 ### 5.4 Overall Learning Process
 
+1. Pre-training : Done using masked edge prediction.
+2. Prompt Addition : Modifies the target node $v_i$ as token pair $[T_{task}(y_c), T_{str}(v_i)] = [e_c^m, e_{v_i}]$.
+3. Prompt Answer : Evaluates the class of node by assigning the task token which has highest linking probability. **NOTE:** The linking probability is evaluated by the _pre-trained_ projection head.
+4. Prompt Tuning (or Fine Tuning) :  Optimizes the GNNs and token embeddings as follows -
 
+    $$\min_{\theta, \phi, E^1, \cdots, E^M} \sum_{(v_y, y_c)} \mathcal{L}^{pre} (p_{\phi}^{pre} (e_c^m, e_{v_i}); g(y_c, v_i)) + \lambda \mathcal{L}_o$$ 
+
+    - $\theta^{init} = \theta^{pre}$, and $\phi^{init} = \phi^{pre}$.
+    - $\lambda$ is the loss hyper-parameter.
+    - $\phi^{pre}$ is the pre-trained parameters of the projection head.
+
+### 5.5 Pseudo-Algorithm
+
+![GPPT](../../assets/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT-2.png){: .center style="height:80%;width:60%"}
 
 ## 6. Experimental Setup
 
