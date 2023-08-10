@@ -12,27 +12,27 @@
         <meta name="author" content="Prateek Mishra">
       
       
-        <link rel="canonical" href="https://pratzohol.github.io/MindML/Python/">
+        <link rel="canonical" href="https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT/">
       
       
-        <link rel="prev" href="../Notes/Miscellaneous/types-of-learning/">
+        <link rel="prev" href="../../Definitions/">
       
       
-        <link rel="next" href="../Techie_Tech/">
+        <link rel="next" href="../icl-over-graphs-GraphPrompt/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Python-Stuff - MindML</title>
+        <title>Prompting : GPPT - MindML</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,11 +59,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Python-Stuff - MindML" >
+        <meta  property="og:title"  content="Prompting : GPPT - MindML" >
       
         <meta  property="og:description"  content="Notes on ML, DL, CV, RL, and more." >
       
-        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Python/index.png" >
+        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -71,15 +71,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/Python/" >
+        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Python-Stuff - MindML" >
+        <meta  name="twitter:title"  content="Prompting : GPPT - MindML" >
       
         <meta  name="twitter:description"  content="Notes on ML, DL, CV, RL, and more." >
       
-        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Python/index.png" >
+        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT.png" >
       
     
     
@@ -105,7 +105,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-stuff" class="md-skip">
+        <a href="#prompting-over-graphs-gppt" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +121,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../../.." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -140,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Python-Stuff
+              Prompting : GPPT
             
           </span>
         </div>
@@ -241,7 +241,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       About
     </a>
   </li>
@@ -249,6 +249,8 @@
       
         
   
+  
+    
   
 
 
@@ -261,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Notes/Definitions/" class="md-tabs__link">
+      <a href="../../Definitions/" class="md-tabs__link md-tabs__link--active">
         Notes
       </a>
     </li>
@@ -273,15 +275,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../Python/" class="md-tabs__link">
         Python
       </a>
     </li>
@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Techie_Tech/" class="md-tabs__link">
+      <a href="../../../Techie_Tech/" class="md-tabs__link">
         Techie Tech
       </a>
     </li>
@@ -331,7 +331,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../../.." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -362,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         About
       </a>
     </li>
@@ -375,14 +375,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
@@ -401,7 +403,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Notes
@@ -434,7 +436,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../Notes/Definitions/">Definitions</a>
+          <a href="../../Definitions/">Definitions</a>
           
         </div>
       
@@ -458,16 +460,18 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
       
       
         
@@ -484,7 +488,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           Graph Neural Networks
@@ -495,11 +499,188 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Notes/Graph_Neural_Networks/icl-over-graphs-GPPT/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Prompting : GPPT
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Prompting : GPPT
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-abstract" class="md-nav__link">
+    1. Abstract
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Abstract">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-motivation" class="md-nav__link">
+    1.1 Motivation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-contributions-of-this-paper" class="md-nav__link">
+    1.2 Contributions of this Paper
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-introduction" class="md-nav__link">
+    2. Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-related-work-graph-pre-training" class="md-nav__link">
+    3. Related Work (Graph Pre-training)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-preliminary-knowledge" class="md-nav__link">
+    4. Preliminary Knowledge
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Preliminary Knowledge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-gnn" class="md-nav__link">
+    4.1 GNN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-pre-train-and-fine-tune-gnns" class="md-nav__link">
+    4.2 Pre-train and Fine-tune GNNs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-graph-prompting-framework" class="md-nav__link">
+    5. Graph Prompting Framework
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Graph Prompting Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-how-to-use-prompt" class="md-nav__link">
+    5.1 How to use Prompt?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-prompt-function-design" class="md-nav__link">
+    5.2 Prompt Function Design
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Prompt Function Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-task-token-generation" class="md-nav__link">
+    5.2.1 Task Token Generation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-structure-token-generation" class="md-nav__link">
+    5.2.2 Structure Token Generation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-prompt-initialization-and-orthogonal-prompt-constraint" class="md-nav__link">
+    5.3 Prompt Initialization and Orthogonal Prompt Constraint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-overall-learning-process" class="md-nav__link">
+    5.4 Overall Learning Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-experimental-setup" class="md-nav__link">
+    6. Experimental Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-doubts" class="md-nav__link">
+    7. Doubts
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -511,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Graph_Neural_Networks/icl-over-graphs-GraphPrompt/" class="md-nav__link">
+      <a href="../icl-over-graphs-GraphPrompt/" class="md-nav__link">
         Prompting : GraphPrompt
       </a>
     </li>
@@ -525,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Graph_Neural_Networks/icl-over-graphs-PRODIGY/" class="md-nav__link">
+      <a href="../icl-over-graphs-PRODIGY/" class="md-nav__link">
         ICL : PRODIGY
       </a>
     </li>
@@ -568,7 +749,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../Notes/Maths/">Maths</a>
+          <a href="../../Maths/">Maths</a>
           
             <label for="__nav_2_3">
               <span class="md-nav__icon md-icon"></span>
@@ -591,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Maths/bigoplus/" class="md-nav__link">
+      <a href="../../Maths/bigoplus/" class="md-nav__link">
         \bigoplus
       </a>
     </li>
@@ -638,7 +819,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../Notes/Miscellaneous/">Miscellaneous</a>
+          <a href="../../Miscellaneous/">Miscellaneous</a>
           
             <label for="__nav_2_4">
               <span class="md-nav__icon md-icon"></span>
@@ -661,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Miscellaneous/contrastive-learning/" class="md-nav__link">
+      <a href="../../Miscellaneous/contrastive-learning/" class="md-nav__link">
         Contrastive Learning
       </a>
     </li>
@@ -675,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Miscellaneous/in-context-learning/" class="md-nav__link">
+      <a href="../../Miscellaneous/in-context-learning/" class="md-nav__link">
         In-context Learning (ICL)
       </a>
     </li>
@@ -689,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Miscellaneous/types-of-learning/" class="md-nav__link">
+      <a href="../../Miscellaneous/types-of-learning/" class="md-nav__link">
         Types of Learning
       </a>
     </li>
@@ -716,16 +897,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
         
@@ -737,12 +916,12 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="./">Python</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../Python/">Python</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Python
@@ -787,7 +966,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../Techie_Tech/">Techie Tech</a>
+          <a href="../../../Techie_Tech/">Techie Tech</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -810,7 +989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/markdown-things/" class="md-nav__link">
+      <a href="../../../Techie_Tech/markdown-things/" class="md-nav__link">
         Some Markdown Things
       </a>
     </li>
@@ -865,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/bfs-dfs/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/bfs-dfs/" class="md-nav__link">
         BFS & DFS
       </a>
     </li>
@@ -879,7 +1058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/meet-in-the-middle/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/meet-in-the-middle/" class="md-nav__link">
         Meet in the Middle
       </a>
     </li>
@@ -893,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/sliding-windows/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/sliding-windows/" class="md-nav__link">
         Sliding Window
       </a>
     </li>
@@ -907,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/sorting-methods/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/sorting-methods/" class="md-nav__link">
         Sorting Methods
       </a>
     </li>
@@ -921,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/topo-sort/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/topo-sort/" class="md-nav__link">
         Topological Sort
       </a>
     </li>
@@ -969,22 +1148,144 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-overview" class="md-nav__link">
-    1. Overview
+  <a href="#1-abstract" class="md-nav__link">
+    1. Abstract
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Abstract">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-motivation" class="md-nav__link">
+    1.1 Motivation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-contributions-of-this-paper" class="md-nav__link">
+    1.2 Contributions of this Paper
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-introduction" class="md-nav__link">
+    2. Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-structure" class="md-nav__link">
-    2. Structure
+  <a href="#3-related-work-graph-pre-training" class="md-nav__link">
+    3. Related Work (Graph Pre-training)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-tags" class="md-nav__link">
-    3. Tags
+  <a href="#4-preliminary-knowledge" class="md-nav__link">
+    4. Preliminary Knowledge
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Preliminary Knowledge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-gnn" class="md-nav__link">
+    4.1 GNN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-pre-train-and-fine-tune-gnns" class="md-nav__link">
+    4.2 Pre-train and Fine-tune GNNs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-graph-prompting-framework" class="md-nav__link">
+    5. Graph Prompting Framework
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Graph Prompting Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-how-to-use-prompt" class="md-nav__link">
+    5.1 How to use Prompt?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-prompt-function-design" class="md-nav__link">
+    5.2 Prompt Function Design
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Prompt Function Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-task-token-generation" class="md-nav__link">
+    5.2.1 Task Token Generation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-structure-token-generation" class="md-nav__link">
+    5.2.2 Structure Token Generation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-prompt-initialization-and-orthogonal-prompt-constraint" class="md-nav__link">
+    5.3 Prompt Initialization and Orthogonal Prompt Constraint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-overall-learning-process" class="md-nav__link">
+    5.4 Overall Learning Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-experimental-setup" class="md-nav__link">
+    6. Experimental Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-doubts" class="md-nav__link">
+    7. Doubts
   </a>
   
 </li>
@@ -1004,10 +1305,24 @@
                   
   
 
+  <nav class="md-tags" >
+    
+      
+      
+        <span class="md-tag">Prompting</span>
+      
+    
+      
+      
+        <span class="md-tag">Graphs</span>
+      
+    
+  </nav>
+
 
 
   
-    <a href="https://github.com/pratzohol/MindML/edit/main/docs/Python/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/edit/main/docs/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-2.3 6.35c.22-.21.22-.56 0-.77L15.42 7.3a.532.532 0 0 0-.77 0l-1 1 2.05 2.05 1-1M7 14.94V17h2.06l6.06-6.06-2.06-2.06L7 14.94Z"/></svg>
     </a>
@@ -1016,39 +1331,161 @@
     
       
     
-    <a href="https://github.com/pratzohol/MindML/raw/main/docs/Python/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/raw/main/docs/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="python-stuff">Python-Stuff<a class="headerlink" href="#python-stuff" title="Permanent link">&para;</a></h1>
-<h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
-<p>This section will contain sub-sections of python libraries which are used for the implementation of the code.</p>
-<h2 id="2-structure">2. Structure<a class="headerlink" href="#2-structure" title="Permanent link">&para;</a></h2>
-<p>The sub-sections (e.x. Pytorch, or Numpy) will have posts which will cover either of the following :</p>
+<h1 id="prompting-over-graphs-gppt">Prompting over Graphs : GPPT<a class="headerlink" href="#prompting-over-graphs-gppt" title="Permanent link">&para;</a></h1>
+<p>In this note, I will cover the following paper <a href="https://dl.acm.org/doi/abs/10.1145/3534678.3539249"> GPPT: Graph Pre-training and Prompt Tuning to Generalize Graph Neural Networks</a></p>
+<p><em><strong>NOTE</strong></em> : Definition of <a href="../../Miscellaneous/in-context-learning/">In-context Learning (ICL)</a> is already covered. First, I will cover GPPT which is based on Graph prompts. Finally, moving ahead from prompting, we will see how <a href="../icl-over-graphs-PRODIGY/">ICL : PRODIGY</a> introduces ICL over graphs.</p>
+<h2 id="1-abstract">1. Abstract<a class="headerlink" href="#1-abstract" title="Permanent link">&para;</a></h2>
+<h3 id="11-motivation">1.1 Motivation<a class="headerlink" href="#11-motivation" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Functions</strong> : This will cover functions of the library which are tricky to use and understand. This will also cover the functions which are not used frequently but are useful. I will cover examples of my own by running and testing them so as to understand the working and test the edge cases of the function.</li>
-<li><strong>Methods</strong> : This will cover methods, i.e., <em>an ensemble of functions</em>. Most of the code will be standard and we should try to adhere to the best practices instead of writing the code from the scratch. Hence, I will store the code snippets for common tasks in Machine Learning which are used frequently.</li>
+<li>The supervised training of GNNs notoriously requires large amounts of labeled data for each downstream task.</li>
+<li>Alternative : Use Transfer Learning -  using easily accessible information to pre-train GNNs, and fine-tuning them to optimize the downstream task with only a few labels.</li>
+<li>Design the self-supervised pretext tasks, and encode the universal graph knowledge among the various applications.</li>
+<li>In rare cases, there is inherent training objective gap between the pretext and downstream tasks.</li>
+<li>This may lead to costly fine-tuning process to adapt the pre-trained GNNs to the downstream tasks.</li>
+<li>The naive pre-training strategy usually deteriorates the downstream task and reduces the reliability of transfer learning on graph.</li>
+<li>Long fine-tuning leads to forgetting of the pre-trained general knowledge. (<a href="../Definitions/index#pre-train-fine-tune">Catastrophic Forgetting</a>)</li>
 </ul>
-<h2 id="3-tags">3. Tags<a class="headerlink" href="#3-tags" title="Permanent link">&para;</a></h2>
-<p>From the above structure, it is clear that the posts will be divided into two categories :</p>
+<h3 id="12-contributions-of-this-paper">1.2 Contributions of this Paper<a class="headerlink" href="#12-contributions-of-this-paper" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Function</li>
-<li>Method</li>
+<li>Novel transfer learning paradigm to generalize GNNs, namely <strong>graph pre-training and prompt tuning (GPPT)</strong>.</li>
+<li><strong>Masked Edge Prediction</strong> is used as pretext task to pre-train GNNs.</li>
+<li>Node Prediction ✅, Link Prediction ❌, and Graph Classification ❌.</li>
+<li>Graph Prompting function reformulates the downstream task by modifying the <em>standalone node</em> into a <em>token pair</em> and makes it similar to the pre-training task, i.e, edge prediction.</li>
+<li>The <em>token pair</em> consists of <strong>node entity</strong> (structure token) and <strong>candidate label class</strong> (task token).</li>
+<li>Instead of "<em>pre-train, fine-tune</em>" paradigm, GPPT uses "<em>pre-train, prompt, fine-tune</em>" paradigm.</li>
 </ul>
+<h2 id="2-introduction">2. Introduction<a class="headerlink" href="#2-introduction" title="Permanent link">&para;</a></h2>
+<p><img alt="GPPT" class="center" src="../../../assets/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT-1.png" style="height:300px;width:90%" /></p>
+<ul>
+<li>Task Token : They are the node labels represented by the trainable continuous vectors. It is appended to the the embedding of the target sample. The linking probability between task token and target sample is directly measured through using the pre-trained model.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>The orthogonal prompt initialization and regularization are proposed to separate the trainable vectors of different labels.
+</span></code></pre></div></li>
+<li>Structure Token : It represents the target sample with its multi-hop neighbourhood.</li>
+</ul>
+<h2 id="3-related-work-graph-pre-training">3. Related Work (Graph Pre-training)<a class="headerlink" href="#3-related-work-graph-pre-training" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>GCC</strong> : Leverages contrastive learning to capture the universal network topological properties across multiple networks.</li>
+<li><strong>GPT-GNN</strong> : Introduces a self-supervised attributed graph generation task to pre-train GNN models that can capture the structural and semantic properties of the graph.</li>
+<li><strong>L2P-GNN</strong> : Utilizes meta-learning to learn the fine-tune strategy during the pre-training process.</li>
+</ul>
+<h2 id="4-preliminary-knowledge">4. Preliminary Knowledge<a class="headerlink" href="#4-preliminary-knowledge" title="Permanent link">&para;</a></h2>
+<h3 id="41-gnn">4.1 GNN<a class="headerlink" href="#41-gnn" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Let tuple <span class="arithmatex">\(\mathcal{G} = (X, A)\)</span> denote undirected graph, where <span class="arithmatex">\(X \in  \mathbb{R}^{N \times d}\)</span> is node feature matrix and <span class="arithmatex">\(A \in \mathbb{R}^{N \times N}\)</span> is adjacency matrix. </li>
+<li>Suppose the number of graph convolutional layers is <span class="arithmatex">\(K\)</span>. To facilitate the following expression, we use <span class="arithmatex">\(h_i = f_\theta (\mathcal{G}, v_i)\)</span> to represent the final node representation learned from <span class="arithmatex">\(K\)</span>-layer GNNs, where <span class="arithmatex">\(\theta = \{\theta^{(1)}, \theta^{(2)}, \cdots , \theta^{(K)}\}\)</span> denotes the concatenated trainable parameters.</li>
+</ul>
+<h3 id="42-pre-train-and-fine-tune-gnns">4.2 Pre-train and Fine-tune GNNs<a class="headerlink" href="#42-pre-train-and-fine-tune-gnns" title="Permanent link">&para;</a></h3>
+<p>The edge prediction pretext task works as follows - </p>
+<ul>
+<li>Randomly mask partial edges and then train GNNs to reconstruct them.</li>
+<li>Formally, let <span class="arithmatex">\(\mathcal{G}^{pre} = (X, A^{pre})\)</span> denote masked graph. Node Embedding of <span class="arithmatex">\(v_i\)</span> is given by  <span class="arithmatex">\(h_i = f_\theta (\mathcal{G}^{pre}, v_i)\)</span>.</li>
+<li>
+<p>Pretext task is to determine whether a node pair is connected, where loss is defined as follows :</p>
+<div class="arithmatex">\[\min_{\theta, \phi} \sum_{(v_i, v_j)} \mathcal{L}^{pre} (p_{\phi}^{pre}(h_i, h_j); g(v_i, v_j))\]</div>
+<p>Node pair <span class="arithmatex">\((v_i, v_j)\)</span> is either masked edge or sampled negative unconnected pairs. <span class="arithmatex">\(p_{\phi}^{pre}\)</span> is projection head to evaluate similarity score of node pair. <span class="arithmatex">\(g(v_i, v_j)\)</span> is ground truth label of the node pair (i.e., <span class="arithmatex">\(A_{ij}\)</span>).</p>
+</li>
+</ul>
+<p>Now, under fine-tuning, following loss is optimized -</p>
+<div class="arithmatex">\[\min_{\theta, \psi} \sum_{v_i} \mathcal{L}^{down}(p_{\psi}^{down}(h_i); g(v_i))\]</div>
+<ul>
+<li><span class="arithmatex">\(\theta_{init} = \theta_{pre}\)</span>, i.e., GNNs are initialized by the optimized parameters from pretext task.</li>
+<li><span class="arithmatex">\(p^{down}_{\phi}(h_i)\)</span> denotes the new projection head accompanied with parameters <span class="arithmatex">\(\phi\)</span>, while the pretext projection head is discarded. </li>
+<li><span class="arithmatex">\(L^{down}\)</span> is the downstream loss function (e.g., cross entropy), and <span class="arithmatex">\(g(v_i)\)</span> denotes the ground-truth label of node <span class="arithmatex">\(v_i\)</span>.</li>
+</ul>
+<h2 id="5-graph-prompting-framework">5. Graph Prompting Framework<a class="headerlink" href="#5-graph-prompting-framework" title="Permanent link">&para;</a></h2>
+<ul>
+<li>First, we note that GNNs’ parameters <span class="arithmatex">\(\theta\)</span> are optimized to generate close embeddings for connected node pairs, instead of nodes of the same class. If the disconnected pairs share the same class, the pretrained model requires to be tuned with many epochs to adapted to the new problem. </li>
+<li>This time-consuming fine-tuning prevents us from efficiently using the pre-trained model. The pre-trained knowledge will also be gradually filtered out in the long tuning process.</li>
+<li>Second, in the initial stage of fine-tuning, the pre-trained model is not well adapted to the downstream task, and gives wrong classifications.</li>
+</ul>
+<h3 id="51-how-to-use-prompt">5.1 How to use Prompt?<a class="headerlink" href="#51-how-to-use-prompt" title="Permanent link">&para;</a></h3>
+<ul>
+<li>For <span class="arithmatex">\(v_i\)</span>, generate prompt <span class="arithmatex">\(v_i^{'} = f_{prompt}(v_i) = [T_{task}(y), T_{srt}(v_i)]\)</span> = [task token, structure token].</li>
+<li>Given the token pairs, <span class="arithmatex">\([T_{task}(y), T_{srt}(v_i)]\)</span>, by embedding them into continuous tensors, one is able to conduct the classification task by fitting the linking probability between the two tokens.</li>
+</ul>
+<p>GPPT consists of 3 componets --&gt;</p>
+<ol>
+<li><strong>Prompt Addition :</strong> The graph prompting function generates a series of token pairs to be classified. Assuming that there are total <span class="arithmatex">\(C\)</span> classes <span class="arithmatex">\([y_1, y_2, \cdots, y_C]\)</span>, we construct their corresponding token pairs <span class="arithmatex">\([T_{task}(y_c), T_{srt}(v_i)]\)</span>, for <span class="arithmatex">\(c = 1, 2, \cdots, C\)</span>.</li>
+<li><strong>Prompt Answer :</strong> Given each token pair <span class="arithmatex">\([T_{task}(y_c), T_{srt}(v_i)]\)</span>, we embed them into continuous vectors. We then concatenate them as input to the <em>pre-trained projection head</em>, and obtain the linking probability. We answer and classify target node <span class="arithmatex">\(v_i\)</span> with label <span class="arithmatex">\(y_c\)</span> if it obtains the highest probability.</li>
+<li>
+<p><strong>Prompt Tuning :</strong> Following the pretext training objective, following loss is optimized :</p>
+<div class="arithmatex">\[\min_{\theta, \phi} \sum_{(v_i, y_c)} \mathcal{L}^{pre} (p_{\phi}^{pre} (T_{task}(y_c), T_{srt}(v_i)); g(y_c, v_i))\]</div>
+<ul>
+<li><span class="arithmatex">\(p_{\phi}^{pre}\)</span> is the <em>pre-training projection head</em> to evaluate the linking probability of the token pair.</li>
+<li><span class="arithmatex">\(g(y_c, v_i)\)</span> denotes the ground truth connection between label class <span class="arithmatex">\(y_c\)</span> and target node <span class="arithmatex">\(v_i\)</span>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="52-prompt-function-design">5.2 Prompt Function Design<a class="headerlink" href="#52-prompt-function-design" title="Permanent link">&para;</a></h3>
+<h4 id="521-task-token-generation">5.2.1 Task Token Generation<a class="headerlink" href="#521-task-token-generation" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The task token <span class="arithmatex">\(T_{task} (y_c)\)</span> is embedded into a trainable vector: <span class="arithmatex">\(e_c = T_{task} (y_c) \in \mathbb{R}^d\)</span>.</li>
+<li>For the total <span class="arithmatex">\(C\)</span> classes in the downstream node classification, the task token embeddings are defined by: <span class="arithmatex">\(E = [e_1, \cdots, e_C] \in \mathbb{R}^{C \times d}\)</span>.</li>
+<li>Task token is basically class-prototype node added to the original graph. </li>
+<li><strong>NOTE :</strong> The optimal embedding of task token <span class="arithmatex">\(T_{task} (y_c)\)</span> should be at the center of node embeddings of the class <span class="arithmatex">\(y_c\)</span>.</li>
+</ul>
+<p>Importance of cluster structure in graphs --&gt;</p>
+<ul>
+<li>It would be hard for the distinct nodes over graph to use and tune the single task token embeddings <span class="arithmatex">\(E\)</span>.</li>
+<li>Given the edge prediction pretext task, the pre-trained node embeddings will also be clustered in the embedding space.</li>
+<li>The optimal embedding of task token <span class="arithmatex">\(T_{task} (y_c)\)</span> should thus vary with clusters. </li>
+<li>To do better node classification at each cluster, do the <em>cluster-based task token generation</em>, consisting of 3 steps:<ol>
+<li>Use <em>scalable clustering module</em> (e.g., METIS) to split nodes into <strong>non-overlapping clusters</strong> : <span class="arithmatex">\(\{\mathcal{G}_1, \cdots, \mathcal{G}_M\}\)</span> where <span class="arithmatex">\(M\)</span> is hyper-parameter of cluster number.</li>
+<li>For each individual cluster <span class="arithmatex">\(m\)</span>, there will be an independent task token embeddings : <span class="arithmatex">\(E^m = [e^m_1, \cdots, e^m_C] \in \mathbb{R}^{C \times d}\)</span>.</li>
+<li><code>NOTE:</code> For task token <span class="arithmatex">\(T_{task}(y_c)\)</span> for node <span class="arithmatex">\(v_i\)</span> belonging to cluster <span class="arithmatex">\(m\)</span>, it's embedding is : <span class="arithmatex">\(e_c^m\)</span>.</li>
+</ol>
+</li>
+</ul>
+<h4 id="522-structure-token-generation">5.2.2 Structure Token Generation<a class="headerlink" href="#522-structure-token-generation" title="Permanent link">&para;</a></h4>
+<ul>
+<li>According to social network theory, proximal nodes tend to possess similar features and node labels.</li>
+<li>It also provides redundant information which makes the classification decision robust.</li>
+<li>Structure token <span class="arithmatex">\(T_{str} (v_i)\)</span> denotes subgraph centered at node <span class="arithmatex">\(v_i\)</span>.</li>
+<li>Used <strong>1-hop</strong> neighbourhood only.</li>
+<li>The structure token <span class="arithmatex">\(T_{str} (v_i)\)</span> is embedded into a continuos vector as :</li>
+</ul>
+<div class="arithmatex">\[e_{v_i} = T_{str} (v_i) = a_i * h_i + \sum_{v_j \in \mathcal{N}(v_i)} a_{j} * h_j\]</div>
+<ul>
+<li><span class="arithmatex">\(a_i\)</span> are the attention weights learned from the attention function.</li>
+</ul>
+<h3 id="53-prompt-initialization-and-orthogonal-prompt-constraint">5.3 Prompt Initialization and Orthogonal Prompt Constraint<a class="headerlink" href="#53-prompt-initialization-and-orthogonal-prompt-constraint" title="Permanent link">&para;</a></h3>
+<p>Prompt Initialization --&gt;</p>
+<ul>
+<li>Optimal node embeddings should be at center of node embeddings. Random initialization may deteriorate the classification at initial stage.</li>
+<li>Thus, for each cluster <span class="arithmatex">\(m\)</span>, <span class="arithmatex">\(e_c^m\)</span> is initialized as the mean of node embeddings of <em>training nodes</em> of class <span class="arithmatex">\(y_c\)</span> in cluster <span class="arithmatex">\(m\)</span>.</li>
+<li>This means initialization provides the valid task tokens, and ensures the correct classification at the initial stage.</li>
+</ul>
+<p>Orthogonal Prompt Constraint --&gt;</p>
+<ul>
+<li><strong>NOTE :</strong> To conduct correct node classification, the task token embeddings of different classes should be irrelevant to each other.</li>
+<li>Thus, orthogonality of task token is enforced during model fine-tuning. </li>
+</ul>
+<div class="arithmatex">\[\mathcal{L_o} = \sum_{m} || E^m (E^m)^T - I ||_F^2\]</div>
+<h3 id="54-overall-learning-process">5.4 Overall Learning Process<a class="headerlink" href="#54-overall-learning-process" title="Permanent link">&para;</a></h3>
+<h2 id="6-experimental-setup">6. Experimental Setup<a class="headerlink" href="#6-experimental-setup" title="Permanent link">&para;</a></h2>
+<h2 id="7-doubts">7. Doubts<a class="headerlink" href="#7-doubts" title="Permanent link">&para;</a></h2>
+<ol>
+<li>How is <span class="arithmatex">\(a_i\)</span> weights of attention function learned in <a href="#522-structure-token-generation">structure token generation</a>? </li>
+<li>How does the <a href="#53--prompt-initialization-and-orthogonal-prompt-constraint">orthogonal constraint</a> equation enforces orthogonality of task token embeddings?</li>
+</ol>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 4, 2023 02:27:40</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 10, 2023 20:11:29</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 4, 2023 02:27:40</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 10, 2023 20:11:29</span>
       
     
   </small>
@@ -1079,7 +1516,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Notes/Miscellaneous/types-of-learning/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Types of Learning" rel="prev">
+          <a href="../../Definitions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Definitions" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1088,20 +1525,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Types of Learning
+                Definitions
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Techie_Tech/" class="md-footer__link md-footer__link--next" aria-label="Next: Techie Tech" rel="next">
+          <a href="../icl-over-graphs-GraphPrompt/" class="md-footer__link md-footer__link--next" aria-label="Next: Prompting : GraphPrompt" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Techie Tech
+                Prompting : GraphPrompt
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1169,13 +1606,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="../javascripts/mathjax.js"></script>
+          <script src="../../../javascripts/mathjax.js"></script>
         
       
         

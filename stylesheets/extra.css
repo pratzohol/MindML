@@ -1,11 +1,16 @@
 .md-typeset {
-    font-size: 14.4px;
+    font-size: 15.5px;
 }
 
 .md-nav {
-    font-size: 13.6px;
+    font-size: 14px;
 }
 
 code {
     white-space: pre-wrap !important;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
 }
