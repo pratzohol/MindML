@@ -27,3 +27,6 @@ The pre-train, fine-tune paradigm is a common approach used in transfer learning
 
 CONS : There might be a large training gap between the pre-trained model and the downstream task. This can lead to a phenomenon called "catastrophic forgetting," where the model forgets the general knowledge learned during pre-training as it learns the task-specific information during fine-tuning. This also leads to large fine-tuning time which might become comparable to the training time and hence, becomes computationally expensive.
 
+### # Secure Multiparty Computation (SMC)
+
+SMC allows a number of mutually distrustful parties to carry out a joint computation of a function of their inputs, while preserving the privacy of the inputs.
