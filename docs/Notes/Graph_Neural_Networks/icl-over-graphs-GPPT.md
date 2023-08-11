@@ -162,7 +162,20 @@ $$\mathcal{L_o} = \sum_{m} || E^m (E^m)^T - I ||_F^2$$
 
 ## 6. Experimental Setup
 
+1. _Datasets_ : These datasets are available in PyG or DGL library.
+![GPPT](../../assets/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT-3.png){: .center style="height:80%;width:60%"}
+2. _Batch Size_ : The batch sizes are 256 - Cora, 256 - Citeseer, 2048 - CoraFull, 256 - Pubmed, 4096 - Ogbn-arxiv, 2048 - AmazonCoBuyComputer, 4096 - AmazonCoBuyPhoto, and 4096 - Reddit.
+3.    - _Number of layers_ : 2 and _Hidden units_ of 128 for GNNs  
+      - _Optimizer_ : Adam  
+      - _Learning Rate_ : [0.001, 0.005]  
+      - _Weight Decay_ : 0.0005  
+      - _Loss Hyper-parameter_ : $\lambda = 0.01$  
+      - _Clustering Number_ : $M =$ 7 (Cora), 6 (Citeseer), 3 (Corafull), 5 (Pubmed), 10 (Ogbn-arxiv), 8 (AmazonCoBuyComputer), 10 (AmazonCobuyPhoto), 10 (Reddit) 
 
+### 6.1 Github Code
+
+- Offficial github code for this paper is at [GPPT](https://github.com/MingChen-Sun/GPPT)
+- Working code implemented by me is available at [GPPT-working](https://github.com/pratzohol/GPPT-working)
 
 ## 7. Doubts
 
