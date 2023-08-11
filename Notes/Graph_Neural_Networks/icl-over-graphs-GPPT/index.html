@@ -675,6 +675,19 @@
     6. Experimental Setup
   </a>
   
+    <nav class="md-nav" aria-label="6. Experimental Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-github-code" class="md-nav__link">
+    6.1 Github Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1295,6 +1308,19 @@
     6. Experimental Setup
   </a>
   
+    <nav class="md-nav" aria-label="6. Experimental Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-github-code" class="md-nav__link">
+    6.1 Github Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1500,6 +1526,26 @@
 <h3 id="55-pseudo-algorithm">5.5 Pseudo-Algorithm<a class="headerlink" href="#55-pseudo-algorithm" title="Permanent link">&para;</a></h3>
 <p><img alt="GPPT" class="center" src="../../../assets/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT-2.png" style="height:80%;width:60%" /></p>
 <h2 id="6-experimental-setup">6. Experimental Setup<a class="headerlink" href="#6-experimental-setup" title="Permanent link">&para;</a></h2>
+<ol>
+<li><em>Datasets</em> : These datasets are available in PyG or DGL library.
+<img alt="GPPT" class="center" src="../../../assets/Notes/Graph_Neural_Networks/icl-over-graphs-GPPT-3.png" style="height:80%;width:60%" /></li>
+<li><em>Batch Size</em> : The batch sizes are 256 - Cora, 256 - Citeseer, 2048 - CoraFull, 256 - Pubmed, 4096 - Ogbn-arxiv, 2048 - AmazonCoBuyComputer, 4096 - AmazonCoBuyPhoto, and 4096 - Reddit.</li>
+<li>
+<ul>
+<li><em>Number of layers</em> : 2 and <em>Hidden units</em> of 128 for GNNs  </li>
+<li><em>Optimizer</em> : Adam  </li>
+<li><em>Learning Rate</em> : [0.001, 0.005]  </li>
+<li><em>Weight Decay</em> : 0.0005  </li>
+<li><em>Loss Hyper-parameter</em> : <span class="arithmatex">\(\lambda = 0.01\)</span>  </li>
+<li><em>Clustering Number</em> : <span class="arithmatex">\(M =\)</span> 7 (Cora), 6 (Citeseer), 3 (Corafull), 5 (Pubmed), 10 (Ogbn-arxiv), 8 (AmazonCoBuyComputer), 10 (AmazonCobuyPhoto), 10 (Reddit) </li>
+</ul>
+</li>
+</ol>
+<h3 id="61-github-code">6.1 Github Code<a class="headerlink" href="#61-github-code" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Offficial github code for this paper is at <a href="https://github.com/MingChen-Sun/GPPT">GPPT</a></li>
+<li>Working code implemented by me is available at <a href="https://github.com/pratzohol/GPPT-working">GPPT-working</a></li>
+</ul>
 <h2 id="7-doubts">7. Doubts<a class="headerlink" href="#7-doubts" title="Permanent link">&para;</a></h2>
 <ol>
 <li>How is <span class="arithmatex">\(a_i\)</span> weights of attention function learned in <a href="#522-structure-token-generation">structure token generation</a>? </li>
@@ -1511,7 +1557,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 10, 2023 20:42:34</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 11, 2023 18:01:31</span>
       
         <br>
         Created:
