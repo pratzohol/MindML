@@ -21,3 +21,5 @@ Following are the tags which were used in this section:
 - Markdown
 - Algorithms
 - Graphs
+- Dynamic Programming
+- Stacks
