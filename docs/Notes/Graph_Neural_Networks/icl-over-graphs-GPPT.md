@@ -21,7 +21,7 @@ _**NOTE**_ : Definition of [[in-context-learning|In-context Learning (ICL)]] is 
 -  In rare cases, there is inherent training objective gap between the pretext and downstream tasks.
 -  This may lead to costly fine-tuning process to adapt the pre-trained GNNs to the downstream tasks.
 -  The naive pre-training strategy usually deteriorates the downstream task and reduces the reliability of transfer learning on graph.
--  Long fine-tuning leads to forgetting of the pre-trained general knowledge. ([Catastrophic Forgetting](../Definitions/index#pre-train-fine-tune))
+-  Long fine-tuning leads to forgetting of the pre-trained general knowledge. ([Catastrophic Forgetting](../Definitions/index.md#pre-train-fine-tune))
 
 ### 1.2 Contributions of this Paper
 

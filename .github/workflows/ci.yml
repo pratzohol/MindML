@@ -35,4 +35,5 @@ jobs:
                 mkdocs-glightbox \
                 mkdocs-minify-plugin \
                 mkdocs-awesome-pages-plugin \
+                mkdocs-jupyter \
       - run: mkdocs gh-deploy --force

@@ -98,6 +98,7 @@ plugins:
   - git-revision-date-localized:
       type: datetime
       enable_creation_date: true
+  - mkdocs-jupyter
   # - git-committers:
   #     repository: pratzohol/MindML
   #     branch: main
