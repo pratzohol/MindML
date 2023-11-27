@@ -19,6 +19,7 @@ I will make a list of tags which were used for this section. Whatever thing I ha
 Following are the tags which were used in this section:
 
 - Markdown
+- LaTeX
 - Algorithms
 - Graphs
 - Dynamic Programming
