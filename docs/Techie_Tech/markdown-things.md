@@ -20,9 +20,10 @@ These things are specific to this repo, i.e., markdown using `mkdocs-material`. 
 
 ## 3. Spacing in Math Mode (LaTeX)
 
-- In increasing order of spacing, use 
-  - \\: 
-  - \\;
-  - \\
-  - \quad
-  - \qquad
+In increasing order of spacing, use 
+
+- \\: 
+- \\;
+- \\
+- \quad
+- \qquad
