@@ -12,28 +12,28 @@
         <meta name="author" content="Prateek Mishra">
       
       
-        <link rel="canonical" href="https://pratzohol.github.io/MindML/Python/">
+        <link rel="canonical" href="https://pratzohol.github.io/MindML/Notes/Graphs_with_LLMs/1-one-for-all-ofa/">
       
       
-        <link rel="prev" href="../Notes/Miscellaneous/types-of-learning/">
+        <link rel="prev" href="../../Graph_Neural_Networks/icl-over-graphs-PRODIGY/">
       
       
-        <link rel="next" href="../Techie_Tech/">
+        <link rel="next" href="../2-talk-like-graph/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
     
     
       
-        <title>Python-Stuff - MindML</title>
+        <title>OneForAll (OFA) - MindML</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.fad675c6.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,11 +63,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Python-Stuff - MindML" >
+        <meta  property="og:title"  content="OneForAll (OFA) - MindML" >
       
         <meta  property="og:description"  content="Notes on ML, DL, CV, RL, and more." >
       
-        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Python/index.png" >
+        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Graphs_with_LLMs/1-one-for-all-ofa.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +75,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/Python/" >
+        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/Notes/Graphs_with_LLMs/1-one-for-all-ofa/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Python-Stuff - MindML" >
+        <meta  name="twitter:title"  content="OneForAll (OFA) - MindML" >
       
         <meta  name="twitter:description"  content="Notes on ML, DL, CV, RL, and more." >
       
-        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Python/index.png" >
+        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Graphs_with_LLMs/1-one-for-all-ofa.png" >
       
     
     
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-stuff" class="md-skip">
+        <a href="#icl-over-graphs-ofa" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../../.." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -145,7 +145,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Python-Stuff
+              OneForAll (OFA)
             
           </span>
         </div>
@@ -250,7 +250,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -265,17 +265,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../Notes/Definitions/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Definitions/" class="md-tabs__link">
           
   
     
@@ -294,13 +298,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../Python/" class="md-tabs__link">
           
   
     
@@ -320,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Techie_Tech/" class="md-tabs__link">
+        <a href="../../../Techie_Tech/" class="md-tabs__link">
           
   
     
@@ -361,7 +363,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../../.." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -391,7 +393,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -408,8 +410,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -430,14 +434,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -451,7 +453,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Notes
@@ -490,7 +492,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Notes/Definitions/" class="md-nav__link ">
+            <a href="../../Definitions/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -574,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Graph_Neural_Networks/icl-over-graphs-GPPT/" class="md-nav__link">
+      <a href="../../Graph_Neural_Networks/icl-over-graphs-GPPT/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Graph_Neural_Networks/icl-over-graphs-PRODIGY/" class="md-nav__link">
+      <a href="../../Graph_Neural_Networks/icl-over-graphs-PRODIGY/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,8 +623,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -637,14 +641,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
@@ -658,7 +660,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Graphs with LLMs
@@ -669,10 +671,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Notes/Graphs_with_LLMs/1-one-for-all-ofa/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    OneForAll (OFA)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -681,6 +703,128 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-comparison-with-prodigy" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Comparison with PRODIGY
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-one-for-all-foundation-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. One-For-All : Foundation Model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. One-For-All : Foundation Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-text-attributed-graphs-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Text-attributed Graphs (TAGs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-nodes-of-interest-noi" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Nodes-of-Interest (NOI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-graph-prompting-paradigm-gpp-for-graph-icl" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Graph Prompting Paradigm (GPP) for Graph ICL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. Prediction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-related-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Related Work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-implementation-of-ofa" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Implementation of OFA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Experiments
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -693,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Graphs_with_LLMs/2-talk-like-graph/" class="md-nav__link">
+      <a href="../2-talk-like-graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -749,7 +893,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Notes/Maths/" class="md-nav__link ">
+            <a href="../../Maths/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -782,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Maths/bigoplus/" class="md-nav__link">
+      <a href="../../Maths/bigoplus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -842,7 +986,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Notes/Miscellaneous/" class="md-nav__link ">
+            <a href="../../Miscellaneous/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -875,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Miscellaneous/contrastive-learning/" class="md-nav__link">
+      <a href="../../Miscellaneous/contrastive-learning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -896,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Miscellaneous/in-context-learning/" class="md-nav__link">
+      <a href="../../Miscellaneous/in-context-learning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -917,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notes/Miscellaneous/types-of-learning/" class="md-nav__link">
+      <a href="../../Miscellaneous/types-of-learning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -950,8 +1094,6 @@
       
   
   
-    
-  
   
   
     
@@ -968,17 +1110,19 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../../Python/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -990,7 +1134,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Python
@@ -1042,7 +1186,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Techie_Tech/" class="md-nav__link ">
+            <a href="../../../Techie_Tech/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1075,7 +1219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/markdown-things/" class="md-nav__link">
+      <a href="../../../Techie_Tech/markdown-things/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1158,7 +1302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/bfs-dfs/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/bfs-dfs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1179,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/dijkstra/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/dijkstra/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1200,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/lis-binary-search/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/lis-binary-search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1221,7 +1365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/mcm-dp/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/mcm-dp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1242,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/meet-in-the-middle/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/meet-in-the-middle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1263,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/sliding-windows/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/sliding-windows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1284,7 +1428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/sorting-methods/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/sorting-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1305,7 +1449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/stacks-area-of-histogram/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/stacks-area-of-histogram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1326,7 +1470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Techie_Tech/DSA/topo-sort/" class="md-nav__link">
+      <a href="../../../Techie_Tech/DSA/topo-sort/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1388,21 +1532,96 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1. Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-comparison-with-prodigy" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Comparison with PRODIGY
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-structure" class="md-nav__link">
+  <a href="#2-one-for-all-foundation-model" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Structure
+      2. One-For-All : Foundation Model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. One-For-All : Foundation Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-text-attributed-graphs-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Text-attributed Graphs (TAGs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-nodes-of-interest-noi" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Nodes-of-Interest (NOI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-graph-prompting-paradigm-gpp-for-graph-icl" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Graph Prompting Paradigm (GPP) for Graph ICL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. Prediction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-related-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Related Work
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-tags" class="md-nav__link">
+  <a href="#4-implementation-of-ofa" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Tags
+      4. Implementation of OFA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Experiments
     </span>
   </a>
   
@@ -1421,9 +1640,38 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <span class="md-tag">Prompting</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">LLMs</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">Graphs</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">ICL</span>
+    
+  
+</nav>
+
 
   
-    <a href="https://github.com/pratzohol/MindML/edit/main/docs/Python/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/edit/main/docs/Notes/Graphs_with_LLMs/1-one-for-all-ofa.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-2.3 6.35c.22-.21.22-.56 0-.77L15.42 7.3a.532.532 0 0 0-.77 0l-1 1 2.05 2.05 1-1M7 14.94V17h2.06l6.06-6.06-2.06-2.06L7 14.94Z"/></svg>
     </a>
@@ -1432,39 +1680,95 @@
     
       
     
-    <a href="https://github.com/pratzohol/MindML/raw/main/docs/Python/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/raw/main/docs/Notes/Graphs_with_LLMs/1-one-for-all-ofa.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="python-stuff">Python-Stuff<a class="headerlink" href="#python-stuff" title="Permanent link">&para;</a></h1>
+<h1 id="icl-over-graphs-ofa">ICL over Graphs : OFA<a class="headerlink" href="#icl-over-graphs-ofa" title="Permanent link">&para;</a></h1>
+<p>In this note, I will cover the following paper <a href="https://arxiv.org/pdf/2310.00149v1.pdf">"ONE FOR ALL: TOWARDS TRAINING ONE GRAPH MODEL FOR ALL CLASSIFICATION TASKS"</a>. This paper benchmarks against <a href="../../Graph_Neural_Networks/icl-over-graphs-PRODIGY/">ICL : PRODIGY</a>. </p>
+<p><em><strong>NOTE</strong></em> : Definition of <a href="../../Miscellaneous/in-context-learning/">In-context Learning (ICL)</a> is already covered.</p>
 <h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
-<p>This section will contain sub-sections of python libraries which are used for the implementation of the code.</p>
-<h2 id="2-structure">2. Structure<a class="headerlink" href="#2-structure" title="Permanent link">&para;</a></h2>
-<p>The sub-sections (e.x. Pytorch, or Numpy) will have posts which will cover either of the following :</p>
-<ul>
-<li><strong>Function</strong> : This will cover functions of the library which are tricky to use and understand. This will also cover the functions which are not used frequently but are useful. I will cover examples of my own by running and testing them so as to understand the working and test the edge cases of the function.</li>
-<li><strong>Method</strong> : This will cover methods, i.e., <em>an ensemble of functions</em>. Most of the code will be standard and we should try to adhere to the best practices instead of writing the code from the scratch. Hence, I will store the code snippets for common tasks in Machine Learning which are used frequently.</li>
+<ol>
+<li>LLMs are used to encode node, edge, graph level information. These are called Text-attributed graphs (TAGs).<ul>
+<li>OFA uses TAGs to integrate graph datasets from different domains into one large TAG dataset and leverages the power of LLMs to learn from all domains jointly.</li>
+<li>All nodes and edges in the graphs are described using human-readable texts and embedded from different domains into the same embedding space with a single LLM.</li>
 </ul>
-<h2 id="3-tags">3. Tags<a class="headerlink" href="#3-tags" title="Permanent link">&para;</a></h2>
-<p>From the above structure, it is clear that the posts will be divided into two categories :</p>
-<ul>
-<li>Function</li>
-<li>Method</li>
+</li>
+<li>OFA introduces the concept of nodes-of-interest (NOI) to standardize different tasks with a single task representation.<ul>
+<li>NOI subgraph and NOI prompt node unifies different types of tasks.</li>
+<li>It improves the ability of fondation model to learn structural information.</li>
 </ul>
+</li>
+<li>For ICL on graphs,  OFA introduces a novel graph prompting paradigm (GPP) which enables it to address various tasks without fine-tuning.<ul>
+<li>It inserts prompt graph into original graph in a task-specific way.</li>
+<li>The nodes in the prompt graph contain all related information about the downstream task. </li>
+<li>Then, the modified graph becomes the actual input to the foundation model.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="OFA pipeline" class="center" src="../../../assets/Notes/Graphs_with_LLMs/ofa-pipeline.png" /></p>
+<h3 id="11-comparison-with-prodigy">1.1. Comparison with PRODIGY<a class="headerlink" href="#11-comparison-with-prodigy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>OFA utilizes LLMS to encode node, edge and graph level information using text prompts whereas PRODIGY just encodes the textual feature of nodes.</li>
+<li>OFA supports zero-shot prompting whereas PRODIGY only supports few-shot prompting.</li>
+<li>Cross domain graphs cannot be handled by PRODIGY whereas OFA encodes cross domain graphs using LLMs.</li>
+</ul>
+<h2 id="2-one-for-all-foundation-model">2. One-For-All : Foundation Model<a class="headerlink" href="#2-one-for-all-foundation-model" title="Permanent link">&para;</a></h2>
+<p><img alt="OFA model" class="center" src="../../../assets/Notes/Graphs_with_LLMs/ofa-model.png" /></p>
+<h3 id="21-text-attributed-graphs-tags">2.1. Text-attributed Graphs (TAGs)<a class="headerlink" href="#21-text-attributed-graphs-tags" title="Permanent link">&para;</a></h3>
+<ul>
+<li>For node feature, <span class="arithmatex">\(s_{v_i}\)</span> = <code>Feature node. &lt;f desc&gt;:&lt;f content&gt; ; &lt;f desc&gt;:&lt;f content&gt; ; ...</code> prompt is used where <code>&lt;f desc&gt;</code> is the description of the feature and <code>&lt;f content&gt;</code> is the content of the feature.</li>
+<li>Similary for edge feature <span class="arithmatex">\(s_{e_{ij}}\)</span>, they use <code>Feature edge</code> in place of <code>Feature node</code>.</li>
+<li>For node <span class="arithmatex">\(v_i\)</span> and edge <span class="arithmatex">\(e_{ij}\)</span>, their vector representations are <span class="arithmatex">\(x_i\)</span> = LLM(<span class="arithmatex">\(s_{v_i}\)</span>) and <span class="arithmatex">\(x_{ij}\)</span> = LLM(<span class="arithmatex">\(s_{e_{ij}}\)</span>) respectively.</li>
+<li>In OFA, they used SentenceTransformer to encode the text into vectors.</li>
+<li>LLMs capture the domain information of features which is passed down to the foundation model.</li>
+</ul>
+<h3 id="22-nodes-of-interest-noi">2.2. Nodes-of-Interest (NOI)<a class="headerlink" href="#22-nodes-of-interest-noi" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>NOI</strong> refers to the blue nodes in the above figure. It is single node for node classification and pair of nodes for link prediction.</li>
+<li><strong>NOI subgraph</strong> is the <span class="arithmatex">\(h\)</span>-hop neighborhood of NOI node(s).</li>
+<li><strong>NOI prompt node</strong> connects to all the nodes in <strong>NOI</strong>.<ul>
+<li>It has the task prompt <code>Prompt node. &lt;task desc&gt;</code>.</li>
+<li>Through message passing, NOI prompt node summarizes information in NOI and task description.</li>
+<li>NOTE : Other works utilize the subgraph and then pool the information to unify different tasks. In contrast, OFA uses NOI prompt node to unify different tasks and thus eliminates the need for explicit pooling and instead, directly uses message passing.</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-graph-prompting-paradigm-gpp-for-graph-icl">2.3. Graph Prompting Paradigm (GPP) for Graph ICL<a class="headerlink" href="#23-graph-prompting-paradigm-gpp-for-graph-icl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Prompt Graph</strong> consists of 2 types of nodes : 1) NOI prompt node <span class="arithmatex">\(p_q\)</span> and, 2) class nodes <span class="arithmatex">\(c_i\)</span>.</li>
+<li>Class node <span class="arithmatex">\(c_i\)</span> has the prompt <code>Prompt node. &lt;class desc&gt;</code>.</li>
+<li>Relation type of edges from NOI to NOI prompt node is <span class="arithmatex">\(r_{t2p}\)</span> and <span class="arithmatex">\(r_{p2t}\)</span> for reverse edge.</li>
+<li>Relation type of edges from NOI prompt node to class node is <span class="arithmatex">\(r_{q2c}\)</span> and <span class="arithmatex">\(r_{c2q}\)</span> for reverse edge.</li>
+<li>Relation type of edges from NOI prompy node of support examples to class node is <span class="arithmatex">\(r_{s2c}\)</span> and <span class="arithmatex">\(r_{c2s}\)</span> for reverse edge.</li>
+<li>Since <span class="arithmatex">\(r_{s2c}\)</span> and <span class="arithmatex">\(r_{q2c}\)</span> differs, model can differentiate between query and support examples.</li>
+<li><strong>Prompted graph</strong>, <span class="arithmatex">\(\mathcal{G}_m\)</span> is the NOI subgraph + prompt graph. This <em>prompted graph</em> is input to the subsequent graph model.</li>
+</ul>
+<h3 id="24-prediction">2.4. Prediction<a class="headerlink" href="#24-prediction" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Let <span class="arithmatex">\(h_{c_i}\)</span> be the vector representation of class node <span class="arithmatex">\(c_i\)</span> after the graph model is applied.</li>
+<li><span class="arithmatex">\(\mathbb{P}\text{[NOI belongs to class i]} = \sigma(\text{MLP}(h_{c_i}))\)</span>. Take <span class="arithmatex">\(\text{argmax}\)</span> to get the class label.</li>
+<li><span class="arithmatex">\(h_{c_i}\)</span> contains class description, NOI information and task information and hence, prediction is task dependent.</li>
+<li>GNN capable of recognizing different edge types serves as graph model in OFA.</li>
+</ul>
+<h2 id="3-related-work">3. Related Work<a class="headerlink" href="#3-related-work" title="Permanent link">&para;</a></h2>
+<p><img alt="OFA comparison" class="center" src="../../../assets/Notes/Graphs_with_LLMs/ofa-comparison.png" /></p>
+<h2 id="4-implementation-of-ofa">4. Implementation of OFA<a class="headerlink" href="#4-implementation-of-ofa" title="Permanent link">&para;</a></h2>
+<h2 id="5-experiments">5. Experiments<a class="headerlink" href="#5-experiments" title="Permanent link">&para;</a></h2>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 21, 2023 04:32:19</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 30, 2023 16:59:58</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 4, 2023 02:27:40</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 30, 2023 16:59:58</span>
       
     
   </small>
@@ -1496,7 +1800,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Notes/Miscellaneous/types-of-learning/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Types of Learning">
+          <a href="../../Graph_Neural_Networks/icl-over-graphs-PRODIGY/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ICL : PRODIGY">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1506,20 +1810,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Types of Learning
+                ICL : PRODIGY
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Techie_Tech/" class="md-footer__link md-footer__link--next" aria-label="Next: Techie Tech">
+          <a href="../2-talk-like-graph/" class="md-footer__link md-footer__link--next" aria-label="Next: Encoding Graphs for LLMs">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Techie Tech
+                Encoding Graphs for LLMs
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1589,12 +1893,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
