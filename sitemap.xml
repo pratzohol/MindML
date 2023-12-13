@@ -36,17 +36,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/Notes/Maths/</loc>
+         <loc>https://pratzohol.github.io/MindML/Notes/Graphs_with_LLMs/3-potential-llm-graph-learning/</loc>
          <lastmod>2023-12-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Maths/bigoplus/</loc>
-         <lastmod>2023-12-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/</loc>
          <lastmod>2023-12-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -67,6 +62,11 @@
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/types-of-learning/</loc>
+         <lastmod>2023-12-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pratzohol.github.io/MindML/Python/quick-pytorch/</loc>
          <lastmod>2023-12-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
