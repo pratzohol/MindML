@@ -1,0 +1,15 @@
+---
+title: "List of Papers Covered"
+---
+
+# List of Papers Covered
+
+List of all the papers I've covered till date :
+
+| S.no. | Name of Paper | Link to Note |
+| ----- | ------------- | ------------ |
+| 1. | [Talk like a Graph : Encoding Graphs for LLMs](https://arxiv.org/pdf/2310.04560.pdf) | [Click here](./Graphs_with_LLMs/2-talk-like-graph.md) |
+| 2. | [ONE FOR ALL: TOWARDS TRAINING ONE GRAPH MODEL FOR ALL CLASSIFICATION TASKS](https://arxiv.org/pdf/2310.00149v1.pdf) | [Click here](./Graphs_with_LLMs/1-one-for-all-ofa.md) |
+| 3. | [GPPT: Graph Pre-training and Prompt Tuning to Generalize Graph Neural Networks](https://dl.acm.org/doi/abs/10.1145/3534678.3539249) | [Click here](./Graph_Neural_Networks/icl-over-graphs-GPPT.md) |
+| 4. | [PRODIGY : Enabling IN-context learning over graphs](https://arxiv.org/abs/2305.12600) | [Click here](./Graph_Neural_Networks/icl-over-graphs-prodigy.md) |
+| 5. | [To do]() | [Click here]() |

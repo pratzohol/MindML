@@ -7,7 +7,7 @@ tags:
 
 # Prompting over Graphs : GPPT
 
-In this note, I will cover the following paper [ GPPT: Graph Pre-training and Prompt Tuning to Generalize Graph Neural Networks](https://dl.acm.org/doi/abs/10.1145/3534678.3539249)
+In this note, I will cover the following paper [GPPT: Graph Pre-training and Prompt Tuning to Generalize Graph Neural Networks](https://dl.acm.org/doi/abs/10.1145/3534678.3539249)
 
 _**NOTE**_ : Definition of [[in-context-learning|In-context Learning (ICL)]] is already covered. First, I will cover GPPT which is based on Graph prompts. Finally, moving ahead from prompting, we will see how [[icl-over-graphs-PRODIGY|ICL : PRODIGY]] introduces ICL over graphs.
 
