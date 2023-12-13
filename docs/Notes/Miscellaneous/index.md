@@ -22,3 +22,4 @@ Following are the tags which were used in this section:
 
 - Basics
 - ICL
+- Graphs
