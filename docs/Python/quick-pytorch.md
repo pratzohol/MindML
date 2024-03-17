@@ -21,7 +21,7 @@ tags:
 
 ## 3. Evaluation mode
 
-- Instead of using `torch.no_grad`, its better to use `torch.inference_mode` as it is more efficient.
+- Instead of using `torch.no_grad()`, its better to use `torch.inference_mode()` as it is more efficient.
 
 ## 4. Random Seed
 
