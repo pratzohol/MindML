@@ -12,25 +12,25 @@
         <meta name="author" content="Prateek Mishra">
       
       
-        <link rel="canonical" href="https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/icl-over-graphs-PRODIGY/">
+        <link rel="canonical" href="https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/3-hyperbolic-gnn-hyla/">
       
       
-        <link rel="prev" href="../icl-over-graphs-GPPT/">
+        <link rel="prev" href="../2-icl-over-graphs-PRODIGY/">
       
       
         <link rel="next" href="../../Graphs_with_LLMs/1-one-for-all-ofa/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
     
     
       
-        <title>ICL : PRODIGY - MindML</title>
+        <title>HyLa - MindML</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.10ba22f1.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -63,11 +63,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="ICL : PRODIGY - MindML" >
+        <meta  property="og:title"  content="HyLa - MindML" >
       
         <meta  property="og:description"  content="Notes on ML, DL, CV, RL, and more." >
       
-        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Graph_Neural_Networks/icl-over-graphs-PRODIGY.png" >
+        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Graph_Neural_Networks/3-hyperbolic-gnn-hyla.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +75,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/icl-over-graphs-PRODIGY/" >
+        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/3-hyperbolic-gnn-hyla/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="ICL : PRODIGY - MindML" >
+        <meta  name="twitter:title"  content="HyLa - MindML" >
       
         <meta  name="twitter:description"  content="Notes on ML, DL, CV, RL, and more." >
       
-        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Graph_Neural_Networks/icl-over-graphs-PRODIGY.png" >
+        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/Notes/Graph_Neural_Networks/3-hyperbolic-gnn-hyla.png" >
       
     
     
@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#icl-over-graphs-prodigy" class="md-skip">
+        <a href="#hyperbolic-gnn-hyla" class="md-skip">
           Skip to content
         </a>
       
@@ -142,7 +142,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ICL : PRODIGY
+              HyLa
             
           </span>
         </div>
@@ -554,6 +554,8 @@
       
         
       
+        
+      
     
     
       
@@ -597,11 +599,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../icl-over-graphs-GPPT/" class="md-nav__link">
+      <a href="../1-icl-over-graphs-GPPT/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Prompting : GPPT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-icl-over-graphs-PRODIGY/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICL : PRODIGY
   </span>
   
 
@@ -627,198 +650,15 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    ICL : PRODIGY
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    ICL : PRODIGY
+    HyLa
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-abstract" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Abstract
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-few-shot-prompting" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Few-shot Prompting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-prompt-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Prompt Graph
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Prompt Graph">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41-data-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.1. Data Graph
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42-task-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.2. Task Graph
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-pre-training-message-passing-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Pre-training : Message Passing Architecture
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Pre-training : Message Passing Architecture">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-data-graph-message-passing" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.1. Data Graph Message Passing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-task-graph-message-passing" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.2. Task Graph Message Passing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#53-prediction-read-out" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.3. Prediction Read-out
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-pre-training-in-context-pretraining-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Pre-training : In-context pretraining objectives
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6. Pre-training : In-context pretraining objectives">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#61-neighbor-matching" class="md-nav__link">
-    <span class="md-ellipsis">
-      6.1. Neighbor Matching
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#62-multi-task" class="md-nav__link">
-    <span class="md-ellipsis">
-      6.2. Multi-task
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#63-prompt-graph-augmentation-and-pretraining-loss" class="md-nav__link">
-    <span class="md-ellipsis">
-      6.3. Prompt Graph Augmentation and Pretraining Loss
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-experiments" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Experiments
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1632,167 +1472,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-abstract" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Abstract
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-few-shot-prompting" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Few-shot Prompting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-prompt-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Prompt Graph
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Prompt Graph">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41-data-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.1. Data Graph
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42-task-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.2. Task Graph
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-pre-training-message-passing-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Pre-training : Message Passing Architecture
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Pre-training : Message Passing Architecture">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-data-graph-message-passing" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.1. Data Graph Message Passing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-task-graph-message-passing" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.2. Task Graph Message Passing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#53-prediction-read-out" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.3. Prediction Read-out
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-pre-training-in-context-pretraining-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Pre-training : In-context pretraining objectives
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6. Pre-training : In-context pretraining objectives">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#61-neighbor-matching" class="md-nav__link">
-    <span class="md-ellipsis">
-      6.1. Neighbor Matching
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#62-multi-task" class="md-nav__link">
-    <span class="md-ellipsis">
-      6.2. Multi-task
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#63-prompt-graph-augmentation-and-pretraining-loss" class="md-nav__link">
-    <span class="md-ellipsis">
-      6.3. Prompt Graph Augmentation and Pretraining Loss
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-experiments" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Experiments
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1810,26 +1489,20 @@
     
     
     
-      <span class="md-tag">Prompting</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">ICL</span>
-    
-  
-    
-    
-    
       <span class="md-tag">Graphs</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">Hyperbolic</span>
     
   
 </nav>
 
 
   
-    <a href="https://github.com/pratzohol/MindML/edit/main/docs/Notes/Graph_Neural_Networks/icl-over-graphs-PRODIGY.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/edit/main/docs/Notes/Graph_Neural_Networks/3-hyperbolic-gnn-hyla.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-2.3 6.35c.22-.21.22-.56 0-.77L15.42 7.3a.532.532 0 0 0-.77 0l-1 1 2.05 2.05 1-1M7 14.94V17h2.06l6.06-6.06-2.06-2.06L7 14.94Z"/></svg>
     </a>
@@ -1838,124 +1511,15 @@
     
       
     
-    <a href="https://github.com/pratzohol/MindML/raw/main/docs/Notes/Graph_Neural_Networks/icl-over-graphs-PRODIGY.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/raw/main/docs/Notes/Graph_Neural_Networks/3-hyperbolic-gnn-hyla.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="icl-over-graphs-prodigy">ICL over Graphs : PRODIGY<a class="headerlink" href="#icl-over-graphs-prodigy" title="Permanent link">&para;</a></h1>
-<p>In this note, I will cover the following paper <a href="https://arxiv.org/abs/2305.12600">"PRODIGY : Enabling in-context learning over graphs"</a>.</p>
-<p><em><strong>NOTE</strong></em> : Definition of <a href="../../Miscellaneous/in-context-learning/">In-context Learning (ICL)</a> is already covered.</p>
-<h2 id="1-abstract">1. Abstract<a class="headerlink" href="#1-abstract" title="Permanent link">&para;</a></h2>
-<ul>
-<li>ICL is the ability of a pretrained model to adapt to novel and diverse downstream tasks by conditioning on prompt examples, without optimizing any parameters.</li>
-<li>The first pretraining framework that enables ICL over graphs - PRODIGY (<strong>Pr</strong>etraining <strong>O</strong>ver <strong>D</strong>iverse <strong>I</strong>n-Context <strong>G</strong>raph S<strong>y</strong>stems)</li>
-</ul>
-<h2 id="2-introduction">2. Introduction<a class="headerlink" href="#2-introduction" title="Permanent link">&para;</a></h2>
-<ul>
-<li>ICL : Capability of a pretrained model to perform diverse tasks directly at the prediction time when prompted with just a few examples, without any model training or fine tuning.</li>
-<li><strong>Challenges</strong> :<ol>
-<li>How to formulate node-, edge- and graph-level tasks over graphs with a unified task representation so that model performs diverse tasks without any fine-tuning or retraining.</li>
-<li>How to design model architecture and pre-training objectives that enables model to achieve ICL over graphs.</li>
-</ol>
-</li>
-<li>Existing Work :<ul>
-<li>Pre-training just learns good graph encoder and then fine-tuning is done for each downstream task.</li>
-<li>Meta-learning generalizes across tasks within the same graph.</li>
-</ul>
-</li>
-<li>ICL over graph means generalizing across <em>graphs</em> and <em>tasks</em> without any fine-tuning or retraining.</li>
-</ul>
-<p><img alt="prodigy" class="center" src="../../../assets/Notes/Graph_Neural_Networks/icl-over-graphs-prodigy-1.png" /></p>
-<ul>
-<li>PRODIGY :  <ol>
-<li>It proposes <em>prompt graph</em> which unifies node-, edge- and graph-level tasks over graphs.</li>
-<li>For pre-training, it uses in-context pretraining objectives (<em>Neighbor Matching</em> &amp; <em>Multi Task</em>) which is a self-supervised task.</li>
-<li>It also defines a GNN structure and an attention mechanism to communicate over prompt graph.</li>
-</ol>
-</li>
-</ul>
-<h2 id="3-few-shot-prompting">3. Few-shot Prompting<a class="headerlink" href="#3-few-shot-prompting" title="Permanent link">&para;</a></h2>
-<ul>
-<li>We define a graph as <span class="arithmatex">\(\mathcal{G} = (\mathcal{V},\mathcal{E}, \mathcal{R})\)</span>, where <span class="arithmatex">\(\mathcal{V},\mathcal{E}, \mathcal{R}\)</span> represent the set of nodes, edges and relations. An edge <span class="arithmatex">\(e = (u,r,v) \in \mathcal{E}\)</span> consists of a subject <span class="arithmatex">\(u \in \mathcal{V}\)</span>, a relation <span class="arithmatex">\(\mathcal{r} \in \mathcal{R}\)</span> and an object <span class="arithmatex">\(v \in \mathcal{V}\)</span>.</li>
-<li>Suppose, we have a <em>m</em>-way classification task with |<span class="arithmatex">\(\mathcal{Y}\)</span>| = <em>m</em> classes and we define <em>k</em>-shot prompt.</li>
-<li><em>prompt examples</em> : <span class="arithmatex">\(\mathcal{S} = \{(x_i, y_i)\}_{i=1}^{m \cdot k}\)</span> with <em>k</em> examples per class <span class="arithmatex">\(y \in \mathcal{Y}\)</span>.</li>
-<li><em>query set</em> : <span class="arithmatex">\(\mathcal{Q} = \{x_i\}_{i=1}^n\)</span> for which we want to predict the labels for.</li>
-</ul>
-<h2 id="4-prompt-graph">4. Prompt Graph<a class="headerlink" href="#4-prompt-graph" title="Permanent link">&para;</a></h2>
-<h3 id="41-data-graph">4.1. Data Graph<a class="headerlink" href="#41-data-graph" title="Permanent link">&para;</a></h3>
-<ul>
-<li>To generate data graph <span class="arithmatex">\(\mathcal{G}^D\)</span>, sample the <em>k</em>-hop neighbour of the <em>input node set</em> from the source graph <span class="arithmatex">\(\mathcal{G}\)</span>.</li>
-<li>For node classification, the input node set is a singleton set of target node. For link prediction, it is a pair of nodes.</li>
-</ul>
-<h3 id="42-task-graph">4.2. Task Graph<a class="headerlink" href="#42-task-graph" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Task graph <span class="arithmatex">\(\mathcal{G}^T\)</span> consists of <em>data nodes</em> (<span class="arithmatex">\(v_{x_i}\)</span>) and <em>label nodes</em> (<span class="arithmatex">\(v_{y_i}\)</span>).</li>
-<li>The data graph <span class="arithmatex">\(\mathcal{G}_i^D\)</span> is aggregated into a single node <span class="arithmatex">\(v_{x_i}\)</span> and the label <span class="arithmatex">\(y_i\)</span> is represented by a label node <span class="arithmatex">\(v_{y_i}\)</span>.</li>
-<li>So, a task graph contains (<em>mk</em> + <em>n</em>) data nodes and <em>m</em> label nodes.</li>
-<li>For query set, we add <strong>single directional</strong> edge from <em>label node</em> to <em>query data node</em>. </li>
-<li>NOTE : This is done to avoid information leakage from query set to prompt set.</li>
-<li>For prompt examples, we add <strong>bi-directional</strong> edge between <em>label node</em> and <em>data node</em>. The edge with true labels are marked <span class="arithmatex">\(T\)</span>, others are marked <span class="arithmatex">\(F\)</span>.</li>
-</ul>
-<h2 id="5-pre-training-message-passing-architecture">5. Pre-training : Message Passing Architecture<a class="headerlink" href="#5-pre-training-message-passing-architecture" title="Permanent link">&para;</a></h2>
-<h3 id="51-data-graph-message-passing">5.1. Data Graph Message Passing<a class="headerlink" href="#51-data-graph-message-passing" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Used GraphSAGE for data graph <span class="arithmatex">\(\mathcal{G}^D\)</span> to  learn embeddings <span class="arithmatex">\(E\)</span> for each node. <span class="arithmatex">\(E \in \mathcal{R}^{|\mathcal{V^D}| \text{ x d}}\)</span></li>
-<li>For node prediction : <span class="arithmatex">\(E_{v_{x_i}}\)</span> = <span class="arithmatex">\(E_{v_i}\)</span> (take the node embedding of node <span class="arithmatex">\(v_i\)</span>)</li>
-<li>For link prediction : <span class="arithmatex">\(E_{v_{x_i}}\)</span> = <span class="arithmatex">\(W^T(E_{v_{i1}} || E_{v_{i2}} || max(E_j \:\:\forall_{j \in \mathcal{G}^D})) + b\)</span> <ul>
-<li>concatenate the node embeddings of two nodes with max-pooling of all the node embeddings in the data graph</li>
-<li>Then project it back to <span class="arithmatex">\(d\)</span>-dimensional embedding space</li>
-<li><span class="arithmatex">\(W \in \mathcal{R}^{\text{3d x d}}\)</span> is a learnable weight matrix and <span class="arithmatex">\(b \in \mathcal{R}^d\)</span> is a learnable bias vector.</li>
-</ul>
-</li>
-</ul>
-<h3 id="52-task-graph-message-passing">5.2. Task Graph Message Passing<a class="headerlink" href="#52-task-graph-message-passing" title="Permanent link">&para;</a></h3>
-<ul>
-<li>The embedding of label node <span class="arithmatex">\(v_{y_i}\)</span> can either be initialized with random Gaussian or additional information available about the labels.</li>
-<li>Each edge also has two binary features <span class="arithmatex">\(e_{ij}\)</span> that indicate<ol>
-<li>whether the edge comes from an example or a query, and </li>
-<li>the edge type of <span class="arithmatex">\(T\)</span> or <span class="arithmatex">\(F\)</span>.</li>
-</ol>
-</li>
-<li>The GNN architecture uses attention mechanism using <span class="arithmatex">\(K\)</span>, <span class="arithmatex">\(Q\)</span>, <span class="arithmatex">\(V\)</span> values and is similar to a transformer.</li>
-</ul>
-<h3 id="53-prediction-read-out">5.3. Prediction Read-out<a class="headerlink" href="#53-prediction-read-out" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Take classfication logits <span class="arithmatex">\(O_i\)</span> by taking cosine similarity between query and label node embedings.</li>
-</ul>
-<h2 id="6-pre-training-in-context-pretraining-objectives">6. Pre-training : In-context pretraining objectives<a class="headerlink" href="#6-pre-training-in-context-pretraining-objectives" title="Permanent link">&para;</a></h2>
-<h3 id="61-neighbor-matching">6.1. Neighbor Matching<a class="headerlink" href="#61-neighbor-matching" title="Permanent link">&para;</a></h3>
-<ul>
-<li>This is Self-supervised task.</li>
-<li>We sample multiple subgraphs from <span class="arithmatex">\(\mathcal{G}_{\text{pretrain}}\)</span> as local neighbourhood and we say a node belongs to the neighbourhood if it is in the sampled subgraph. </li>
-<li><span class="arithmatex">\(\mathtt{NM}_{k, m}\)</span> is sampler which generates <span class="arithmatex">\(m\)</span>-way neighbor matching with <span class="arithmatex">\(k\)</span>-shot prompt examples and labels of the queries.</li>
-<li>First, sample <span class="arithmatex">\(m\)</span> nodes from <span class="arithmatex">\(\mathcal{G}_{\text{pretrain}}\)</span> and each node corresponds to one class.</li>
-<li>Then, sample <span class="arithmatex">\(k\)</span> nodes from <span class="arithmatex">\(l\)</span>-hop neighbourhood of each class node <span class="arithmatex">\(c_i\)</span>. </li>
-<li>Lastly, sample <span class="arithmatex">\(\lceil \frac{n}{m} \rceil\)</span> nodes from each class node <span class="arithmatex">\(c_i\)</span>. This will be the query set.</li>
-</ul>
-<h3 id="62-multi-task">6.2. Multi-task<a class="headerlink" href="#62-multi-task" title="Permanent link">&para;</a></h3>
-<ul>
-<li>This is Supervised task.</li>
-<li>If node/edge level labels are present for <span class="arithmatex">\(\mathcal{G}_{\text{pretrain}}\)</span>, then we can leverage them to construct pretraining task similar to neighbor matching.</li>
-<li>Sample <span class="arithmatex">\(m\)</span> labels from whole label set. Then sample <span class="arithmatex">\(k\)</span> support exampls for each label class.</li>
-<li>Lastly, sample <span class="arithmatex">\(\lceil \frac{n}{m} \rceil\)</span> nodes from each label class to form the query set.</li>
-</ul>
-<h3 id="63-prompt-graph-augmentation-and-pretraining-loss">6.3. Prompt Graph Augmentation and Pretraining Loss<a class="headerlink" href="#63-prompt-graph-augmentation-and-pretraining-loss" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Prompt Graph Augmentation</strong> :<ol>
-<li>Node Dropping : From the data graph of samples and queries, randomly drop few nodes from its <span class="arithmatex">\(l\)</span>-hop neighborhood.</li>
-<li>Node Feature Masking : From the data graph of samples and queries, mask the features as zero vector for few nodes randomly.</li>
-</ol>
-</li>
-<li><strong>Pretraining Loss</strong> :<ul>
-<li><span class="arithmatex">\(\mathcal{L} = \underset{x_i \in \mathcal{Q}_{\mathtt{task}}}{\mathbb{E}} \mathtt{CE}(O_{\mathtt{task, i}}, y_{\mathtt{task, i}})\)</span> where <span class="arithmatex">\(\mathtt{task}\)</span> = <span class="arithmatex">\(\mathtt{NM}\)</span> and <span class="arithmatex">\(\mathtt{MT}\)</span>. </li>
-<li>This is cross-entropy loss between logits and true class label.</li>
-</ul>
-</li>
-</ul>
-<h2 id="7-experiments">7. Experiments<a class="headerlink" href="#7-experiments" title="Permanent link">&para;</a></h2>
+<h1 id="hyperbolic-gnn-hyla">Hyperbolic GNN : HyLa<a class="headerlink" href="#hyperbolic-gnn-hyla" title="Permanent link">&para;</a></h1>
+<p>In this note, I will cover the following paper <a href="">""</a></p>
 
 
 
@@ -1978,7 +1542,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 27, 2023 18:32:57</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 18, 2024 07:24:47</span>
   </span>
 
     
@@ -1988,7 +1552,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 2, 2023 07:47:41</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 18, 2024 07:24:47</span>
   </span>
 
     
@@ -2023,7 +1587,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../icl-over-graphs-GPPT/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prompting : GPPT">
+          <a href="../2-icl-over-graphs-PRODIGY/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ICL : PRODIGY">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2033,7 +1597,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Prompting : GPPT
+                ICL : PRODIGY
               </div>
             </div>
           </a>
@@ -2119,7 +1683,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.bd41221c.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       
