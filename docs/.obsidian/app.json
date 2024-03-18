@@ -1,0 +1,13 @@
+{
+  "livePreview": false,
+  "showLineNumber": true,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "absolute",
+  "showUnsupportedFiles": true,
+  "userIgnoreFilters": [
+    "assets/",
+    "javascripts/",
+    "stylesheets/"
+  ],
+  "readableLineLength": false
+}

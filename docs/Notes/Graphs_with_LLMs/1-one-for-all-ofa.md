@@ -9,7 +9,7 @@ tags:
 
 # ICL over Graphs : OFA
 
-In this note, I will cover the following paper ["ONE FOR ALL: TOWARDS TRAINING ONE GRAPH MODEL FOR ALL CLASSIFICATION TASKS"](https://arxiv.org/pdf/2310.00149v1.pdf). This paper benchmarks against [[icl-over-graphs-prodigy|ICL : PRODIGY]]. 
+In this note, I will cover the following paper ["ONE FOR ALL: TOWARDS TRAINING ONE GRAPH MODEL FOR ALL CLASSIFICATION TASKS"](https://arxiv.org/pdf/2310.00149v1.pdf). This paper benchmarks against [[Notes/Graph_Neural_Networks/2-icl-over-graphs-PRODIGY|ICL : PRODIGY]]. 
 
 _**NOTE**_ : Definition of [[in-context-learning|In-context Learning (ICL)]] is already covered.
 
