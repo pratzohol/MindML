@@ -2,102 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pratzohol.github.io/MindML/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/list-of-papers/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Definitions/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/1-icl-over-graphs-GPPT/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/2-icl-over-graphs-PRODIGY/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/Notes/Graphs_with_LLMs/1-one-for-all-ofa/</loc>
-         <lastmod>2024-08-30</lastmod>
-    </url>
-    <url>
-         <loc>https://pratzohol.github.io/MindML/Notes/Graphs_with_LLMs/2-talk-like-graph/</loc>
-         <lastmod>2024-08-30</lastmod>
-    </url>
-    <url>
-         <loc>https://pratzohol.github.io/MindML/Notes/Graphs_with_LLMs/3-potential-llm-graph-learning/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <loc>https://pratzohol.github.io/MindML/Notes/Graph_Neural_Networks/3-one-for-all-ofa/</loc>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Maths/bigoplus/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/contrastive-learning/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/erdos-renyl-model/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/in-context-learning/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Notes/Miscellaneous/types-of-learning/</loc>
-         <lastmod>2024-08-30</lastmod>
-    </url>
-    <url>
-         <loc>https://pratzohol.github.io/MindML/Python/quick-pytorch/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/markdown-things/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/DSA/bfs-dfs/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/DSA/dijkstra/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/DSA/lis-binary-search/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/DSA/mcm-dp/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/DSA/meet-in-the-middle/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/DSA/sliding-windows/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/DSA/sorting-methods/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/DSA/stacks-area-of-histogram/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
     <url>
          <loc>https://pratzohol.github.io/MindML/Techie_Tech/DSA/topo-sort/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-10-24</lastmod>
     </url>
 </urlset>
