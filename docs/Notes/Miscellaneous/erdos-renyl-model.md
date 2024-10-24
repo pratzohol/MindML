@@ -1,7 +1,5 @@
 ---
 title: "Erdos Renyl Model"
-tags:
-    - Graphs
 ---
 
 # Erdos Renyl Model : Generating Random Graphs
@@ -19,4 +17,4 @@ tags:
 
 ## 2. References
 
-- https://www.geeksforgeeks.org/erdos-renyl-model-generating-random-graphs/
+- https://www.geeksforgeeks.org/erdos-renyl-model-generating-random-graphs/      

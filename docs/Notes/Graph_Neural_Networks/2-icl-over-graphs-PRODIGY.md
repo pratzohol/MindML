@@ -1,9 +1,5 @@
 ---
 title: "ICL : PRODIGY"
-tags:
-    - Prompting
-    - ICL
-    - Graphs
 ---
 
 # ICL over Graphs : PRODIGY

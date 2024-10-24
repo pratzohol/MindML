@@ -1,7 +1,5 @@
 ---
 title: \bigoplus
-tags:
-    - LaTeX
 ---
 
 ## 1. \bigoplus operator
