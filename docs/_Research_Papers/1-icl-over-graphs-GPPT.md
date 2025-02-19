@@ -31,7 +31,7 @@ _**NOTE**_ : Definition of [[in-context-learning|In-context Learning (ICL)]] is 
 
 ## 2. Introduction
 
-![GPPT](/docs/assets//icl-over-graphs-GPPT-1.png)
+![GPPT](../assets/icl-over-graphs-GPPT-1.png)
 
 - Task Token : They are the node labels represented by the trainable continuous vectors. It is appended to the the embedding of the target sample. The linking probability between task token and target sample is directly measured through using the pre-trained model.
 
@@ -157,12 +157,12 @@ $$\mathcal{L_o} = \sum_{m} || E^m (E^m)^T - I ||_F^2$$
 
 ### 5.5 Pseudo-Algorithm
 
-![GPPT](/docs/assets/icl-over-graphs-GPPT-2.png)
+![GPPT](../assets/icl-over-graphs-GPPT-2.png)
 
 ## 6. Experimental Setup
 
 1. _Datasets_ : These datasets are available in PyG or DGL library.  
-![GPPT](/docs/assets/icl-over-graphs-GPPT-3.png)
+![GPPT](../assets/icl-over-graphs-GPPT-3.png)
 1. _Batch Size_ : The batch sizes are 256 - Cora, 256 - Citeseer, 2048 - CoraFull, 256 - Pubmed, 4096 - Ogbn-arxiv, 2048 - AmazonCoBuyComputer, 4096 - AmazonCoBuyPhoto, and 4096 - Reddit.
 2.    - _Number of layers_ : 2 and _Hidden units_ of 128 for GNNs  
       - _Optimizer_ : Adam  

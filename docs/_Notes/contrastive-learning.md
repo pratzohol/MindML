@@ -12,7 +12,7 @@ What this means is that it tries to bring similar samples close to each other in
 
 Let's suppose we have 3 images, $I_1$, $I_2$ and $I_3$, where $I_1$ and $I_2$ belongs to same class (e.x. dog) and $I_3$ belongs to different class (e.x. cat). The representation space will look something like this:
 
-![svg-1](/docs/assets/contrastive-learning-1.drawio.svg)
+![svg-1](../assets/contrastive-learning-1.drawio.svg)
 
 We see that the distance $d(x_1, x_2)$ is small compared to $d(x_1, x_3)$ and $d(x_2, x_3)$ where $d()$ is a metric function like euclidean.
 

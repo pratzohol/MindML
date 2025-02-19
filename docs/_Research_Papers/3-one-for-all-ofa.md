@@ -21,7 +21,7 @@ _**NOTE**_ : Definition of [[in-context-learning|In-context Learning (ICL)]] is 
     -  The nodes in the prompt graph contain all related information about the downstream task. 
     -  Then, the modified graph becomes the actual input to the foundation model.
 
-![OFA pipeline](/docs/assets/ofa-pipeline.png)
+![OFA pipeline](../assets/ofa-pipeline.png)
 
 ### 1.1. Comparison with PRODIGY
 
@@ -31,7 +31,7 @@ _**NOTE**_ : Definition of [[in-context-learning|In-context Learning (ICL)]] is 
 
 ## 2. One-For-All : Foundation Model
 
-![OFA model](/docs/assets/ofa-model.png)
+![OFA model](../assets/ofa-model.png)
 
 ### 2.1. Text-attributed Graphs (TAGs)
 
@@ -69,6 +69,6 @@ _**NOTE**_ : Definition of [[in-context-learning|In-context Learning (ICL)]] is 
 
 ## 3. Related Work
 
-![OFA comparison](/docs/assets/ofa-comparison.png)
+![OFA comparison](../assets/ofa-comparison.png)
 
 
