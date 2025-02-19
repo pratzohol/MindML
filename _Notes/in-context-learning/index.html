@@ -12,26 +12,28 @@
         <meta name="author" content="Prateek Mishra">
       
       
-        <link rel="canonical" href="https://pratzohol.github.io/MindML/_Notes/Miscellaneous/types-of-learning/">
+        <link rel="canonical" href="https://pratzohol.github.io/MindML/_Notes/in-context-learning/">
       
       
-        <link rel="prev" href="../in-context-learning/">
+        <link rel="prev" href="../erdos-renyl-model/">
       
       
+        <link rel="next" href="../types-of-learning/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
     
     
       
-        <title>Types of Learning - MindML</title>
+        <title>In-context Learning (ICL) - MindML</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,11 +63,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Types of Learning - MindML" >
+        <meta  property="og:title"  content="In-context Learning (ICL) - MindML" >
       
         <meta  property="og:description"  content="Welcome to my Digital Garden where I write about Machine Learning, Deep Learning, and Artificial Intelligence." >
       
-        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_Notes/Miscellaneous/types-of-learning.png" >
+        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_Notes/in-context-learning.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -73,15 +75,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/_Notes/Miscellaneous/types-of-learning/" >
+        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/_Notes/in-context-learning/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Types of Learning - MindML" >
+        <meta  name="twitter:title"  content="In-context Learning (ICL) - MindML" >
       
         <meta  name="twitter:description"  content="Welcome to my Digital Garden where I write about Machine Learning, Deep Learning, and Artificial Intelligence." >
       
-        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_Notes/Miscellaneous/types-of-learning.png" >
+        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_Notes/in-context-learning.png" >
       
     
     
@@ -104,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#types-of-learning" class="md-skip">
+        <a href="#in-context-learning-icl" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +122,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../.." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1M338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -140,7 +142,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Types of Learning
+              In-context Learning (ICL)
             
           </span>
         </div>
@@ -248,7 +250,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -267,7 +269,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../_DSA/" class="md-tabs__link">
+        <a href="../../_DSA/bfs-dfs/" class="md-tabs__link">
           
   
     
@@ -289,12 +291,32 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../list-of-papers/" class="md-tabs__link">
+        <a href="../contrastive-learning/" class="md-tabs__link">
           
   
     
   
    Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../_Research_Papers/" class="md-tabs__link">
+          
+  
+    
+  
+   Research Papers
 
         </a>
       </li>
@@ -330,7 +352,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../.." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1M338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -360,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -382,10 +404,6 @@
   
     
     
-      
-        
-          
-        
       
         
       
@@ -422,10 +440,8 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../_DSA/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
      DSA
@@ -433,14 +449,8 @@
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -450,15 +460,13 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-            
-              
                 
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../../_DSA/bfs-dfs/" class="md-nav__link">
+      <a href="../../_DSA/bfs-dfs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_DSA/dijkstra/" class="md-nav__link">
+      <a href="../../_DSA/dijkstra/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -502,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_DSA/lis-binary-search/" class="md-nav__link">
+      <a href="../../_DSA/lis-binary-search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_DSA/mcm-dp/" class="md-nav__link">
+      <a href="../../_DSA/mcm-dp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_DSA/meet-in-the-middle/" class="md-nav__link">
+      <a href="../../_DSA/meet-in-the-middle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_DSA/sliding-windows/" class="md-nav__link">
+      <a href="../../_DSA/sliding-windows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_DSA/sorting-methods/" class="md-nav__link">
+      <a href="../../_DSA/sorting-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_DSA/stacks-area-of-histogram/" class="md-nav__link">
+      <a href="../../_DSA/stacks-area-of-histogram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -634,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_DSA/topo-sort/" class="md-nav__link">
+      <a href="../../_DSA/topo-sort/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -719,277 +727,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../list-of-papers/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    List of Papers Covered
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../Definitions/" class="md-nav__link ">
-              
-  
-  <span class="md-ellipsis">
-    Definitions
-    
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Definitions
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Graph Neural Networks
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
-            <span class="md-nav__icon md-icon"></span>
-            Graph Neural Networks
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Graph_Neural_Networks/1-icl-over-graphs-GPPT/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Prompting : GPPT
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Graph_Neural_Networks/2-icl-over-graphs-PRODIGY/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ICL : PRODIGY
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Graph_Neural_Networks/3-one-for-all-ofa/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    OneForAll (OFA)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Miscellaneous
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_4">
-            <span class="md-nav__icon md-icon"></span>
-            Miscellaneous
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../contrastive-learning/" class="md-nav__link">
         
   
@@ -1031,28 +768,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../in-context-learning/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    In-context Learning (ICL)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1069,7 +784,7 @@
           
   
   <span class="md-ellipsis">
-    Types of Learning
+    In-context Learning (ICL)
     
   </span>
   
@@ -1081,7 +796,7 @@
         
   
   <span class="md-ellipsis">
-    Types of Learning
+    In-context Learning (ICL)
     
   </span>
   
@@ -1104,42 +819,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-supervised-learning" class="md-nav__link">
+  <a href="#1-definition" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Supervised Learning
+      1. Definition
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-unsupervised-learning" class="md-nav__link">
+  <a href="#2-icl-vs-size-of-the-model" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Unsupervised Learning
+      2. ICL vs Size of the Model
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. Unsupervised Learning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-self-supervised-learning" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1. Self-supervised Learning
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-semi-supervised-learning" class="md-nav__link">
+  <a href="#3-related-discussion" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Semi-supervised Learning
+      3. Related Discussion
     </span>
   </a>
   
@@ -1154,9 +854,161 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types-of-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types of Learning in ML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../_Research_Papers/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+     Research Papers
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+             Research Papers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Research_Papers/1-icl-over-graphs-GPPT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompting : GPPT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Research_Papers/2-icl-over-graphs-PRODIGY/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICL : PRODIGY
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_Research_Papers/3-one-for-all-ofa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OneForAll (OFA)
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1196,42 +1048,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-supervised-learning" class="md-nav__link">
+  <a href="#1-definition" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Supervised Learning
+      1. Definition
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-unsupervised-learning" class="md-nav__link">
+  <a href="#2-icl-vs-size-of-the-model" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Unsupervised Learning
+      2. ICL vs Size of the Model
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. Unsupervised Learning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-self-supervised-learning" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1. Self-supervised Learning
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-semi-supervised-learning" class="md-nav__link">
+  <a href="#3-related-discussion" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Semi-supervised Learning
+      3. Related Discussion
     </span>
   </a>
   
@@ -1253,7 +1090,7 @@
 
 
   
-    <a href="https://github.com/pratzohol/MindML/edit/main/docs/_Notes/Miscellaneous/types-of-learning.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/edit/main/docs/_Notes/in-context-learning.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-2.3 6.35c.22-.21.22-.56 0-.77L15.42 7.3a.53.53 0 0 0-.77 0l-1 1 2.05 2.05zM7 14.94V17h2.06l6.06-6.06-2.06-2.06z"/></svg>
     </a>
@@ -1262,33 +1099,30 @@
     
       
     
-    <a href="https://github.com/pratzohol/MindML/raw/main/docs/_Notes/Miscellaneous/types-of-learning.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/raw/main/docs/_Notes/in-context-learning.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="types-of-learning">Types of Learning<a class="headerlink" href="#types-of-learning" title="Permanent link">&para;</a></h1>
-<p>There are broadly 3 different types of learning in Machine Learning paradigm:</p>
+<h1 id="in-context-learning-icl">In-context Learning (ICL)<a class="headerlink" href="#in-context-learning-icl" title="Permanent link">&para;</a></h1>
+<h2 id="1-definition">1. Definition<a class="headerlink" href="#1-definition" title="Permanent link">&para;</a></h2>
+<p>In-context Learning or ICL was defined in <a href="https://arxiv.org/abs/2005.14165">"Language Models are few-shot learners"</a> by Brown et al., the paper that introduced GPT-3. The authors define ICL as:</p>
+<blockquote>
+<p><em>During unsupervised pre-training, a language model develops a broad set of skills and pattern recognition abilities. It then uses these abilities at inference time to rapidly adapt to or recognize the desired task. We use the term “in-context learning” to describe the inner loop of this process, which occurs within the forward-pass upon each sequence.</em></p>
+</blockquote>
+<h2 id="2-icl-vs-size-of-the-model">2. ICL vs Size of the Model<a class="headerlink" href="#2-icl-vs-size-of-the-model" title="Permanent link">&para;</a></h2>
+<p><a href="https://arxiv.org/abs/2211.15661">Akyürek et al.</a> make another observation that ICL exhibits <em>algorithmic phase transitions</em> as model depth increases:</p>
 <ul>
-<li>Supervised Learning</li>
-<li>Unsupervised Learning</li>
-<li>Semi-supervised Learning</li>
+<li>One-layer transformers’ ICL behavior approximates a single step of gradient descent, while wider and deeper transformers match ordinary least squares or ridge regression solutions.</li>
+<li>It is possible to imagine that if small models implement simple learning algorithms in-context, larger models might implement more sophisticated functions during ICL.</li>
+<li>Smaller models do not seem to learn from in-context examples, and larger ones do.</li>
 </ul>
-<h2 id="1-supervised-learning">1. Supervised Learning<a class="headerlink" href="#1-supervised-learning" title="Permanent link">&para;</a></h2>
-<p>When we have lots of labeled samples and we want to train our model to learn from these samples, we use Supervised Learning. Model's performance is measure against a test set which is not seen during training. (We have true labels of the test set)</p>
-<h2 id="2-unsupervised-learning">2. Unsupervised Learning<a class="headerlink" href="#2-unsupervised-learning" title="Permanent link">&para;</a></h2>
-<p>When we don't have any labeled data and instead model tries to discover patterns and insights without any explicit guidance or instruction. For example, clustering is an unsupervised learning task.</p>
-<h3 id="21-self-supervised-learning">2.1. Self-supervised Learning<a class="headerlink" href="#21-self-supervised-learning" title="Permanent link">&para;</a></h3>
-<ul>
-<li>This is kinda unsupervised but with an additional supervisory signal.</li>
-<li>For example, one perform augmentations on the same images and label them as a positive pair, different images as negative pair, and attempts to push the learnt features of negative pairs away while dragging positive features close.</li>
-<li>Constrastive learning is a type of self-supervised learning.</li>
-<li>This enables the network to learn to group images of similar classes, which allows model to perform classification / segmentation tasks without having ground truths.</li>
-</ul>
-<h2 id="3-semi-supervised-learning">3. Semi-supervised Learning<a class="headerlink" href="#3-semi-supervised-learning" title="Permanent link">&para;</a></h2>
-<p>When we have a few labeled samples and a lot of unlabeled samples, we want to be able to use both of them to optimize the performance and learning capability of our model. This is the definition of Semi-supervised Learning.</p>
+<h2 id="3-related-discussion">3. Related Discussion<a class="headerlink" href="#3-related-discussion" title="Permanent link">&para;</a></h2>
+<ol>
+<li>In <a href="../../_Research_Papers/2-icl-over-graphs-PRODIGY/">ICL over Graphs : PRODIGY</a>, I covered the paper <a href="https://arxiv.org/abs/2305.12600">"PRODIGY : Enabling in-context learning over graphs"</a> which extends the concept of ICL to graphs.</li>
+</ol>
 
 
 
@@ -1321,7 +1155,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 2, 2023 18:59:42</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 1, 2023 18:26:54</span>
   </span>
 
     
@@ -1356,7 +1190,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../in-context-learning/" class="md-footer__link md-footer__link--prev" aria-label="Previous: In-context Learning (ICL)">
+          <a href="../erdos-renyl-model/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Erdos Renyl Model">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1366,11 +1200,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                In-context Learning (ICL)
+                Erdos Renyl Model
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../types-of-learning/" class="md-footer__link md-footer__link--next" aria-label="Next: Types of Learning in ML">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Types of Learning in ML
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -1433,12 +1283,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
@@ -1448,7 +1298,7 @@
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
-        <script src="../../../javascripts/tablesort.js"></script>
+        <script src="../../javascripts/tablesort.js"></script>
       
     
   </body>
