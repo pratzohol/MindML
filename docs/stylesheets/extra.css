@@ -8,6 +8,8 @@
 
 code {
     white-space: pre-wrap !important;
+    overflow-x: auto;
+    display: block;
 }
 
 .center {
