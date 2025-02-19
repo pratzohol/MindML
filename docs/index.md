@@ -1,6 +1,8 @@
-# About
+# About Me
 
-I'm a Fourth year Undergraduate at IIT Delhi majoring in Electrical Engineering. My core interests are in Machine Learning, Deep Learning, and Artificial Intelligence. In addition to these, I enjoy new technology, problem-solving and playing outdoor sports.
+I completed my Bachelor's from IIT Delhi in Electrical Engineering. I love statistics, probability and linear algebra, which makes it quite obvious that I also love to learn about recent trends in Machine Learning and Artifical Intelligence. I like coding and problem solving as well. 
+
+I'm also an endurance cyclist and runner. Currently I'm preparing for Half Ironman. You can follow my journey on Insta [@loofy_simp](https://www.instagram.com/loofy_simp) (I'm a big time _One piece_ fan also!!)
 
 ## What is MindML?
 
