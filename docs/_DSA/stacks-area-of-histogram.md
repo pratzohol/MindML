@@ -1,8 +1,5 @@
 ---
 title: "Max area Histogram"
-tags:
-    - Algorithms
-    - Stacks
 ---
 
 # Max area Histogram

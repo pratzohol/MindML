@@ -1,8 +1,5 @@
 ---
 title: "MCM DP"
-tags:
-    - Algorithms
-    - Dynamic Programming
 ---
 
 # Matrix Chain Multiplication (MCM) | DP

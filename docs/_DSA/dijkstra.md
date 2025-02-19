@@ -1,8 +1,5 @@
 ---
 title: "Dijkstra's Algorithm"
-tags:
-    - Algorithms
-    - Graphs
 ---
 
 # Dijkstra's Algorithm
@@ -11,7 +8,7 @@ tags:
 
 Given a graph and a source vertex in the graph, find shortest paths from source to all vertices in the given graph.
 
-- NOTE : If graph is a **DAG**, then simply do [[topo-sort|Topological Sort]]  and store the vertices in a stack. Then pop the vertices from the stack and update the distances of the adjacent vertices.
+- NOTE : If graph is a **DAG**, then simply do [[topo-sort|Topological Sort]] and store the vertices in a stack. Then pop the vertices from the stack and update the distances of the adjacent vertices.
 - This is because to calculate shortest path of any node, we need to calculate the shortest path of all the nodes that come before it. Thus, this automatically calls for topological sorting.
 
 ## 2. Solution

@@ -1,8 +1,5 @@
 ---
 title: "BFS & DFS"
-tags:
-    - Algorithms
-    - Graphs
 ---
 
 # BFS & DFS

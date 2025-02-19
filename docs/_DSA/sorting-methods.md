@@ -1,7 +1,5 @@
 ---
 title: "Sorting Methods"
-tags:
-    - Algorithms
 ---
 
 # Sorting Methods

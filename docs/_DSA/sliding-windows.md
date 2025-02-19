@@ -1,7 +1,5 @@
 ---
 title: "Sliding Window"
-tags:
-    - Algorithms
 ---
 
 # Sliding Window

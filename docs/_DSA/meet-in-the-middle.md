@@ -1,7 +1,5 @@
 ---
 title: "Meet in the Middle"
-tags:
-    - Algorithms
 ---
 
 # Meet in the Middle

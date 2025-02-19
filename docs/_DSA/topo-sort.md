@@ -1,8 +1,5 @@
 ---
 title: "Topological Sort"
-tags:
-    - Algorithms
-    - Graphs
 ---
 
 # Topological Sort

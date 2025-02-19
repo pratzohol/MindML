@@ -1,4 +1,8 @@
-# Types of Learning
+---
+title: Types of Learning in ML
+--- 
+
+# Types of Learning in Machine Learning
 
 There are broadly 3 different types of learning in Machine Learning paradigm:
 

@@ -1,8 +1,5 @@
 ---
 title: "LIS | Binary Search"
-tags:
-    - Algorithms
-    - Dynamic Programming
 ---
 
 # Longest Increasing Subsequence (LIS) | Binary Search
