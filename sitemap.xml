@@ -2,74 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pratzohol.github.io/MindML/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_DSA/bfs-dfs/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_CS/_Algorithms/bfs-dfs/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_DSA/dijkstra/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_CS/_Algorithms/dijkstra/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_DSA/lis-binary-search/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_CS/_Algorithms/sorting-methods/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_DSA/mcm-dp/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_CS/_Algorithms/topo-sort/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_DSA/meet-in-the-middle/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_CS/_CP/lis-binary-search/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_DSA/sliding-windows/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_CS/_CP/mcm-dp/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_DSA/sorting-methods/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_CS/_CP/meet-in-the-middle/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_DSA/stacks-area-of-histogram/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_CS/_CP/sliding-windows/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_DSA/topo-sort/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_Notes/_Graph_ML/erdos-renyl-model/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_Notes/contrastive-learning/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_Notes/_ML/contrastive-learning/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_Notes/erdos-renyl-model/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_Notes/_ML/types-of-learning/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_Notes/in-context-learning/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_Notes/_NLP/bigram-model/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
     <url>
-         <loc>https://pratzohol.github.io/MindML/_Notes/types-of-learning/</loc>
-         <lastmod>2025-02-19</lastmod>
-    </url>
-    <url>
-         <loc>https://pratzohol.github.io/MindML/_Research_Papers/</loc>
-         <lastmod>2025-02-19</lastmod>
-    </url>
-    <url>
-         <loc>https://pratzohol.github.io/MindML/_Research_Papers/1-icl-over-graphs-GPPT/</loc>
-         <lastmod>2025-02-19</lastmod>
-    </url>
-    <url>
-         <loc>https://pratzohol.github.io/MindML/_Research_Papers/2-icl-over-graphs-PRODIGY/</loc>
-         <lastmod>2025-02-19</lastmod>
-    </url>
-    <url>
-         <loc>https://pratzohol.github.io/MindML/_Research_Papers/3-one-for-all-ofa/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <loc>https://pratzohol.github.io/MindML/_Notes/_NLP/in-context-learning/</loc>
+         <lastmod>2025-04-23</lastmod>
     </url>
 </urlset>
