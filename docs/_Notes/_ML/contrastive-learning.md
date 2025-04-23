@@ -12,7 +12,7 @@ What this means is that it tries to bring similar samples close to each other in
 
 Let's suppose we have 3 images, $I_1$, $I_2$ and $I_3$, where $I_1$ and $I_2$ belongs to same class (e.x. dog) and $I_3$ belongs to different class (e.x. cat). The representation space will look something like this:
 
-![svg-1](../assets/contrastive-learning-1.drawio.svg)
+![svg-1](../../assets/contrastive-learning.png){: .center style="transform: scale(0.7)"}
 
 We see that the distance $d(x_1, x_2)$ is small compared to $d(x_1, x_3)$ and $d(x_2, x_3)$ where $d()$ is a metric function like euclidean.
 
@@ -65,9 +65,3 @@ Many hard negative mining methods have been proposed that usually look into the 
 ```
 It only makes sense that this kind of contrastive learning will be used mostly with self-supervised (unsupervised) or semi-supervised settings.
 ```
-
-## 4. Related Discussion
-
-1. Different types of Learning in Machine Learning setting is covered in this post [[types-of-learning|Types of Learning in ML]].
-
-

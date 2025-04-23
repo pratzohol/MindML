@@ -13,9 +13,3 @@ In-context Learning or ICL was defined in ["Language Models are few-shot learner
 * One-layer transformers’ ICL behavior approximates a single step of gradient descent, while wider and deeper transformers match ordinary least squares or ridge regression solutions.
 * It is possible to imagine that if small models implement simple learning algorithms in-context, larger models might implement more sophisticated functions during ICL.
 * Smaller models do not seem to learn from in-context examples, and larger ones do.
-
-## 3. Related Discussion
-
-1. In [[2-icl-over-graphs-PRODIGY|ICL over Graphs : PRODIGY]], I covered the paper ["PRODIGY : Enabling in-context learning over graphs"](https://arxiv.org/abs/2305.12600) which extends the concept of ICL to graphs.
-
-
