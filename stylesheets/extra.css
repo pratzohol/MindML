@@ -7,9 +7,9 @@
 }
 
 code {
-    white-space: pre-wrap !important;
+    /* white-space: pre-wrap !important; */
     overflow-x: auto;
-    display: block;
+    display: inline;
 }
 
 .center {
