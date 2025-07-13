@@ -18,5 +18,5 @@ A **Spanning tree** is tree-like subgraph consisting of all the vertices in grap
 
 ## 4. Complexity
 
-- Time Complexity --> $O()$
-- Space Complexity --> $O()$
+- Time Complexity --> $O(E*log(E))$
+- Space Complexity --> $O(E + V)$
