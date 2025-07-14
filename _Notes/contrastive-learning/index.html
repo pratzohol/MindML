@@ -12,26 +12,28 @@
         <meta name="author" content="Prateek Mishra">
       
       
-        <link rel="canonical" href="https://pratzohol.github.io/MindML/_Notes/_NLP/in-context-learning/">
+        <link rel="canonical" href="https://pratzohol.github.io/MindML/_Notes/contrastive-learning/">
       
       
         <link rel="prev" href="../bigram-model/">
       
       
+        <link rel="next" href="../erdos-renyl-model/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>In-context Learning (ICL) - MindML</title>
+        <title>Contrastive Learning - MindML</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,11 +63,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="In-context Learning (ICL) - MindML" >
+        <meta  property="og:title"  content="Contrastive Learning - MindML" >
       
         <meta  property="og:description"  content="Welcome to my Digital Garden where I write about Machine Learning, Deep Learning, and Artificial Intelligence." >
       
-        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_Notes/_NLP/in-context-learning.png" >
+        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_Notes/contrastive-learning.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -73,15 +75,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/_Notes/_NLP/in-context-learning/" >
+        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/_Notes/contrastive-learning/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="In-context Learning (ICL) - MindML" >
+        <meta  name="twitter:title"  content="Contrastive Learning - MindML" >
       
         <meta  name="twitter:description"  content="Welcome to my Digital Garden where I write about Machine Learning, Deep Learning, and Artificial Intelligence." >
       
-        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_Notes/_NLP/in-context-learning.png" >
+        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_Notes/contrastive-learning.png" >
       
     
     
@@ -104,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#in-context-learning-icl" class="md-skip">
+        <a href="#contrastive-learning" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +122,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../.." title="MindML" class="md-header__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1M338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -140,7 +142,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              In-context Learning (ICL)
+              Contrastive Learning
             
           </span>
         </div>
@@ -252,7 +254,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -273,7 +275,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../_CS/disjoint-set/" class="md-tabs__link">
+        <a href="../../_CS/disjoint-set/" class="md-tabs__link">
           
   
   
@@ -296,17 +298,8 @@
   
     
     
-      
-  
-  
-  
-    
-  
-  
-    
-    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../_Graph_ML/erdos-renyl-model/" class="md-tabs__link">
+        <a href="../bigram-model/" class="md-tabs__link">
           
   
   
@@ -316,9 +309,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -351,7 +341,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
+    <a href="../.." title="MindML" class="md-nav__button md-logo" aria-label="MindML" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1M338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg>
@@ -381,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -452,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/disjoint-set/" class="md-nav__link">
+      <a href="../../_CS/disjoint-set/" class="md-nav__link">
         
   
   
@@ -476,6 +466,8 @@
   
     
     
+      
+        
       
         
       
@@ -542,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/bellman-ford/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/bellman-ford/" class="md-nav__link">
         
   
   
@@ -565,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/bfs-dfs/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/bfs-dfs/" class="md-nav__link">
         
   
   
@@ -588,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/dijkstra/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/dijkstra/" class="md-nav__link">
         
   
   
@@ -611,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/floyd-warshall/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/floyd-warshall/" class="md-nav__link">
         
   
   
@@ -634,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/kadane-algo/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/kadane-algo/" class="md-nav__link">
         
   
   
@@ -657,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/kosaraju-algo/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/kosaraju-algo/" class="md-nav__link">
         
   
   
@@ -680,7 +672,30 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/moore-voting/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/kruskal-algo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kruskal's Algo (MST)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_CS/_Algorithms/moore-voting/" class="md-nav__link">
         
   
   
@@ -703,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/morris-traversal/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/morris-traversal/" class="md-nav__link">
         
   
   
@@ -726,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/prims-algo/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/prims-algo/" class="md-nav__link">
         
   
   
@@ -749,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/sorting-methods/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/sorting-methods/" class="md-nav__link">
         
   
   
@@ -772,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_CS/_Algorithms/topo-sort/" class="md-nav__link">
+      <a href="../../_CS/_Algorithms/topo-sort/" class="md-nav__link">
         
   
   
@@ -813,6 +828,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -863,236 +882,6 @@
   
   
   
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-     Graph ML
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
-            <span class="md-nav__icon md-icon"></span>
-             Graph ML
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../_Graph_ML/erdos-renyl-model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Erdos Renyl Model
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-     ML
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
-            <span class="md-nav__icon md-icon"></span>
-             ML
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../_ML/contrastive-learning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Contrastive Learning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../_ML/types-of-learning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Types of Learning in ML
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-     NLP
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_3">
-            <span class="md-nav__icon md-icon"></span>
-             NLP
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../bigram-model/" class="md-nav__link">
         
@@ -1131,7 +920,7 @@
   
   
   <span class="md-ellipsis">
-    In-context Learning (ICL)
+    Contrastive Learning
     
   </span>
   
@@ -1144,7 +933,7 @@
   
   
   <span class="md-ellipsis">
-    In-context Learning (ICL)
+    Contrastive Learning
     
   </span>
   
@@ -1176,11 +965,68 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-icl-vs-size-of-the-model" class="md-nav__link">
+  <a href="#2-loss-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      2. ICL vs Size of the Model
+      2. Loss Functions
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. Loss Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-contrastive-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Contrastive Loss
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-triplet-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Triplet Loss
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-types-of-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Types of Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Types of Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-self-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Self-Supervised Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Supervised Learning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1193,9 +1039,70 @@
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../erdos-renyl-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Erdos Renyl Model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../in-context-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    In-context Learning (ICL)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types-of-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Types of Learning in ML
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1244,11 +1151,68 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-icl-vs-size-of-the-model" class="md-nav__link">
+  <a href="#2-loss-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      2. ICL vs Size of the Model
+      2. Loss Functions
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. Loss Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-contrastive-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Contrastive Loss
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-triplet-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Triplet Loss
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-types-of-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Types of Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Types of Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-self-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Self-Supervised Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Supervised Learning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1268,7 +1232,7 @@
 
 
   
-    <a href="https://github.com/pratzohol/MindML/edit/main/docs/_Notes/_NLP/in-context-learning.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/pratzohol/MindML/edit/main/docs/_Notes/contrastive-learning.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-2.3 6.35c.22-.21.22-.56 0-.77L15.42 7.3a.53.53 0 0 0-.77 0l-1 1 2.05 2.05zM7 14.94V17h2.06l6.06-6.06-2.06-2.06z"/></svg>
     </a>
@@ -1277,26 +1241,51 @@
     
       
     
-    <a href="https://github.com/pratzohol/MindML/raw/main/docs/_Notes/_NLP/in-context-learning.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/raw/main/docs/_Notes/contrastive-learning.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="in-context-learning-icl">In-context Learning (ICL)<a class="headerlink" href="#in-context-learning-icl" title="Permanent link">&para;</a></h1>
+<h1 id="contrastive-learning">Contrastive Learning<a class="headerlink" href="#contrastive-learning" title="Permanent link">&para;</a></h1>
 <h2 id="1-definition">1. Definition<a class="headerlink" href="#1-definition" title="Permanent link">&para;</a></h2>
-<p>In-context Learning or ICL was defined in <a href="https://arxiv.org/abs/2005.14165">"Language Models are few-shot learners"</a> by Brown et al., the paper that introduced GPT-3. The authors define ICL as:</p>
 <blockquote>
-<p><em>During unsupervised pre-training, a language model develops a broad set of skills and pattern recognition abilities. It then uses these abilities at inference time to rapidly adapt to or recognize the desired task. We use the term “in-context learning” to describe the inner loop of this process, which occurs within the forward-pass upon each sequence.</em></p>
+<p>Contrastive learning aims at learning low-dimensional representations of data by contrasting between similar and dissimilar samples.</p>
 </blockquote>
-<h2 id="2-icl-vs-size-of-the-model">2. ICL vs Size of the Model<a class="headerlink" href="#2-icl-vs-size-of-the-model" title="Permanent link">&para;</a></h2>
-<p><a href="https://arxiv.org/abs/2211.15661">Akyürek et al.</a> make another observation that ICL exhibits <em>algorithmic phase transitions</em> as model depth increases:</p>
+<p>What this means is that it tries to bring similar samples close to each other in the representation space and push dissimilar samples away from each other.</p>
+<p>Let's suppose we have 3 images, <span class="arithmatex">\(I_1\)</span>, <span class="arithmatex">\(I_2\)</span> and <span class="arithmatex">\(I_3\)</span>, where <span class="arithmatex">\(I_1\)</span> and <span class="arithmatex">\(I_2\)</span> belongs to same class (e.x. dog) and <span class="arithmatex">\(I_3\)</span> belongs to different class (e.x. cat). The representation space will look something like this:</p>
+<p><img alt="svg-1" class="center" src="../../assets/contrastive-learning.png" style="transform: scale(0.7)" /></p>
+<p>We see that the distance <span class="arithmatex">\(d(x_1, x_2)\)</span> is small compared to <span class="arithmatex">\(d(x_1, x_3)\)</span> and <span class="arithmatex">\(d(x_2, x_3)\)</span> where <span class="arithmatex">\(d()\)</span> is a metric function like euclidean.</p>
+<h2 id="2-loss-functions">2. Loss Functions<a class="headerlink" href="#2-loss-functions" title="Permanent link">&para;</a></h2>
+<h3 id="21-contrastive-loss">2.1. Contrastive Loss<a class="headerlink" href="#21-contrastive-loss" title="Permanent link">&para;</a></h3>
+<p>We suppose that we have a pair (<span class="arithmatex">\(I_i\)</span>, <span class="arithmatex">\(I_j\)</span>) and a label <span class="arithmatex">\(Y\)</span> that is equal to 0 if the samples are similar and 1 otherwise. To extract a low-dimensional representation of each sample, we use a Convolutional Neural Network <span class="arithmatex">\(f\)</span> that encodes the input images <span class="arithmatex">\(I_i\)</span> and <span class="arithmatex">\(I_j\)</span> into an embedding space where <span class="arithmatex">\(x_i = f(I_i)\)</span> and <span class="arithmatex">\(x_j = f(I_j)\)</span>. The contrastive loss is defined as:  </p>
+<div class="arithmatex">\[\mathbf{L = (1-Y) * ||x_i - x_j||^2 + Y * max(0, m - ||x_i - x_j||^2)}\]</div>
+<p>where <span class="arithmatex">\(m\)</span> is a hyperparameter, defining lower bound distance between dissimilar samples.<br />
+This can be thought of as :  </p>
 <ul>
-<li>One-layer transformers’ ICL behavior approximates a single step of gradient descent, while wider and deeper transformers match ordinary least squares or ridge regression solutions.</li>
-<li>It is possible to imagine that if small models implement simple learning algorithms in-context, larger models might implement more sophisticated functions during ICL.</li>
-<li>Smaller models do not seem to learn from in-context examples, and larger ones do.</li>
+<li>If <span class="arithmatex">\(Y = 0\)</span>, then samples are similar and hence, we want to minimize the distance between <span class="arithmatex">\(\mathbf{x_i}\)</span> and <span class="arithmatex">\(\mathbf{x_j}\)</span>.  </li>
+<li>If <span class="arithmatex">\(Y = 1\)</span>, then samples are dissimilar and minimizing <span class="arithmatex">\(\mathbf{L}\)</span> means we want to make the term <span class="arithmatex">\(m - ||x_i - x_j||^2\)</span> <span class="arithmatex">\(\leq\)</span> 0. Thus, we want the distance between <span class="arithmatex">\(\mathbf{x_i}\)</span> and <span class="arithmatex">\(\mathbf{x_j}\)</span> to be maximized and greater than the lower bound <span class="arithmatex">\(m\)</span>.</li>
+<li>[NOTE :] This is not a classification task. We are trying to learn the embedding <span class="arithmatex">\(\mathbf{x_i}\)</span> for the <span class="arithmatex">\(i\)</span>-th sample.</li>
 </ul>
+<h3 id="22-triplet-loss">2.2. Triplet Loss<a class="headerlink" href="#22-triplet-loss" title="Permanent link">&para;</a></h3>
+<p>It takes triplet as input : an anchor sample <span class="arithmatex">\(I\)</span>, a positive sample <span class="arithmatex">\(I^{+}\)</span> and a negative sample <span class="arithmatex">\(I^{-}\)</span>. During training, the loss function enforces the distance between anchor and positive sample to be less than the distance between anchor and negative sample.</p>
+<p>The triplet loss is defined as:</p>
+<div class="arithmatex">\[\mathbf{L = max(0, ||x - x^{+}||^2 - ||x - x^{-}||^2 + m)}\]</div>
+<p>where <span class="arithmatex">\(m\)</span> is a hyperparameter defined in contrastive loss. Here also, we want dissimilar to be far and similar to be close so that the term <span class="arithmatex">\(||x - x^{+}||^2 - ||x - x^{-}||^2 + m\)</span> <span class="arithmatex">\(\leq\)</span> 0.</p>
+<h2 id="3-types-of-learning">3. Types of Learning<a class="headerlink" href="#3-types-of-learning" title="Permanent link">&para;</a></h2>
+<h3 id="31-self-supervised-learning">3.1. <a href="../types-of-learning/#2-unsupervised-learning">Self-Supervised Learning</a><a class="headerlink" href="#31-self-supervised-learning" title="Permanent link">&para;</a></h3>
+<p>When we don't have labeled samples, we use unsupervised learning, also known as self-supervised learning.</p>
+<p>A famous self-supervised framework for unsupervised contrastive learning is <a href="https://arxiv.org/abs/2002.05709"><strong><em>SimCLR</em></strong></a>. Its main idea is to generate positive image pairs by applying random transformations in the anchor image like crop, flip and color jitter since these changes keep the label of the image unchanged.</p>
+<h3 id="32-supervised-learning">3.2. <a href="../types-of-learning/#1-supervised-learning">Supervised Learning</a><a class="headerlink" href="#32-supervised-learning" title="Permanent link">&para;</a></h3>
+<p>The label of each sample is available during training. So, we can generate positive and negative pairs or triplets by just looking at the labels. </p>
+<p><em>Positive Pairs : Samples with same label</em><br />
+<em>Negative Pairs : Samples with different label</em></p>
+<p>However, generating all possible pairs or triplets requires a lot of time and computational resources. Also, in every dataset, there are many negative pairs or triplets that already satisfy the contrastive training objectives and give zero loss resulting in slow training convergence.</p>
+<p>To deal with this problem, we have to generate <em>hard pairs</em> and <em>hard triplets</em>, meaning that their loss value is high, i.e., similar pairs that are far apart and dissimilar pairs that are very close. </p>
+<p>Many hard negative mining methods have been proposed that usually look into the representation space for hard pairs and triplets using fast search algorithms.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>It only makes sense that this kind of contrastive learning will be used mostly with self-supervised (unsupervised) or semi-supervised settings.
+</span></code></pre></div>
 
 
 
@@ -1319,7 +1308,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="April 23, 2025 15:48:58 UTC">April 23, 2025 15:48:58</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 14, 2025 09:55:21 UTC">July 14, 2025 09:55:21</span>
   </span>
 
     
@@ -1329,7 +1318,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 1, 2023 18:26:54 UTC">July 1, 2023 18:26:54</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 2, 2023 16:31:30 UTC">July 2, 2023 16:31:30</span>
   </span>
 
     
@@ -1379,6 +1368,22 @@
             </div>
           </a>
         
+        
+          
+          <a href="../erdos-renyl-model/" class="md-footer__link md-footer__link--next" aria-label="Next: Erdos Renyl Model">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Erdos Renyl Model
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -1443,12 +1448,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.share", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
@@ -1458,7 +1463,7 @@
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
-        <script src="../../../javascripts/tablesort.js"></script>
+        <script src="../../javascripts/tablesort.js"></script>
       
     
   </body>
