@@ -6,7 +6,7 @@ title: Kruskal's Algo (MST)
 
 Given a weighted, undirected, and connected graph of V vertices and E edges. Find the sum of weights of the edges of the Minimum Spanning Tree.
 
-## 1.1 What is MST ?
+### 1.1 What is MST ?
 
 A **Spanning tree** is tree-like subgraph consisting of all the vertices in graph. There could be multiple spanning trees. The spanning tree with edges having minimum sum of weights is considered MST.
 
