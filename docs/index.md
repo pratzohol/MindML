@@ -4,7 +4,7 @@ I completed my Bachelor's from IIT Delhi in Electrical Engineering. I love stati
 
 I'm also an endurance cyclist and runner. Currently I'm preparing for Half Ironman.  
 I Seriously need to learn how to swim 😭😭.  
-You are welcome follow my journey on Insta [@woofyluffy](https://www.instagram.com/woofyluffy) (I'm a big time _One piece_ fan also!!)
+You are welcome to follow my journey on Insta [@woofyluffy](https://www.instagram.com/woofyluffy) (I'm a big time _One piece_ fan also!!)
 
 
 > In case you found this slightly useful, it's recommended to use the **_search_** feature for finding relevant topics/notes quickly.
