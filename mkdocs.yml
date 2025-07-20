@@ -80,6 +80,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
   - toc:
       permalink: true
   - pymdownx.highlight:
@@ -128,9 +130,9 @@ extra:
       - icon: fontawesome/brands/linkedin
         link: https://www.linkedin.com/in/pratzohol-iitd/
         name: LinkedIn
-      # - icon: fontawesome/brands/instragram
-      #   link: https://www.instagram.com/pratzohol/
-      #   name: Instagram
+      - icon: fontawesome/brands/instagram
+        link: https://www.instagram.com/woofyluffy/
+        name: Instagram
       - icon: fontawesome/solid/paper-plane
         link: mailto:IITDprateekmishra@gmail.com
         name: Email

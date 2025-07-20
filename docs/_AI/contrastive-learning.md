@@ -43,13 +43,13 @@ where $m$ is a hyperparameter defined in contrastive loss. Here also, we want di
 
 ## 3. Types of Learning
 
-### 3.1. [Self-Supervised Learning](types-of-learning.md#2-unsupervised-learning)
+### 3.1. [Self-Supervised Learning](learning-paradigms.md#2-unsupervised-learning)
 
 When we don't have labeled samples, we use unsupervised learning, also known as self-supervised learning.
 
 A famous self-supervised framework for unsupervised contrastive learning is [**_SimCLR_**](https://arxiv.org/abs/2002.05709). Its main idea is to generate positive image pairs by applying random transformations in the anchor image like crop, flip and color jitter since these changes keep the label of the image unchanged.
 
-### 3.2. [Supervised Learning](types-of-learning.md#1-supervised-learning)
+### 3.2. [Supervised Learning](learning-paradigms.md#1-supervised-learning)
 
 The label of each sample is available during training. So, we can generate positive and negative pairs or triplets by just looking at the labels. 
 

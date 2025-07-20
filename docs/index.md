@@ -12,3 +12,8 @@ You are welcome follow my journey on Insta [@woofyluffy](https://www.instagram.c
 ## What is MindML?
 
 Inspired from [Notes on AI](https://notesonai.com/Notes+on+AI), MindML is a personal wiki on AI and ML. It is a collection of notes, resources, and ideas on various topics in AI and ML. The search function and simplistic site makes it easy to navigate and revisit the concepts I have learnt.
+
+
+??? "To-Do List"
+
+    - [ ] MRR, CodeBERT, ELECTRA  

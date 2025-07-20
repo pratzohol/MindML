@@ -1,5 +1,5 @@
 ---
-title: Types of Learning in ML
+title: Learning Paradigms
 --- 
 
 # Types of Learning in Machine Learning
