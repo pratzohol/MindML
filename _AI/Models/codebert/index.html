@@ -12,13 +12,13 @@
         <meta name="author" content="Prateek Mishra">
       
       
-        <link rel="canonical" href="https://pratzohol.github.io/MindML/_CS/_Algorithms/dijkstra/">
+        <link rel="canonical" href="https://pratzohol.github.io/MindML/_AI/Models/codebert/">
       
       
-        <link rel="prev" href="../bfs-dfs/">
+        <link rel="prev" href="../../mrr/">
       
       
-        <link rel="next" href="../floyd-warshall/">
+        <link rel="next" href="../electra/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Dijkstra's Algorithm - MindML</title>
+        <title>CodeBERT - MindML</title>
       
     
     
@@ -63,11 +63,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Dijkstra's Algorithm - MindML" >
+        <meta  property="og:title"  content="CodeBERT - MindML" >
       
         <meta  property="og:description"  content="Welcome to my Digital Garden where I write about Machine Learning, Deep Learning, and Artificial Intelligence." >
       
-        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_CS/_Algorithms/dijkstra.png" >
+        <meta  property="og:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_AI/Models/codebert.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +75,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/_CS/_Algorithms/dijkstra/" >
+        <meta  property="og:url"  content="https://pratzohol.github.io/MindML/_AI/Models/codebert/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Dijkstra's Algorithm - MindML" >
+        <meta  name="twitter:title"  content="CodeBERT - MindML" >
       
         <meta  name="twitter:description"  content="Welcome to my Digital Garden where I write about Machine Learning, Deep Learning, and Artificial Intelligence." >
       
-        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_CS/_Algorithms/dijkstra.png" >
+        <meta  name="twitter:image"  content="https://pratzohol.github.io/MindML/assets/images/social/_AI/Models/codebert.png" >
       
     
     
@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dijkstras-algo" class="md-skip">
+        <a href="#codebert" class="md-skip">
           Skip to content
         </a>
       
@@ -142,7 +142,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dijkstra's Algorithm
+              CodeBERT
             
           </span>
         </div>
@@ -271,11 +271,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../_AI/contrastive-learning/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../contrastive-learning/" class="md-tabs__link">
           
   
   
@@ -293,13 +295,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../disjoint-set/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../_CS/disjoint-set/" class="md-tabs__link">
           
   
   
@@ -390,8 +390,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -411,19 +413,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -436,7 +439,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
              AI
@@ -450,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_AI/contrastive-learning/" class="md-nav__link">
+      <a href="../../contrastive-learning/" class="md-nav__link">
         
   
   
@@ -473,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_AI/erdos-renyl-model/" class="md-nav__link">
+      <a href="../../erdos-renyl-model/" class="md-nav__link">
         
   
   
@@ -496,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_AI/in-context-learning/" class="md-nav__link">
+      <a href="../../in-context-learning/" class="md-nav__link">
         
   
   
@@ -519,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_AI/learning-paradigms/" class="md-nav__link">
+      <a href="../../learning-paradigms/" class="md-nav__link">
         
   
   
@@ -542,7 +545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_AI/mrr/" class="md-nav__link">
+      <a href="../../mrr/" class="md-nav__link">
         
   
   
@@ -562,8 +565,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -578,13 +583,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
         
           
           <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
@@ -600,7 +603,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Models
@@ -611,10 +614,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../_AI/Models/codebert/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    CodeBERT
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -625,6 +650,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -637,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../_AI/Models/electra/" class="md-nav__link">
+      <a href="../electra/" class="md-nav__link">
         
   
   
@@ -672,10 +726,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -687,20 +739,19 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -713,7 +764,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
              CS
@@ -727,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../disjoint-set/" class="md-nav__link">
+      <a href="../../../_CS/disjoint-set/" class="md-nav__link">
         
   
   
@@ -747,10 +798,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -785,11 +834,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -805,7 +856,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
              Algorithms
@@ -819,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bellman-ford/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/bellman-ford/" class="md-nav__link">
         
   
   
@@ -842,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bfs-dfs/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/bfs-dfs/" class="md-nav__link">
         
   
   
@@ -862,32 +913,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Dijkstra's Algorithm
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../_CS/_Algorithms/dijkstra/" class="md-nav__link">
         
   
   
@@ -898,77 +927,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-problem-statement" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Problem Statement
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-solution" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Solution
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Solution">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-using-sets" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 Using Sets
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-using-priority-queues" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 Using Priority Queues
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-complexity" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Complexity
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -981,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../floyd-warshall/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/floyd-warshall/" class="md-nav__link">
         
   
   
@@ -1004,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kadane-algo/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/kadane-algo/" class="md-nav__link">
         
   
   
@@ -1027,7 +985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kosaraju-algo/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/kosaraju-algo/" class="md-nav__link">
         
   
   
@@ -1050,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kruskal-algo/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/kruskal-algo/" class="md-nav__link">
         
   
   
@@ -1073,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../moore-voting/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/moore-voting/" class="md-nav__link">
         
   
   
@@ -1096,7 +1054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../morris-traversal/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/morris-traversal/" class="md-nav__link">
         
   
   
@@ -1119,7 +1077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prims-algo/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/prims-algo/" class="md-nav__link">
         
   
   
@@ -1142,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sorting-methods/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/sorting-methods/" class="md-nav__link">
         
   
   
@@ -1165,7 +1123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../topo-sort/" class="md-nav__link">
+      <a href="../../../_CS/_Algorithms/topo-sort/" class="md-nav__link">
         
   
   
@@ -1223,51 +1181,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-problem-statement" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Problem Statement
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-solution" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Solution
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Solution">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-using-sets" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 Using Sets
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-using-priority-queues" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 Using Priority Queues
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-complexity" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Complexity
+      1.
     </span>
   </a>
   
@@ -1289,7 +1205,7 @@
 
 
   
-    <a href="https://github.com/pratzohol/MindML/edit/main/docs/_CS/_Algorithms/dijkstra.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/pratzohol/MindML/edit/main/docs/_AI/Models/codebert.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-2.3 6.35c.22-.21.22-.56 0-.77L15.42 7.3a.53.53 0 0 0-.77 0l-1 1 2.05 2.05zM7 14.94V17h2.06l6.06-6.06-2.06-2.06z"/></svg>
     </a>
@@ -1298,116 +1214,15 @@
     
       
     
-    <a href="https://github.com/pratzohol/MindML/raw/main/docs/_CS/_Algorithms/dijkstra.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/pratzohol/MindML/raw/main/docs/_AI/Models/codebert.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="dijkstras-algo">Dijkstra's Algo<a class="headerlink" href="#dijkstras-algo" title="Permanent link">&para;</a></h1>
-<h2 id="1-problem-statement">1. Problem Statement<a class="headerlink" href="#1-problem-statement" title="Permanent link">&para;</a></h2>
-<p>Given a graph and a source vertex in the graph, find shortest paths from source to all vertices in the given graph.</p>
-<ul>
-<li>NOTE : If graph is a <strong>DAG</strong>, then simply do <a href="../topo-sort/">Topological Sort</a> and store the vertices in a stack. Then pop the vertices from the stack and update the distances of the adjacent vertices.</li>
-<li>This is because to calculate shortest path of any node, we need to calculate the shortest path of all the nodes that come before it. Thus, this automatically calls for topological sorting.</li>
-</ul>
-<h2 id="2-solution">2. Solution<a class="headerlink" href="#2-solution" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>NOTE:</strong> Dijkstra’s Algorithm is not valid for negative weights or negative cycles.</li>
-<li>A negative cycle is a cycle whose edges are such that the sum of their weights is a negative value.</li>
-<li>Difference between using <code>sets</code> and <code>priority_queues</code> is that in <code>sets</code> we can check if there exists a pair with the same node but a greater distance than the current distance.</li>
-<li>This is not possible in <code>priority_queues</code> as we cannot erase a particular element from the queue. Thus, we need to push the same node with a smaller distance and the <code>priority_queue</code> will automatically sort it.</li>
-<li>We can use <code>queues</code> also but it will be slower than the above two methods.</li>
-</ul>
-<h3 id="21-using-sets">2.1 Using Sets<a class="headerlink" href="#21-using-sets" title="Permanent link">&para;</a></h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dijkstra</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">V</span><span class="p">,</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">src</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c1">// Create a set for storing the nodes as a pair {dist,node}</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">set</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">st</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="c1">// Initialising dist list with a large number to</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="c1">// indicate the nodes are unvisited initially.</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="c1">// This list contains distance from source to the nodes.</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dist</span><span class="p">(</span><span class="n">V</span><span class="p">,</span><span class="w"> </span><span class="mf">1e9</span><span class="p">);</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">st</span><span class="p">.</span><span class="n">insert</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">});</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="c1">// Source initialised with dist=0</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="n">dist</span><span class="p">[</span><span class="n">src</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="c1">// Now, erase the minimum distance node first from the set</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="c1">// and traverse for all its adjacent nodes.</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">st</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="n">begin</span><span class="p">());</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">second</span><span class="p">;</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">dis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">first</span><span class="p">;</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="n">st</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="c1">// Check for all adjacent nodes of the erased</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="c1">// element whether the prev dist is larger than current or not.</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">node</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">adjNode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">edgW</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">dis</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">edgW</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">dist</span><span class="p">[</span><span class="n">adjNode</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">                </span><span class="c1">// erase if it was visited previously at</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">                </span><span class="c1">// a greater cost.</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">                </span><span class="k">if</span><span class="p">(</span><span class="n">dist</span><span class="p">[</span><span class="n">adjNode</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">1e9</span><span class="p">)</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">                    </span><span class="n">st</span><span class="p">.</span><span class="n">erase</span><span class="p">({</span><span class="n">dist</span><span class="p">[</span><span class="n">adjNode</span><span class="p">],</span><span class="w"> </span><span class="n">adjNode</span><span class="p">});</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">                </span><span class="c1">// If current distance is smaller,</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">                </span><span class="c1">// push it into the queue</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">                </span><span class="n">dist</span><span class="p">[</span><span class="n">adjNode</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dis</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">edgW</span><span class="p">;</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">                </span><span class="n">st</span><span class="p">.</span><span class="n">insert</span><span class="p">({</span><span class="n">dist</span><span class="p">[</span><span class="n">adjNode</span><span class="p">],</span><span class="w"> </span><span class="n">adjNode</span><span class="p">});</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">            </span><span class="p">}</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">dist</span><span class="p">;</span>
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="22-using-priority-queues">2.2 Using Priority Queues<a class="headerlink" href="#22-using-priority-queues" title="Permanent link">&para;</a></h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dijkstra</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">V</span><span class="p">,</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="c1">// Create a p.q. for storing the nodes as a pair {dist,node}</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="n">priority_queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">greater</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">pq</span><span class="p">;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="c1">// This list contains distance from source to the nodes.</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">distTo</span><span class="p">(</span><span class="n">V</span><span class="p">,</span><span class="w"> </span><span class="n">INT_MAX</span><span class="p">);</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="c1">// Source initialised with dist=0.</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="n">distTo</span><span class="p">[</span><span class="n">S</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="n">pq</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">S</span><span class="p">});</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="c1">// Now, pop the minimum distance node first from the min-heap</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="c1">// and traverse for all its adjacent nodes.</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">pq</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pq</span><span class="p">.</span><span class="n">top</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">dis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pq</span><span class="p">.</span><span class="n">top</span><span class="p">().</span><span class="n">first</span><span class="p">;</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="n">pq</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="c1">// Check for all adjacent nodes of the popped out</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="c1">// element whether the prev dist is larger than current or not.</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">node</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dis</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">distTo</span><span class="p">[</span><span class="n">v</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">                </span><span class="n">distTo</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dis</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">                </span><span class="c1">// If current distance is smaller,</span>
-</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">                </span><span class="c1">// push it into the queue.</span>
-</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">                </span><span class="n">pq</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="n">dis</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">w</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">});</span>
-</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">            </span><span class="p">}</span>
-</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">distTo</span><span class="p">;</span>
-</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="3-complexity">3. Complexity<a class="headerlink" href="#3-complexity" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Time Complexity --&gt; <span class="arithmatex">\(O(E*logV)\)</span> if using sets, else <span class="arithmatex">\(O(E*logE)\)</span> if using min-heap</li>
-<li>Space Complexity --&gt; <span class="arithmatex">\(O(V)\)</span></li>
-</ul>
+<h1 id="codebert">CodeBERT<a class="headerlink" href="#codebert" title="Permanent link">&para;</a></h1>
+<h2 id="1">1.<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 
 
 
@@ -1430,7 +1245,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 13, 2025 19:02:13 UTC">July 13, 2025 19:02:13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 20, 2025 08:37:00 UTC">July 20, 2025 08:37:00</span>
   </span>
 
     
@@ -1440,7 +1255,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 21, 2023 04:32:19 UTC">August 21, 2023 04:32:19</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 20, 2025 08:37:00 UTC">July 20, 2025 08:37:00</span>
   </span>
 
     
@@ -1475,7 +1290,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../bfs-dfs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: BFS &amp; DFS">
+          <a href="../../mrr/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mean Reciprocal Rank (MRR)">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1485,20 +1300,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                BFS & DFS
+                Mean Reciprocal Rank (MRR)
               </div>
             </div>
           </a>
         
         
           
-          <a href="../floyd-warshall/" class="md-footer__link md-footer__link--next" aria-label="Next: Floyd Warshall Algo">
+          <a href="../electra/" class="md-footer__link md-footer__link--next" aria-label="Next: ELECTRA">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Floyd Warshall Algo
+                ELECTRA
               </div>
             </div>
             <div class="md-footer__button md-icon">

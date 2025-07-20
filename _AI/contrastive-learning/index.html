@@ -405,6 +405,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -617,7 +621,7 @@
   
   
   <span class="md-ellipsis">
-    In-context Learning (ICL)
+    In-context Learning
     
   </span>
   
@@ -635,17 +639,143 @@
   
   
     <li class="md-nav__item">
-      <a href="../types-of-learning/" class="md-nav__link">
+      <a href="../learning-paradigms/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Types of Learning in ML
+    Learning Paradigms
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mrr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mean Reciprocal Rank (MRR)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Models
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Models/codebert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CodeBERT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Models/electra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ELECTRA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1249,10 +1379,10 @@ This can be thought of as :  </p>
 <div class="arithmatex">\[\mathbf{L = max(0, ||x - x^{+}||^2 - ||x - x^{-}||^2 + m)}\]</div>
 <p>where <span class="arithmatex">\(m\)</span> is a hyperparameter defined in contrastive loss. Here also, we want dissimilar to be far and similar to be close so that the term <span class="arithmatex">\(||x - x^{+}||^2 - ||x - x^{-}||^2 + m\)</span> <span class="arithmatex">\(\leq\)</span> 0.</p>
 <h2 id="3-types-of-learning">3. Types of Learning<a class="headerlink" href="#3-types-of-learning" title="Permanent link">&para;</a></h2>
-<h3 id="31-self-supervised-learning">3.1. <a href="../types-of-learning/#2-unsupervised-learning">Self-Supervised Learning</a><a class="headerlink" href="#31-self-supervised-learning" title="Permanent link">&para;</a></h3>
+<h3 id="31-self-supervised-learning">3.1. <a href="../learning-paradigms/#2-unsupervised-learning">Self-Supervised Learning</a><a class="headerlink" href="#31-self-supervised-learning" title="Permanent link">&para;</a></h3>
 <p>When we don't have labeled samples, we use unsupervised learning, also known as self-supervised learning.</p>
 <p>A famous self-supervised framework for unsupervised contrastive learning is <a href="https://arxiv.org/abs/2002.05709"><strong><em>SimCLR</em></strong></a>. Its main idea is to generate positive image pairs by applying random transformations in the anchor image like crop, flip and color jitter since these changes keep the label of the image unchanged.</p>
-<h3 id="32-supervised-learning">3.2. <a href="../types-of-learning/#1-supervised-learning">Supervised Learning</a><a class="headerlink" href="#32-supervised-learning" title="Permanent link">&para;</a></h3>
+<h3 id="32-supervised-learning">3.2. <a href="../learning-paradigms/#1-supervised-learning">Supervised Learning</a><a class="headerlink" href="#32-supervised-learning" title="Permanent link">&para;</a></h3>
 <p>The label of each sample is available during training. So, we can generate positive and negative pairs or triplets by just looking at the labels. </p>
 <p><em>Positive Pairs : Samples with same label</em><br />
 <em>Negative Pairs : Samples with different label</em></p>
@@ -1283,7 +1413,7 @@ This can be thought of as :  </p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 14, 2025 09:56:14 UTC">July 14, 2025 09:56:14</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 20, 2025 08:37:00 UTC">July 20, 2025 08:37:00</span>
   </span>
 
     
@@ -1399,6 +1529,14 @@ This can be thought of as :  </p>
     
     <a href="https://www.linkedin.com/in/pratzohol-iitd/" target="_blank" rel="noopener" title="LinkedIn" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.instagram.com/woofyluffy/" target="_blank" rel="noopener" title="Instagram" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
     </a>
   
     
