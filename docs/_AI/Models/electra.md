@@ -88,4 +88,16 @@ $\lambda$ is taken 50 since the loss of discriminator is very small compared to 
 - **Smaller Generator**: If smaller $G$ is taken, first we add linear layer to project $E$ into $G$'s hidden state. Model works best with $G$ that are 1/2 or 1/4 of size of $D$. We don't want a weak $G$ but also don't want a very strong $G$ which correctly detects the token most of the time.
 - **Training Algorithm**: If we first separately train $G$, it becomes too good at prediction and $D$ can cheat the system by predicting "real" everytime. Thus, both are trained jointly.
 
-## 5. ELECTRA 
+## 5. Ablation Study
+
+- **ELECTRA 15%**: Same as ELECTRA, but $\mathcal{L}_{Disc}$ comes from only the 15% of the tokens which were masked. 
+    - The loss is taken only over masked tokens in input. 
+    - This model obviously performs much worse.
+- **Replace MLM**: MLM objective is used, but instead of $[MASK]$ token, replaced tokens from $G$ is used. This was done because BERT uses $[MASK]$ token in pre-training but not during fine-tuning. This creates mismatch. 
+    - The loss is taken only over masked tokens in input.
+    - Replace MLM performs slightly better than BERT. 
+- **All-tokens MLM**: Similar to Replace MLM. Uses additional copy mechanism for training.
+    - The loss is taken over all tokens in input. 
+    - If $[MASK]$ was used, model would learn to just copy for non-mask tokens and predict for mask tokens. Hence, replacements from generator are used.
+    - Copy mechanism uses $h_t$ to output probability $d$ for copying input token $x_t$ as it is, and $1 - d$ for using output of MLM softmax ($softmax(Eh_t)$).
+    - Final probability distribution over $V$ is weighted sum of these two.
