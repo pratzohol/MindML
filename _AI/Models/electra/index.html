@@ -786,9 +786,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      1.
+      1. Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-pre-training-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Pre-training Objective
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Pre-training Objective">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-discriminator" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Discriminator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-training-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Pre-training Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-pre-training-setup-for-g-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Pre-training Setup for G-D
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-electra" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. ELECTRA
     </span>
   </a>
   
@@ -1277,9 +1337,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      1.
+      1. Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-pre-training-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Pre-training Objective
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Pre-training Objective">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-discriminator" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Discriminator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-training-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Pre-training Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-pre-training-setup-for-g-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Pre-training Setup for G-D
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-electra" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. ELECTRA
     </span>
   </a>
   
@@ -1318,7 +1438,71 @@
 
 
 <h1 id="electra">ELECTRA<a class="headerlink" href="#electra" title="Permanent link">&para;</a></h1>
-<h2 id="1">1.<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">&para;</a></h2>
+<p>This paper introduced the pre-training objective of <a href="../codebert/#32-rtd"><strong>Replaced Token Detection (RTD)</strong></a> which is sample-efficient compared to traditional MLM which utilizes only 15% of tokens for pre-training. Using very less compute, it outperforms lot of models by a significant margin.</p>
+<h2 id="2-pre-training-objective">2. Pre-training Objective<a class="headerlink" href="#2-pre-training-objective" title="Permanent link">&para;</a></h2>
+<p>Two neural networks are trained, namely, generator <span class="arithmatex">\(G\)</span> and discriminator <span class="arithmatex">\(D\)</span>. Both works as encoders. The generator <span class="arithmatex">\(G\)</span> is trained with <span class="arithmatex">\(\text{MLE}\)</span> loss instead of training it adversarially as earlier works show it is difficult to apply GANs to text.</p>
+<p>For <span class="arithmatex">\(\boldsymbol{x} = [x_1, x_2, .., x_n]\)</span> as input, we get contextualized embeddings <span class="arithmatex">\(h(\boldsymbol{x}) = [h_1, h_2, .., h_n]\)</span>.  </p>
+<ul>
+<li>First, select positions to mask-out tokens, replace them with <span class="arithmatex">\([MASK]\)</span>.  </li>
+<li>Generator then predicts the masked tokens.  </li>
+<li>Masked tokens are replaced by generator samples.  </li>
+<li>Discriminar predicts if the token is "real".</li>
+</ul>
+<div class="arithmatex">\[
+\begin{array}{ll}
+m_i \sim \text{unif}\{1, n\} \quad \text{for } i = 1 \text{ to } k 
+&amp; \quad \boldsymbol{x}^{\text{masked}} = \text{REPLACE}(x, \boldsymbol{m}, [\text{MASK}]) \\
+\hat{x}_i \sim p_G(x_i \mid \boldsymbol{x}^{\text{masked}}) \quad \text{for } i \in \boldsymbol{m}
+&amp; \quad \boldsymbol{x}^{\text{corrupt}} = \text{REPLACE}(x, \boldsymbol{m}, \hat{\boldsymbol{x}})
+\end{array}
+\]</div>
+<h3 id="21-generator">2.1 Generator<a class="headerlink" href="#21-generator" title="Permanent link">&para;</a></h3>
+<p>For position <span class="arithmatex">\(t\)</span>, where <span class="arithmatex">\(x_t = [MASK]\)</span>, we first get probability distribution over the vocabulary <span class="arithmatex">\(V\)</span> by taking softmax after calculating dot product with embedding matrix <span class="arithmatex">\(E\)</span>. The probability of generating token <span class="arithmatex">\(x_t\)</span> is given by,</p>
+<div class="arithmatex">\[
+p_G(x_t \mid \boldsymbol{x}) = 
+    \dfrac{\exp (E{x_t}^T \cdot h_G(\boldsymbol{x})_t)}{\sum_{x'} \exp (E{x'}^T \cdot h_G(\boldsymbol{x})_t)}
+\]</div>
+<p>The generator <span class="arithmatex">\(G\)</span> is trained using this <span class="arithmatex">\(\text{MLE}\)</span> loss function: </p>
+<div class="arithmatex">\[
+\mathcal{L}_{MLM}(\boldsymbol{x}, \theta_G) = 
+\mathbb{E} \left(
+    - \sum_{i \in \boldsymbol{m}} \log p_G(x_i \mid \boldsymbol{x}^{\text{masked}})
+\right)
+\]</div>
+<h3 id="22-discriminator">2.2 Discriminator<a class="headerlink" href="#22-discriminator" title="Permanent link">&para;</a></h3>
+<p>For the discrimintor, it outputs a probability whether <span class="arithmatex">\(x_t\)</span> is "real". </p>
+<div class="arithmatex">\[
+D(\boldsymbol{x}, t) = sigmoid(w^T h_D(\boldsymbol{x}_t))
+\]</div>
+<p>The loss function for Discriminator <span class="arithmatex">\(D\)</span> is given by,</p>
+<div class="arithmatex">\[
+\mathcal{L}_{\text{Disc}}(\boldsymbol{x}, \theta_D) = 
+\mathbb{E} \left( 
+\sum_{t = 1}^{n} 
+- \mathbb{1}(x_t^{\text{corrupt}} = x_t) \log D(\boldsymbol{x}^{\text{corrupt}}, t)
+- \mathbb{1}(x_t^{\text{corrupt}} \ne x_t) \log (1 - D(\boldsymbol{x}^{\text{corrupt}}, t))
+\right)
+\]</div>
+<hr />
+<p>The combined pre-training objective to minimize then becomes :</p>
+<div class="arithmatex">\[
+\min\limits_{\theta_G, \theta_D} \sum_{\boldsymbol{x} \in \mathcal{X}} 
+\mathcal{L}_{MLM}(\boldsymbol{x}, \theta_G) + \lambda \mathcal{L}_{\text{Disc}}(\boldsymbol{x}, \theta_D)
+\]</div>
+<p><span class="arithmatex">\(\lambda\)</span> is taken 50 since the loss of discriminator is very small compared to generator. After pre-training is done, we discard the generator model and use the discriminator. </p>
+<h2 id="3-pre-training-data">3. Pre-training Data<a class="headerlink" href="#3-pre-training-data" title="Permanent link">&para;</a></h2>
+<ul>
+<li>3.3 Billion tokens from <strong>Wikipedia</strong> and <strong>BookCorpus</strong>.</li>
+<li>For ELECTRA-Large model, it's trained on 33B tokens by including data from <strong>ClueWeb</strong>, <strong>CommonCrawl</strong>, and <strong>Gigaword</strong>.</li>
+</ul>
+<h2 id="4-pre-training-setup-for-g-d">4. Pre-training Setup for G-D<a class="headerlink" href="#4-pre-training-setup-for-g-d" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Weight Sharing</strong>: We use common <span class="arithmatex">\(E\)</span> for both <span class="arithmatex">\(G\)</span> and <span class="arithmatex">\(D\)</span>. Hidden dimension is taken to be same as <span class="arithmatex">\(D\)</span>'s hidden state. This is because, <span class="arithmatex">\(D\)</span> only updates tokens tht are present in input or sampled by generator. Whereas <span class="arithmatex">\(G\)</span> updates every token because of the <span class="arithmatex">\(softmax\)</span>.</li>
+<li><strong>Smaller Generator</strong>: If smaller <span class="arithmatex">\(G\)</span> is taken, first we add linear layer to project <span class="arithmatex">\(E\)</span> into <span class="arithmatex">\(G\)</span>'s hidden state. Model works best with <span class="arithmatex">\(G\)</span> that are 1/2 or 1/4 of size of <span class="arithmatex">\(D\)</span>. We don't want a weak <span class="arithmatex">\(G\)</span> but also don't want a very strong <span class="arithmatex">\(G\)</span> which correctly detects the token most of the time.</li>
+<li><strong>Training Algorithm</strong>: If we first separately train <span class="arithmatex">\(G\)</span>, it becomes too good at prediction and <span class="arithmatex">\(D\)</span> can cheat the system by predicting "real" everytime. Thus, both are trained jointly.</li>
+</ul>
+<h2 id="5-electra">5. ELECTRA<a class="headerlink" href="#5-electra" title="Permanent link">&para;</a></h2>
 
 
 
@@ -1341,7 +1525,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 20, 2025 08:37:00 UTC">July 20, 2025 08:37:00</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 21, 2025 14:41:32 UTC">July 21, 2025 14:41:32</span>
   </span>
 
     
