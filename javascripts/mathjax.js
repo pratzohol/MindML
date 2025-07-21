@@ -1,9 +1,13 @@
 window.MathJax = {
+  loader: {
+    load: ['[tex]/boldsymbol']
+  },
   tex: {
     inlineMath: [["\\(", "\\)"]],
     displayMath: [["\\[", "\\]"]],
     processEscapes: true,
-    processEnvironments: true
+    processEnvironments: true,
+    packages: {'[+]': ['boldsymbol']},
   },
   options: {
     ignoreHtmlClass: ".*|",
@@ -12,5 +16,8 @@ window.MathJax = {
 };
 
 document$.subscribe(() => {
+  MathJax.startup.output.clearCache()
+  MathJax.typesetClear()
+  MathJax.texReset()
   MathJax.typesetPromise()
 })
