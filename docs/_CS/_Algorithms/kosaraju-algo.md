@@ -10,7 +10,7 @@ Find Strongly Connected Components (SCCs) in a directed graph.
 
 ## 1.1 Strongly Connected Components (SCCs)
 
-In a directed graph, a Strongly Connected Component is a subset of vertices where every vertex is reachable from each other.
+In a directed graph, a Strongly Connected Component is a subset of vertices where every vertex is reachable from each other. If vertex `j` is reachable from `i`, then `i` must also be reachable from `j`.
 
 
 ## 2. Solution

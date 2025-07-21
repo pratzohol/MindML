@@ -106,7 +106,7 @@ plugins:
   #     repository: pratzohol/MindML
   #     branch: main
   - social
-  # - awesome-pages
+  - awesome-pages
 
 extra_javascript:
   - javascripts/mathjax.js
