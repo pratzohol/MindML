@@ -6,7 +6,7 @@ title: CodeBERT
 
 ## 1. Architecture
 
-CodeBERT uses bidirectional transformer and same architecture as RoBERTa-base. Total Number of parameters = 125M.
+CodeBERT uses bidirectional transformer and same architecture as RoBERTa-base. Total Number of parameters = 125M. It works as an encoder.
 
 ## 2. Pre-training Data
 
