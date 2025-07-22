@@ -2,12 +2,12 @@
 
 
 !!! note "! P1"
-
-    - [x] ELECTRA
-        - [ ] generator as adverserial using RL
     - [x] CodeBERT
 
 !!! note "!! P2"
-    - [ ] BLEU score
+    - [ ] ROUGE metric
+    - [x] BLEU score
+    - [x] ELECTRA
+        - [ ] generator as adverserial using RL
     - [x] MRR
     - [ ] ~~What is AST (abstract syntax tree)~~

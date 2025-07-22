@@ -4,7 +4,7 @@ title: Mean Reciprocal Rank (MRR)
 
 # Mean Reciprocal Rank (MRR)
 
-# Definition
+# 1. Definition
 
 MRR is a standard metric in ranking tasks, when there is a single correct answer per query.
 
