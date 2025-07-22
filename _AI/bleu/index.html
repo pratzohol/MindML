@@ -535,6 +535,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    BLEU Score
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -546,6 +559,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Formula
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-smoothed-bleu" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Smoothed-BLEU
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1229,6 +1279,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Formula
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-smoothed-bleu" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Smoothed-BLEU
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1260,6 +1336,44 @@
 
 
 <h1 id="bleu-score">BLEU Score<a class="headerlink" href="#bleu-score" title="Permanent link">&para;</a></h1>
+<ul>
+<li>BLEU stands for "Bilingual Evaluation Understudy".  </li>
+<li>It evaluates the quality of <strong>text generation</strong> by comparing n-grams of generated text, i.e., candidate with the reference text, i.e., ground truth.  </li>
+<li>Usually, BLEU score decreases as the length of generated text increases. This is because, in higher order n-grams, it's much more likely to be non-overlapping with the reference text.</li>
+</ul>
+<h2 id="1-formula">1. Formula<a class="headerlink" href="#1-formula" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[\text{BLEU} = \text{BP} \cdot \exp \left(\sum_{i=1}^{N} w_i \ln p_i\right)\]</div>
+<p>Where:</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\text{BP}\)</span> is <strong>Brevity Penalty</strong>. It is defined as 
+    <span class="arithmatex">\(\quad \text{BP} = 
+    \begin{cases}
+    1 &amp; \text{if } c &gt; r \\
+    \exp\left(1 - \frac{r}{c} \right) &amp; \text{if } c \leq r
+    \end{cases}\)</span><br />
+    where</p>
+<div class="arithmatex">\[
+\begin{aligned}
+r &amp;= \text{length of reference text} \\
+c &amp;= \text{length of candidate text}
+\end{aligned}
+\]</div>
+<p>We see <span class="arithmatex">\(\text{BP} &lt; 1\)</span> for candidate text shorter than reference text. It penalizes very short outputs, but also, does not exceed 1 even if candidate text is much longer than reference text.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(p_i\)</span> is <strong>clipped precision</strong> of n-gram with length <span class="arithmatex">\(i\)</span>. </p>
+<div class="arithmatex">\[
+p_i = \dfrac{\text{CountClip}(\text{matching-n-grams}_i, \text{max-ref-count}_i)}{\text{candidate-n-grams}_i}
+\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(w_i\)</span> is weight given to n-grams with length <span class="arithmatex">\(i\)</span>. Usually <span class="arithmatex">\(N\)</span> is taken upto 4. Then, in this case we can assign <span class="arithmatex">\(w_1, w_2, w_3, w_4\)</span> each to be <span class="arithmatex">\(0.25\)</span>.</p>
+</li>
+</ul>
+<h2 id="2-smoothed-bleu">2. Smoothed-BLEU<a class="headerlink" href="#2-smoothed-bleu" title="Permanent link">&para;</a></h2>
+<p>When a candidate is short and no bigrams or trigrams match, BLEU can be zero, even if the output is reasonably close. Smoothed BLEU modifies the precision terms <span class="arithmatex">\(p_i\)</span> to avoid zero values when there are no matches.</p>
+<p>This can be done using methods like adding 1 to both numerator and denominator, or backoff smoothing.</p>
 
 
 
@@ -1282,7 +1396,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 21, 2025 12:51:56 UTC">July 21, 2025 12:51:56</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="July 22, 2025 04:08:59 UTC">July 22, 2025 04:08:59</span>
   </span>
 
     
